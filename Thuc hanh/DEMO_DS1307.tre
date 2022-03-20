@@ -1,0 +1,87 @@
+ÀÄDEMO_DS1307
+   ÀÄMAIN  0/460  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port_ic_chot  0/30  Ram=0
+      ÃÄds1307_read_time  0/108  Ram=1
+      ³  ÃÄsoft_i2c_start  0/18  Ram=0
+      ³  ÃÄsoft_i2c_write  0/100  Ram=4
+      ³  ³  ÀÄsoft_i2c_clk  0/10  Ram=0
+      ³  ÃÄsoft_i2c_write  0/100  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄsoft_i2c_start  0/18  Ram=0
+      ³  ÃÄsoft_i2c_write  0/100  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄsoft_i2c_read  0/56  Ram=3
+      ³  ³  ÀÄsoft_i2c_clk  0/10  Ram=0
+      ³  ÃÄsoft_i2c_read  0/56  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄsoft_i2c_read  0/56  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄsoft_i2c_read  0/56  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄsoft_i2c_read  0/56  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄsoft_i2c_read  0/56  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄsoft_i2c_read  0/56  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄsoft_i2c_stop  0/18  Ram=0
+      ÃÄinputcd  0/206  Ram=5
+      ³  ÃÄ@WRITEBITA  0/62  Ram=6
+      ³  ÃÄ@READBITA  0/46  Ram=5
+      ³  ÃÄhien_thi_8led_7doan_quet_all  0/54  Ram=1
+      ³  ³  ÃÄxuat_8led_7doan_quet_2  0/60  Ram=3
+      ³  ³  ³  ÃÄ@const746  0/24  Ram=0
+      ³  ³  ³  ÃÄxuat_1byte  0/42  Ram=3
+      ³  ³  ³  ÃÄxuat_1byte  0/42  Ram=3
+      ³  ³  ³  ÀÄmo_ic_74573_b_thong_dl  0/46  Ram=0
+      ³  ³  ÀÄxuat_8led_7doan_quet_tat_led  0/10  Ram=0
+      ³  ³     ÀÄxuat_8led_7doan_quet_1  0/44  Ram=3
+      ³  ³        ÃÄxuat_1byte  0/42  Ram=3
+      ³  ³        ÃÄxuat_1byte  0/42  Ram=3
+      ³  ³        ÀÄmo_ic_74573_b_thong_dl  0/46  Ram=0
+      ³  ÃÄ@WRITEBITA  0/62  Ram=6
+      ³  ÃÄ@READBITA  0/46  Ram=5
+      ³  ÃÄhien_thi_8led_7doan_quet_all  0/54  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@WRITEBITA  0/62  Ram=6
+      ³  ÀÄ@READBITA  0/46  Ram=5
+      ÃÄinputcd  0/206  Ram=5
+      ³  ÀÄ*
+      ÃÄhieuchinhBCDvaNapthoigian  0/62  Ram=0
+      ³  ÃÄhieuchinhBCD  0/30  Ram=2
+      ³  ÃÄhieuchinhBCD  0/30  Ram=2
+      ³  ÃÄhieuchinhBCD  0/30  Ram=2
+      ³  ÀÄds1307_set_time  0/74  Ram=8
+      ³     ÃÄsoft_i2c_start  0/18  Ram=0
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄsoft_i2c_write  0/100  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄsoft_i2c_stop  0/18  Ram=0
+      ÃÄinputcd  0/206  Ram=5
+      ³  ÀÄ*
+      ÃÄhieuchinhBCDvaNapthoigian  0/62  Ram=0
+      ³  ÀÄ*
+      ÃÄ@const672  0/32  Ram=0
+      ÃÄ@const672  0/32  Ram=0
+      ÃÄ@const672  0/32  Ram=0
+      ÃÄ@const672  0/32  Ram=0
+      ÃÄ@const672  0/32  Ram=0
+      ÃÄ@const672  0/32  Ram=0
+      ÀÄhien_thi_8led_7doan_quet_all  0/54  Ram=1
+         ÀÄ*

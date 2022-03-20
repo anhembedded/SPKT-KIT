@@ -1,0 +1,16 @@
+[PROJECT]
+Target=DEMO_LCD.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DEMO_LCD.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DEMO_LCD.c]
+Type=4
+[mru-list]
+1=DEMO_LCD.c
+[Units]
+Count=1
+1=DEMO_LCD (main)

@@ -1,0 +1,132 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     tin_hieu_dk_74573_a
+004.2   g_lcda
+004.4   g_32a
+004.6   g_4a
+005     tin_hieu_dk_74573_b
+005.2   g_rbdcb
+005.4   g_8b
+005.6   g_mtb
+006-007 rbdc
+006.0   step_motor_enable
+006.1   step_motor_in1
+006.2   step_motor_in2
+006.3   step_motor_in3
+006.4   step_motor_in4
+006.5   dc_enable
+006.6   pwrkey
+007.0   buzzer
+007.1   triac_1
+007.2   triac_2
+007.3   relay_1
+007.4   relay_2
+008     lcddata
+009     lcdcontrol
+00A     glcddata
+00B     glcdcontrol
+00C-018 led_7dq
+019     tt8led
+01A-01B inputcd.oldpin
+01C.0   inputcd.tt
+01C.1   inputcd.dem
+01D     dem
+01E-01F xuat_4led_7doan_giaima_xoa_so0.tam
+01E     @WRITEBITA.P1
+01E     @READBITA.P2
+01E     MAIN.@SCRATCH1
+01F     @DIV88.P1
+01F-020 @READBITA.P2
+01F     @delay_ms1.P3
+01F     @WRITEBITA.P4
+01F     MAIN.@SCRATCH2
+020     @DIV88.P1
+020-021 @WRITEBITA.P2
+020-023 xuat_4led_7doan_giaima_xoa_so0.ht
+021     @DIV88.@SCRATCH1
+024     xuat_4led_7doan_giaima_xoa_so0.i
+025     xuat_4led_7doan_4so.bl743
+025     xuat_4led_7doan_giaima_xoa_so0.@SCRATCH1
+026     xuat_4led_7doan_4so.bl742
+026     xuat_4led_7doan_giaima_xoa_so0.@SCRATCH2
+027     xuat_4led_7doan_4so.bl741
+027-028 @DIV1616.P1
+027     xuat_4led_7doan_giaima_xoa_so0.@SCRATCH3
+028     xuat_4led_7doan_4so.bl740
+028     xuat_4led_7doan_giaima_xoa_so0.@SCRATCH4
+029-02A @DIV1616.P1
+029     xuat_1byte.bytexuat
+029     xuat_4led_7doan_giaima_xoa_so0.@SCRATCH5
+02A     xuat_1byte.sb
+02B     xuat_1byte.x
+02B.7   xuat_1byte.bseri
+02B     @DIV1616.@SCRATCH1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  set_up_port_ic_chot
+000042  @DIV88
+00006A  xuat_1byte
+000094  mo_ic_74573_a_thong_dl
+0000C4  xuat_4led_7doan_4so
+0000EE  @delay_ms1
+000114  @DIV1616
+000156  xuat_4led_7doan_giaima_xoa_so0
+0001D0  @cinit1
+0001D0  MAIN
+000206  @cinit2
+
+Project Directory:
+    F:\D503\Thuc hanh\
+
+Project Files:
+    DEMO_4LED_7SEG.c                                        [13-Feb-22 09:38  CRC=3E997B92]
+    TV_PICKIT2_SHIFT_1.c                                    [09-Mar-22 07:10  CRC=D79533EB]
+    tv_pickit2_shift_1.h                                    [02-Mar-22 11:35  CRC=7D26A25C]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+
+Source signature=39C51669
+
+Units:
+    DEMO_4LED_7SEG (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   DEMO_4LED_7SEG.xsym
+    Errors:      DEMO_4LED_7SEG.err
+    Ext Symbols: DEMO_4LED_7SEG.esym
+    INHX32:      DEMO_4LED_7SEG.hex
+    Symbols:     DEMO_4LED_7SEG.sym
+    List:        DEMO_4LED_7SEG.lst
+    Debug/COFF:  DEMO_4LED_7SEG.cof
+    Project:     DEMO_4LED_7SEG.ccspjt
+    Call Tree:   DEMO_4LED_7SEG.tre
+    Statistics:  DEMO_4LED_7SEG.STA

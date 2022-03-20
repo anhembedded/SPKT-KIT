@@ -1,0 +1,83 @@
+
+ROM used:   8112/32768 (25%)
+            8112/32768 (25%) including unused fragments
+
+            3.5 Average locations per line
+            11.3 Average locations per statement
+
+RAM used:   1070/2048 (52%) at main() level
+            1147/2048 (56%) worst case
+
+Stack used: 7 worst case (7 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   56    22   3  DEMO_GLCD.c
+  552   265  37  TV_PICKIT2_SHIFT_1.c
+  136     0   0  tv_pickit2_shift_1.h
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  550   434  60  TV_PICKIT2_SHIFT_GLCD_128x64.c
+  204     0   0  TV_PICKIT2_SHIFT_GLCD_128x64.h
+----- -----
+ 2335   721 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0    1             @delay_ms1
+0     46   0    3   271  4.3  xuat_1byte
+0     30   0    0   152  1.8  set_up_port_ic_chot
+0     48   0    0   119  1.7  mo_ic_74573_a_thong_dl
+0     44   0    0   172  1.8  xuat_glcd_lcd
+0     20   0    2    80  2.7  xuat_glcd128x64
+0    272   2    0             @const919
+0    236   1    0             @const923
+0    526   3    0             @const927
+0     26   0    1   102  2.1  GLCD_XUAT_8BIT
+0     10   0    1    43  1.5  glcd_command
+0     10   0    1    43  1.5  glcd_data
+0    124   1    7   338  5.1  glcd_clear
+0     34   0    5             @MUL1616
+0    268   2    6   510  8.0  glcd_pixel_temp
+0    270   2    3   558  5.3  glcd_update_full
+0    424   3   11  1503  9.5  glcd_update_area
+0     40   0    5   188  5.1  glcd_vertical_line
+0   1596  10   17  2510 12.8  glcd_horizone_line
+0     20   0    0    78  2.3  glcd_update_last_raw
+0     26   0    6   209  3.1  glcd_text_setup
+0    352   2   15  1786  9.5  glcd_text
+0    166   1   11   727  7.0  glcd_spkt_logo_raw
+0    346   2   17  1939  9.5  glcd_line
+0    190   1   11  1110  6.6  glcd_rect
+0     84   1    6             @MULS1616
+0    566   3   11  2434  9.7  glcd_circle
+0     78   0    2             @MUL88
+0   1246   8   54  5387  8.9  glcd_triangle
+0    120   1    6             @DIVS1616
+0    114   1    0   339  1.9  glcd_setup
+0    462   3    0  1081  3.4  MAIN
+0      6   0    0             @const1024
+0     34   0    2             @PSTRINGC_864
+0     44   0    3             @DIV88
+0    190   1    6             @PRINTF_D0_864
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               24
+    Statements              721
+    Comments                568
+    Volume (V)              33886
+    Difficulty (D)          125.9
+    Effort to implement (E) 4267009
+    Time to implement (T)   65 hours, 51 minutes
+    Est Delivered Bugs (B)  9
+    Cyclomatic Complexity   63
+    Maintainability (MI)    125
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  8108  24656  
+
+
+

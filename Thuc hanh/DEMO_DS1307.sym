@@ -1,0 +1,155 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     tin_hieu_dk_74573_a
+004.2   g_lcda
+004.4   g_32a
+004.6   g_4a
+005     tin_hieu_dk_74573_b
+005.2   g_rbdcb
+005.4   g_8b
+005.6   g_mtb
+006-007 rbdc
+006.0   step_motor_enable
+006.1   step_motor_in1
+006.2   step_motor_in2
+006.3   step_motor_in3
+006.4   step_motor_in4
+006.5   dc_enable
+006.6   pwrkey
+007.0   buzzer
+007.1   triac_1
+007.2   triac_2
+007.3   relay_1
+007.4   relay_2
+008     donvi4
+009     chuc4
+00A     tram4
+00B     ngan4
+00C     lcddata
+00D     lcdcontrol
+00E     glcddata
+00F     glcdcontrol
+010-01C led_7dq
+01D     tt8led
+01E-01F inputcd.oldpin
+020.0   inputcd.tt
+020.1   inputcd.dem
+021-027 ds1307
+028     mode
+029-02A inputcd.pin
+029     soft_i2c_read.ack
+029-02F ds1307_set_time.t
+029     hieuchinhBCD.x
+029     ds1307_read_time.@SCRATCH1
+029     MAIN.@SCRATCH1
+02A     soft_i2c_read.n
+02A     hieuchinhBCD.@SCRATCH1
+02B     soft_i2c_read.nhan
+02B     inputcd.n
+02C     @READBITA.P1
+02C     xuat_8led_7doan_quet_1.ma
+02C     @WRITEBITA.P1
+02C     hien_thi_8led_7doan_quet_all.@SCRATCH1
+02C     inputcd.@SCRATCH1
+02D     xuat_8led_7doan_quet_1.so_hthi
+02D     @WRITEBITA.P1
+02D     xuat_8led_7doan_quet_2.thutuled
+02D-02E @READBITA.P1
+02D     inputcd.@SCRATCH2
+02E     xuat_8led_7doan_quet_2.so_hthi
+02E-02F @WRITEBITA.P1
+02E     xuat_8led_7doan_quet_1.@SCRATCH1
+02F     xuat_8led_7doan_quet_2.@SCRATCH1
+030     xuat_1byte.bytexuat
+030     soft_i2c_write.b
+030     ds1307_set_time.@SCRATCH1
+031     xuat_1byte.sb
+031     soft_i2c_write.m
+032     xuat_1byte.x
+032     soft_i2c_write.dem
+032.7   xuat_1byte.bseri
+033     soft_i2c_write.@SCRATCH1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  ttledquet.call
+000034  ttledquet.data
+00003C  set_up_port_ic_chot
+00005A  soft_i2c_start
+00006C  soft_i2c_clk
+000076  soft_i2c_write
+0000DA  soft_i2c_read
+000112  soft_i2c_stop
+000124  ds1307_read_time
+000190  @WRITEBITA
+0001CE  @READBITA
+0001FC  xuat_1byte
+000226  mo_ic_74573_b_thong_dl
+000254  xuat_8led_7doan_quet_2
+000290  xuat_8led_7doan_quet_1
+0002BC  xuat_8led_7doan_quet_tat_led
+0002C6  hien_thi_8led_7doan_quet_all
+0002FC  inputcd
+0003CA  hieuchinhBCD
+0003E8  ds1307_set_time
+000432  hieuchinhBCDvaNapthoigian
+000470  @cinit1
+000470  MAIN
+0004A6  @cinit2
+
+Project Directory:
+    F:\D503\Thuc hanh\
+
+Project Files:
+    DEMO_DS1307.c                                           [09-Mar-22 07:07  CRC=2DEA6993]
+    TV_PICKIT2_SHIFT_1.c                                    [02-Mar-22 11:34  CRC=98C2C7BD]
+    tv_pickit2_shift_1.h                                    [02-Mar-22 11:35  CRC=7D26A25C]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    TV_PICKIT2_SHIFT_DS1307_I2C.c                           [19-Feb-22 10:29  CRC=FD5E7414]
+    TV_PICKIT2_SHIFT_DS1307_I2C.h                           [19-Feb-22 10:29  CRC=A7E0BF98]
+
+Source signature=E42BA938
+
+Units:
+    DEMO_DS1307 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   DEMO_DS1307.xsym
+    Errors:      DEMO_DS1307.err
+    Ext Symbols: DEMO_DS1307.esym
+    INHX32:      DEMO_DS1307.hex
+    Symbols:     DEMO_DS1307.sym
+    List:        DEMO_DS1307.lst
+    Debug/COFF:  DEMO_DS1307.cof
+    Project:     DEMO_DS1307.ccspjt
+    Call Tree:   DEMO_DS1307.tre
+    Statistics:  DEMO_DS1307.STA

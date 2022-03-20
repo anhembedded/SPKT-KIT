@@ -1,0 +1,79 @@
+#ifndef    __TV_PICKIT2_SHIFT_1_H__
+#define    __TV_PICKIT2_SHIFT_1_H__
+
+#include    <18f4550.h>
+#device     adc=10
+#fuses      nowdt,put,hs,noprotect,nolvp,cpudiv1
+#use        delay(clock=20000000)
+//#use        i2c(master,slow,sda=pin_b0,scl=pin_b1)
+#use        rs232(baud=9600, xmit=pin_c6,rcv=pin_c7)
+#define  soft_i2c_sda   pin_b0
+#define  soft_i2c_scl   pin_b1
+//nut nhan:
+#define  bt0     pin_b5
+#define  bt1     pin_b4
+#define  bt2     pin_b3
+#define  bt3     pin_b2
+
+#define  on      bt0       //dk led don, motor
+#define  off     bt1
+#define  inv     bt2
+
+#define  up      bt0    //dk led don
+#define  dw      bt1
+#define  clr     bt2
+#define  mod     bt3
+
+#define  stop    bt3
+
+#define  on1     bt0     
+#define  off1    bt1
+#define  on2     bt2       
+#define  off2    bt3
+
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#define      ssdo             pin_e2         //chung tat ca
+#define      ssck             pin_e0         //chung tat ca
+
+#define      g_all            pin_d0         //a - 4 byte
+#define      rck_lcd20x4      pin_d2         //a - 2 byte dao
+#define      rck_buzerelay    pin_d3     //b - 1 byte 
+#define      rck_32led        pin_d4         //a - 4 byte
+#define      rck_8ledquet     pin_d5         //b - 2 byte dao
+#define      rck_4led7doan    pin_d6         //a - 4 byte
+#define      rck_matranled    pin_d7         //b - 3 byte dao
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//khai bao du lieu 16 bit cho module relay, triac, buzzer, dong co
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+unsigned int16 rbdc;
+#bit step_motor_enable  = rbdc.0    //1=ena,0=dis
+#bit step_motor_in1     = rbdc.1    
+#bit step_motor_in2     = rbdc.2
+#bit step_motor_in3     = rbdc.3
+#bit step_motor_in4     = rbdc.4
+#bit dc_enable          = rbdc.5    //1=ena,0=dis
+#bit pwrkey             = rbdc.6    //khoi tao sim900
+#bit buzzer             = rbdc.8    //1=on,0=off
+#bit triac_1            = rbdc.9    //1=on,0=off
+#bit triac_2            = rbdc.10   //1=on,0=off
+#bit relay_1            = rbdc.11   //0=on,1=off
+#bit relay_2            = rbdc.12   //0=on,1=off
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   
+const unsigned char ma7doan[16]= {0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,
+0x80,0x90,0x88, 0x83, 0xc6, 0xa1, 0x86, 0x8e};
+#define     maso0    0xc0
+#define     maso1    0xf9
+#define     maso2    0xa4
+#define     maso3    0xb0
+#define     maso4    0x99
+#define     maso5    0x92
+#define     maso6    0x82
+#define     maso7    0xf8
+typedef enum 
+{
+      OK  = 0,
+      ERR = 1
+}result;
+#endif

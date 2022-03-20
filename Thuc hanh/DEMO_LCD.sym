@@ -1,0 +1,170 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     tin_hieu_dk_74573_a
+004.2   g_lcda
+004.4   g_32a
+004.6   g_4a
+005     tin_hieu_dk_74573_b
+005.2   g_rbdcb
+005.4   g_8b
+005.6   g_mtb
+006.0   step_motor_enable
+006-007 rbdc
+006.1   step_motor_in1
+006.2   step_motor_in2
+006.3   step_motor_in3
+006.4   step_motor_in4
+006.5   dc_enable
+006.6   pwrkey
+007.0   buzzer
+007.1   triac_1
+007.2   triac_2
+007.3   relay_1
+007.4   relay_2
+008     donvi4
+009     chuc4
+00A     tram4
+00B     ngan4
+00C     lcddata
+00D     lcdcontrol
+00E     glcddata
+00F     glcdcontrol
+010-01C led_7dq
+01D     tt8led
+01E-01F inputcd.oldpin
+020.0   inputcd.tt
+020.1   inputcd.dem
+021     LCD_CONTROL
+021.0   LCD_E
+021.1   LCD_RW
+021.2   LCD_RS
+021.3   LCD_P
+022     dem
+023     lcd_setup.n
+023     @PRINTF_U_840.P1
+023     @WRITEBITA.P2
+023     @READBITA.P3
+023     MAIN.@SCRATCH1
+023     @PSTRINGC_840.@SCRATCH1
+024     lcd_write_2x3_num.lcd_so
+024-025 @READBITA.P1
+024     @PRINTF_U_840.P2
+024     @delay_ms1.P3
+024     lcd_write_4x3_num.so
+024     @WRITEBITA.P1
+024     lcd_setup.@SCRATCH1
+024     @PSTRINGC_840.@SCRATCH2
+025-026 @WRITEBITA.P1
+025     lcd_write_4x3_num.x
+025     lcd_write_2x3_num.x1
+026     lcd_write_2x3_num.y1
+026     lcd_write_4x3_num.n
+027     lcd_write_2x3_num.i
+027     @DIV88.P1
+027     lcd_write_4x3_num.@SCRATCH1
+028     @MUL88.P1
+028     @DIV88.P2
+028     lcd_write_2x3_num.@SCRATCH1
+028     lcd_write_4x3_num.@SCRATCH2
+029     lcd_goto_xy.x
+029     lcd_data.LCD_DATA_X
+029     @MUL88.P1
+029     lcd_write_2x3_num.@SCRATCH2
+029     @DIV88.@SCRATCH1
+02A     lcd_goto_xy.y
+02B     lcd_goto_xy.@SCRATCH1
+02C     lcd_command.LCD_DATA_X
+02D     LCD_XUAT_8BIT.LCD_DATA_X
+02E     xuat_lcd20x4.lcd_signal
+02F     xuat_lcd20x4.lcd_ins_hthi
+030     xuat_1byte.bytexuat
+031     xuat_1byte.sb
+032     xuat_1byte.x
+032.7   xuat_1byte.bseri
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_SO_X.call
+000014  LCD_SO_X.data
+000056  LCD_SO_X1.call
+000066  LCD_SO_X1.data
+0000EA  LCD_MA_8DOAN.call
+0000FA  LCD_MA_8DOAN.data
+00013A  dc.call
+00014A  dc.data
+00014E  @const871.call
+000158  set_up_port_ic_chot
+000176  xuat_1byte
+0001A0  mo_ic_74573_a_thong_dl
+0001D0  xuat_glcd_lcd
+0001FC  xuat_lcd20x4
+00020C  LCD_XUAT_8BIT
+000226  lcd_command
+00023C  @delay_ms1
+000262  lcd_data
+000278  lcd_setup
+0002D4  lcd_goto_xy
+0002EE  @PSTRINGC_840
+000310  @DIV88
+000338  @PRINTF_U_840
+0003A0  @MUL88
+0003EC  lcd_write_2x3_num
+000448  lcd_write_4x3_num
+0004A6  MAIN
+0004A6  @cinit1
+0004DC  @cinit2
+
+Project Directory:
+    F:\D503\Thuc hanh\
+
+Project Files:
+    DEMO_LCD.c                                              [12-Feb-22 09:51  CRC=AC519AFD]
+    TV_PICKIT2_SHIFT_1.c                                    [02-Mar-22 11:34  CRC=98C2C7BD]
+    tv_pickit2_shift_1.h                                    [02-Mar-22 11:35  CRC=7D26A25C]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    TV_PICKIT2_SHIFT_LCD.c                                  [19-Feb-22 09:09  CRC=91610F60]
+    TV_PICKIT2_SHIFT_LCD.h                                  [14-Feb-22 09:43  CRC=DF7F2AE5]
+
+Source signature=65D24C88
+
+Units:
+    DEMO_LCD (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   DEMO_LCD.xsym
+    Errors:      DEMO_LCD.err
+    Ext Symbols: DEMO_LCD.esym
+    INHX32:      DEMO_LCD.hex
+    Symbols:     DEMO_LCD.sym
+    List:        DEMO_LCD.lst
+    Debug/COFF:  DEMO_LCD.cof
+    Project:     DEMO_LCD.ccspjt
+    Call Tree:   DEMO_LCD.tre
+    Statistics:  DEMO_LCD.STA

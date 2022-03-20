@@ -1,0 +1,25 @@
+ÀÄDEMO_4LED_7SEG
+   ÀÄMAIN  0/236  Ram=2
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port_ic_chot  0/30  Ram=0
+      ÃÄ@DIV88  0/40  Ram=3
+      ÃÄ@DIV88  0/40  Ram=3
+      ÃÄ@const672  0/32  Ram=0
+      ÃÄ@DIV88  0/40  Ram=3
+      ÃÄ@const672  0/32  Ram=0
+      ÃÄxuat_4led_7doan_4so  0/42  Ram=4
+      ³  ÃÄxuat_1byte  0/42  Ram=3
+      ³  ÃÄxuat_1byte  0/42  Ram=3
+      ³  ÃÄxuat_1byte  0/42  Ram=3
+      ³  ÃÄxuat_1byte  0/42  Ram=3
+      ³  ÀÄmo_ic_74573_a_thong_dl  0/48  Ram=0
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄ@DIV88  0/40  Ram=3
+      ÃÄxuat_4led_7doan_giaima_xoa_so0  0/122  Ram=12
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const672  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÀÄxuat_4led_7doan_4so  0/42  Ram=4
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÀÄ@DIV88  0/40  Ram=3

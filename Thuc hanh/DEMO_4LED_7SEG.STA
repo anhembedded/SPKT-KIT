@@ -1,0 +1,55 @@
+
+ROM used:   700/32768 (2%)
+            700/32768 (2%) including unused fragments
+
+            0.5 Average locations per line
+            2.6 Average locations per statement
+
+RAM used:   32/2048 (2%) at main() level
+            44/2048 (2%) worst case
+
+Stack used: 3 worst case (3 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   37    11   4  DEMO_4LED_7SEG.c
+  545   258  96  TV_PICKIT2_SHIFT_1.c
+  136     0   0  tv_pickit2_shift_1.h
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+----- -----
+ 1555   269 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   3    1             @delay_ms1
+0     32   2    0             @const672
+0     42   3    3   271  4.3  xuat_1byte
+0     30   2    0   152  1.8  set_up_port_ic_chot
+0     48   3    0   119  1.7  mo_ic_74573_a_thong_dl
+0     42   3    4   231  2.3  xuat_4led_7doan_4so
+0    122   9   12   353  5.3  xuat_4led_7doan_giaima_xoa_so0
+0     66   5    5             @DIV1616
+0    236  17    2   390  5.2  MAIN
+0     40   3    3   370  3.3  @DIV88
+ Inline         0   149  3.9  @cinit1
+
+Program metrics:
+    Functions               8
+    Statements              269
+    Comments                328
+    Volume (V)              3204
+    Difficulty (D)          27.5
+    Effort to implement (E) 88145
+    Time to implement (T)   1 hours, 22 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   5
+    Maintainability (MI)    59
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   696  32068  
+
+
+

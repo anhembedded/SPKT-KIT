@@ -1,0 +1,24 @@
+[PROJECT]
+Target=DEMO_4LED_7SEG.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DEMO_4LED_7SEG.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DEMO_4LED_7SEG.c]
+Type=4
+[mru-list]
+1=DEMO_4LED_7SEG.c
+[Opened Files]
+1=DEMO_LCD.c
+2=DEMO_GLCD.c
+3=DEMO_4LED_7SEG.c
+4=DEMO_DS1307.c
+5=TV_PICKIT2_SHIFT_1.c
+6=..\..\D501\Thuc hanh\TV_PICKIT2_SHIFT_1.c
+7=
+[Units]
+Count=1
+1=DEMO_4LED_7SEG (main)

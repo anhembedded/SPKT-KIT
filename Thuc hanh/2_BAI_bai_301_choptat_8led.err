@@ -1,0 +1,11 @@
+*** Error 18 "2_BAI_bai_301_choptat_8led.c" Line 1(9,35): File can not be opened
+    Not in "C:\Program Files (x86)\PICC\Devices\tv_kit_vdk_pic_all.c"
+    Not in "C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c"
+    Not in local "tv_kit_vdk_pic_all.c"
+    Not in local "E:\D503\D503\Mo phong\tv_kit_vdk_pic_all.c"
+    Not in last "tv_kit_vdk_pic_all.c"
+    Not in project "E:\D503\D503\Thuc hanh\tv_kit_vdk_pic_all.c"
+*** Error 128 "2_BAI_bai_301_choptat_8led.c" Line 1(9,16): A #DEVICE required before this line
+*** Error 32 "2_BAI_bai_301_choptat_8led.c" Line 2(25,30): Expecting a , or )
+      3 Errors,  0 Warnings.
+Build Failed.

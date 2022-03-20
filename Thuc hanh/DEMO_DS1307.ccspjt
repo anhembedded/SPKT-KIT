@@ -1,0 +1,24 @@
+[PROJECT]
+Target=DEMO_DS1307.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DEMO_DS1307.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DEMO_DS1307.c]
+Type=4
+[mru-list]
+1=DEMO_DS1307.c
+[Opened Files]
+1=DEMO_LCD.c
+2=DEMO_GLCD.c
+3=DEMO_4LED_7SEG.c
+4=DEMO_DS1307.c
+5=
+6=tv_pickit2_shift_1.h
+7=
+[Units]
+Count=1
+1=DEMO_DS1307 (main)

@@ -1,0 +1,15 @@
+#include <main.h>
+#include <TV_PICKIT2_SHIFT_1.c>
+
+
+void main()
+{
+   setup_adc_ports(NO_ANALOGS, VSS_VDD);
+
+   while(TRUE)
+   {
+
+
+   }
+
+}

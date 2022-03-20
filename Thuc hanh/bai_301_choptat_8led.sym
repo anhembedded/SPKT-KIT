@@ -1,0 +1,112 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     tin_hieu_dk_74573_a
+004.2   g_lcda
+004.4   g_32a
+004.6   g_4a
+005     tin_hieu_dk_74573_b
+005.2   g_rbdcb
+005.4   g_8b
+005.6   g_mtb
+006.0   step_motor_enable
+006-007 rbdc
+006.1   step_motor_in1
+006.2   step_motor_in2
+006.3   step_motor_in3
+006.4   step_motor_in4
+006.5   dc_enable
+006.6   pwrkey
+007.0   buzzer
+007.1   triac_1
+007.2   triac_2
+007.3   relay_1
+007.4   relay_2
+008     lcddata
+009     lcdcontrol
+00A     glcddata
+00B     glcdcontrol
+00C-018 led_7dq
+019     tt8led
+01A-01B inputcd.oldpin
+01C.0   inputcd.tt
+01C.1   inputcd.dem
+01D     y
+01E     xuat_32led_don_4byte.bld3
+01E     @delay_ms1.P1
+01E     @WRITEBITA.P2
+01E     @READBITA.P3
+01F     xuat_32led_don_4byte.bld2
+01F-020 @READBITA.P1
+01F     @WRITEBITA.P2
+020     xuat_32led_don_4byte.bld1
+020-021 @WRITEBITA.P1
+021     xuat_32led_don_4byte.bld0
+022     xuat_1byte.bytexuat
+023     xuat_1byte.sb
+024     xuat_1byte.x
+024.7   xuat_1byte.bseri
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  set_up_port_ic_chot
+000022  xuat_1byte
+00004C  mo_ic_74573_a_thong_dl
+00007C  xuat_32led_don_4byte
+0000A8  @delay_ms1
+0000D0  @cinit1
+0000D0  MAIN
+000104  @cinit2
+
+Project Directory:
+    E:\D503\D503\Thuc hanh\
+
+Project Files:
+    bai_301_choptat_8led.c                                  [16-Mar-22 20:13  CRC=D872A938]
+    tv_pickit2_shift_1.c                                    [09-Mar-22 07:10  CRC=D79533EB]
+    tv_pickit2_shift_1.h                                    [02-Mar-22 11:35  CRC=7D26A25C]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [18-Apr-14 16:57  CRC=68697302]
+
+Source signature=FE016583
+
+Units:
+    bai_301_choptat_8led (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   bai_301_choptat_8led.xsym
+    Errors:      bai_301_choptat_8led.err
+    Ext Symbols: bai_301_choptat_8led.esym
+    INHX32:      bai_301_choptat_8led.hex
+    Symbols:     bai_301_choptat_8led.sym
+    List:        bai_301_choptat_8led.lst
+    Debug/COFF:  bai_301_choptat_8led.cof
+    Project:     bai_301_choptat_8led.ccspjt
+    Call Tree:   bai_301_choptat_8led.tre
+    Statistics:  bai_301_choptat_8led.STA

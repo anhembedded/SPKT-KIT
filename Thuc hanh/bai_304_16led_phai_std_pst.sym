@@ -1,0 +1,124 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     tin_hieu_dk_74573_a
+004.2   g_lcda
+004.4   g_32a
+004.6   g_4a
+005     tin_hieu_dk_74573_b
+005.2   g_rbdcb
+005.4   g_8b
+005.6   g_mtb
+006-007 rbdc
+006.0   step_motor_enable
+006.1   step_motor_in1
+006.2   step_motor_in2
+006.3   step_motor_in3
+006.4   step_motor_in4
+006.5   dc_enable
+006.6   pwrkey
+007.0   buzzer
+007.1   triac_1
+007.2   triac_2
+007.3   relay_1
+007.4   relay_2
+008     lcddata
+009     lcdcontrol
+00A     glcddata
+00B     glcdcontrol
+00C-018 led_7dq
+019     tt8led
+01A-01B inputcd.oldpin
+01C.0   inputcd.tt
+01C.1   inputcd.dem
+01D     @WRITEBITA.P1
+01D     @READBITA.P2
+01D-01E b304_16led_phai_std_pst.dl
+01E     @WRITEBITA.P1
+01E-01F @READBITA.P2
+01F     b304_16led_phai_std_pst.i
+01F-020 @WRITEBITA.P1
+020-021 b304_16led_phai_std_pst.LP
+022-023 xuat_32led_don_2word.wld1
+022     b304_16led_phai_std_pst.@SCRATCH1
+023     @delay_ms1.P1
+023     b304_16led_phai_std_pst.@SCRATCH2
+024-025 xuat_32led_don_2word.wld0
+026     xuat_32led_don_2word.b3
+027     xuat_32led_don_2word.b2
+028     xuat_32led_don_2word.b1
+029     xuat_32led_don_2word.b0
+02A     xuat_32led_don_4byte.bld3
+02B     xuat_32led_don_4byte.bld2
+02C     xuat_32led_don_4byte.bld1
+02D     xuat_32led_don_4byte.bld0
+02E     xuat_1byte.bytexuat
+02F     xuat_1byte.sb
+030     xuat_1byte.x
+030.7   xuat_1byte.bseri
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  set_up_port_ic_chot
+000022  xuat_1byte
+00004C  mo_ic_74573_a_thong_dl
+00007C  xuat_32led_don_4byte
+0000A8  xuat_32led_don_2word
+0000CC  @delay_ms1
+0000F2  b304_16led_phai_std_pst
+00017A  MAIN
+00017A  @cinit1
+0001AE  @cinit2
+
+Project Directory:
+    E:\D503\D503\Thuc hanh\
+
+Project Files:
+    bai_304_16led_phai_std_pst.c                            [16-Mar-22 20:39  CRC=C4EBDBF2]
+    tv_pickit2_shift_1.c                                    [09-Mar-22 07:10  CRC=D79533EB]
+    tv_pickit2_shift_1.h                                    [02-Mar-22 11:35  CRC=7D26A25C]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [18-Apr-14 16:57  CRC=68697302]
+
+Source signature=EA7A983D
+
+Units:
+    bai_304_16led_phai_std_pst (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   bai_304_16led_phai_std_pst.xsym
+    Errors:      bai_304_16led_phai_std_pst.err
+    Ext Symbols: bai_304_16led_phai_std_pst.esym
+    INHX32:      bai_304_16led_phai_std_pst.hex
+    Symbols:     bai_304_16led_phai_std_pst.sym
+    List:        bai_304_16led_phai_std_pst.lst
+    Debug/COFF:  bai_304_16led_phai_std_pst.cof
+    Project:     bai_304_16led_phai_std_pst.ccspjt
+    Call Tree:   bai_304_16led_phai_std_pst.tre
+    Statistics:  bai_304_16led_phai_std_pst.STA

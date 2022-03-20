@@ -1,0 +1,20 @@
+[PROJECT]
+Target=DEMO_GP2D12.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DEMO_GP2D12.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DEMO_GP2D12.c]
+Type=4
+[mru-list]
+1=DEMO_GP2D12.c
+[Opened Files]
+1=DEMO_DS1307.c
+2=DEMO_GP2D12.c
+3=
+[Units]
+Count=1
+1=DEMO_GP2D12 (main)

@@ -1,0 +1,12 @@
+ÀÄmain
+   ÀÄMAIN  0/258  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄset_up_port_ic_chot  0/60  Ram=0
+      ³  ÃÄxuat_4led_7doan_4so  0/66  Ram=4
+      ³  ÃÄxuat_32led_don_1dw  0/88  Ram=9
+      ³  ÃÄhien_thi_8led_7doan_quet_all  0/102  Ram=2
+      ³  ³  ÀÄ@delay_ms1  0/40  Ram=1
+      ³  ÃÄbuzzer_off  0/8  Ram=0
+      ³  ÀÄtriac_2_off  0/8  Ram=0
+      ÀÄxuat_4led_7doan_4so  0/66  Ram=4

@@ -1,0 +1,54 @@
+000     @SCRATCH
+001     @SCRATCH
+002     @SCRATCH
+003     @SCRATCH
+052.2   step_motor_enable
+058.0   xuat_1bit.bserix
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+FFFFFF  ma7doan.data
+
+Project Directory:
+    F:\D503\Thuc hanh\
+
+Project Files:
+    TV_PICKIT2_SHIFT_1.c                                    [02-Mar-22 11:34  CRC=98C2C7BD]
+    tv_pickit2_shift_1.h                                    [02-Mar-22 11:35  CRC=7D26A25C]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+
+Source signature=BC592EA9
+
+Units:
+    TV_PICKIT2_SHIFT_1 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   TV_PICKIT2_SHIFT_1.xsym
+    Errors:      TV_PICKIT2_SHIFT_1.err
+    Ext Symbols: TV_PICKIT2_SHIFT_1.esym
+    Symbols:     TV_PICKIT2_SHIFT_1.sym

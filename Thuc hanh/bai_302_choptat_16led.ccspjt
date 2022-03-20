@@ -1,0 +1,20 @@
+[PROJECT]
+Target=bai_302_choptat_16led.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.025
+Compiler=PCH
+[Target Data]
+FileList=bai_302_choptat_16led.c
+[bai_302_choptat_16led.c]
+Type=4
+[mru-list]
+1=bai_302_choptat_16led.c
+[Units]
+Count=1
+1=bai_302_choptat_16led (main)
+
+[ProjectLog]
+Days=1
+D1=16-03-2022
+D1_L=1
+D1_L1=[73926]Project Closed.

@@ -1,0 +1,26 @@
+[PROJECT]
+Target=DEMO_4LED_7SEG.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.025
+Compiler=PCH
+[Target Data]
+FileList=DEMO_4LED_7SEG.c
+[DEMO_4LED_7SEG.c]
+Type=4
+[mru-list]
+1=DEMO_4LED_7SEG.c
+
+[Opened Files]
+1=DEMO_4LED_7SEG.c
+2=
+[Units]
+Count=1
+1=DEMO_4LED_7SEG (main)
+
+[ProjectLog]
+Days=1
+D1=16-03-2022
+D1_L=3
+D1_L1=[70126]Project Closed.
+D1_L2=[70137]Project Opened.
+D1_L3=[70144]Project Closed.

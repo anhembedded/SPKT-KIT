@@ -1,0 +1,60 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F6722
+CCSVerions=5.101
+Compiler=PCH
+CCSVersion=5.101
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Project\SPKT-KIT\Source\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=1
+D1=20-03-2022
+D1_L=11
+D1_L1=[76537]Project Closed.
+D1_L2=[76537]Project Opened.
+D1_L3=[76543]Started Editing.
+D1_L4=[77880]Stopped Editing.
+TotalEdit=68
+TotalDebug=0
+D1_E=68
+D1_D=0
+D1_L5=[80417]Project Closed.
+D1_L6=[80708]Project Opened.
+D1_L7=[81714]Started Editing.
+D1_L8=[84254]Stopped Editing.
+D1_L9=[84298]Started Editing.
+D1_L10=[85337]Stopped Editing.
+D1_L11=[85966]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=main.c
+t1=37
+Count=6
+2=TV_PICKIT2_SHIFT_1.c
+t2=63
+3=TV_PICKIT2_SHIFT_1.h
+t3=31
+4=C:\Program Files (x86)\PICC\Devices\18f6722.h
+t4=907
+5=main.h
+t5=1
+6=TV_PICKIT2_SHIFT_32LED_DON.c
+t6=73
+[main.c]
+Type=4
+
+[defines]
+buildcount=42
+[Units]
+Count=1
+1=main (main)
