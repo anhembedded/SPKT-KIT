@@ -1,18 +1,29 @@
 #include <main.h>
 #include <TV_PICKIT2_SHIFT_32LED_DON.c>
-
+#define setColorAllLed() xuat_32led_don_1dw(0xffffffff)
+#define updateEvent  ;
 
 #USE        SPI(SPI2)
 
-uintmax_t systemTick = 0;
+uintmax_t systemTick = 0;;
 unsigned int8 trangThaiLed; // bien trang thai
 int1 testTrangThai = 0;
 unsigned int8 bienDem; 
 unsigned int8 hangDonVi;
 unsigned int8 hangChuc;
-
-
-
+uintmax_t now;
+ uint32_t totalDelay;
+void delayHandler(uint32_t time, void *HandleF)
+{
+     
+   now = systemTick;
+      totalDelay = now + time;
+     while (systemTick < totalDelay)
+     {
+         
+     }
+}
+void ledEffect4();
 #INT_TIMER1
 void ngatTimer1()
 {
@@ -63,54 +74,34 @@ void main()
             trangThaiLed = 0;
          }
       }
-      xuat_4led_7doan_4so(MA7DOAN[hangChuc],MA7DOAN[hangDonVi] , 0b0111111, MA7DOAN[trangThaiLed]);
-      
-       
-    if(trangThaiLed == 0)
-    {
-       sang_don_ttr_32led(200, 0);
-    } else if(trangThaiLed == 1)
-    {
-       sang_don_tnt_32led(200, 0);
-    }
-     else if(trangThaiLed == 2)
-    {
-       sang_don_tsp_32led(200, 0);
-    }
-     else if(trangThaiLed == 3)
-    {
-       sang_don_pst_32led(200, 0);
-    }
-     else if(trangThaiLed == 4)
-    {
-       diem_sang_di_chuyen_tsp_32led(200, 0);
-    }
-     else if(trangThaiLed == 5)
-    {
-       diem_sang_di_chuyen_pst_32led(200, 0);
-    }
-     else if(trangThaiLed == 6)
-    {
-       sang_tat_dan_tsp_32led(200, 0);
-    }
-     else if(trangThaiLed == 7)
-    {
-       sang_tat_dan_pst_32led(200, 0);
-    }
-     else if(trangThaiLed == 8)
-    {
-       sang_tat_dan_trai_sang_phai_2x16led(200, 0);
-    }
-     else if(trangThaiLed == 9)
-    {
-       sang_tat_dan_phai_sang_trai_2x16led(200, 0);
-    }
-     
-    
-    
-    
+      xuat_4led_7doan_4so(MA7DOAN[hangChuc],MA7DOAN[hangDonVi] , 0, MA7DOAN[trangThaiLed]);
    }
-  
+     
+
 }
 
-
+void ledEffect4()
+{
+  setColorAllLed();
+  updateEvent();
+  for(int i= lastLedPos; i >= 0; i--)
+  {
+    if (whichEffect != 4)
+    {
+      break;
+    }
+    for(int j=i; j <= NUMPIXELS; j++)
+    {
+      if (whichEffect != 4)
+      {
+        break;
+      }
+      ledOff(j);
+    }
+    updateEvent();
+    pollingDelay(100,irRecivHandler);
+    setColorAllLed();
+    updateEvent();
+    pollingDelay(100,irRecivHandler);
+  }
+}

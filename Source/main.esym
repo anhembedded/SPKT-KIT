@@ -1,10 +1,9 @@
-F N "Project" 2 764 ""
-D G "__PCH__" 2 764 ""5.101""
-D G "__DEVICE__" 2 764 "6722"
-D G "__DATE__" 2 764 ""20-Mar-22""
-D G "__TIME__" 2 764 ""23:37:18""
-D G "_UNICODE" 2 764 ""?""
-D G "__EVAL" 2 764 ""?"" "Standard Header file for the PIC18F6722 device ////////////////"
+D G "__PCH__" 0 118 ""5.101""
+D G "__DEVICE__" 0 118 "6722"
+D G "__DATE__" 0 118 ""21-Mar-22""
+D G "__TIME__" 0 118 ""10:52:34""
+D G "_UNICODE" 0 118 ""?""
+D G "__EVAL" 0 118 ""?"" "Standard Header file for the PIC18F6722 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 F N "set_tris_a" 2 43 ""
 V L "value" 2 43 "int8" `55 
@@ -1429,440 +1428,505 @@ D G "INT_SSP2" 2 946 "0x00A380"
 D G "INT_EXT3_L2H" 2 947 "0x5003F020"
 D G "INT_EXT3_H2L" 2 948 "0x6003F020"
 D G "INT_EXT3" 2 949 "0x00F020"
-D G "__TV_PICKIT2_SHIFT_1_C__" 3 2 ""
-D G "__TV_PICKIT2_SHIFT_1_H__" 4 2 ""
-C L "jump_to_isr" 4 4 5 "FUNCTION"
-D G "MATH_H" 5 30 ""
-D G "PI" 5 35 "3.1415926535897932"
-D G "SQRT2" 5 38 "1.4142135623730950"
-C L "jump_to_isr" 5 2 3 "FUNCTION"
-F N "CEIL_FLOOR" 5 45 ""
-V L "x" 5 45 "float" `786 
-V L "n" 5 45 "int8" `787 
-F G "CEIL_FLOOR" 5 46 "float(float x,int8 n)" `785 
-V L "y" 5 47 "float" `788 
-V L "res" 5 47 "float" `789 
-V L "l" 5 48 "int16" `790 
-V L "s" 5 49 "int1" `791 
-C L "floor" 5 2 5 "FUNCTION"
-F N "floor" 5 207 ""
-V L "x" 5 207 "float" `806 
-F G "floor" 5 208 "float(float x)" `805 
-C L "ceil" 5 2 5 "FUNCTION"
-F N "ceil" 5 233 ""
-V L "x" 5 233 "float" `808 
-F G "ceil" 5 234 "float(float x)" `807 
-D G "fabs" 5 259 "abs"
-C L "fmod" 5 2 6 "FUNCTION"
-F N "fmod" 5 271 ""
-V L "x" 5 271 "float" `810 
-V L "y" 5 271 "float" `811 
-F G "fmod" 5 272 "float(float x,float y)" `809 
-V L "i" 5 273 "float" `812 
-D G "LN2" 5 334 "0.6931471805599453"
-D G "LN2_INV" 5 335 "1.4426950408889634073"
-V G "pe" 5 337 "[6]" `817 
-F N "exp" 5 341 ""
-V L "x" 5 341 "float" `820 
-F G "exp" 5 342 "float(float x)" `819 
-V L "y" 5 343 "float" `821 
-V L "res" 5 343 "float" `822 
-V L "r" 5 343 "float" `823 
-V L "n" 5 347 "sint8" `824 
-V L "s" 5 348 "int1" `825 
-C L "exp" 5 2 1 "FUNCTION"
-V G "pl" 5 525 "[4]" `829 
-V G "ql" 5 526 "[4]" `832 
-C L "log" 5 2 3 "FUNCTION"
-F N "log" 5 534 ""
-V L "x" 5 534 "float" `835 
-F G "log" 5 535 "float(float x)" `834 
-V L "y" 5 536 "float" `836 
-V L "res" 5 536 "float" `837 
-V L "r" 5 536 "float" `838 
-V L "y2" 5 536 "float" `839 
-V L "n" 5 540 "sint8" `840 
-C L "log" 5 2 1 "FUNCTION"
-D G "LN10" 5 758 "2.3025850929940456"
-D G "LN10_INV" 5 759 "0.4342944819032518276"
-C L "log10" 5 2 3 "FUNCTION"
-F N "log10" 5 767 ""
-V L "x" 5 767 "float" `842 
-F G "log10" 5 768 "float(float x)" `841 
-V L "r" 5 769 "float" `843 
-C L "modf" 5 2 8 "FUNCTION"
-F N "modf" 5 808 ""
-V L "value" 5 808 "float" `845 
-V L "iptr" 5 808 "*float" `846 
-F G "modf" 5 809 "float(float value,*float iptr)" `844 
-C L "pwr" 5 2 6 "FUNCTION"
-F N "pwr" 5 836 ""
-V L "x" 5 836 "float" `848 
-V L "y" 5 836 "float" `849 
-F G "pwr" 5 837 "float(float x,float y)" `847 
-C L "pow" 5 2 7 "FUNCTION"
-F N "pow" 5 899 ""
-V L "x" 5 899 "float" `851 
-V L "y" 5 899 "float" `852 
-F G "pow" 5 900 "float(float x,float y)" `850 
-C L "sqrt" 5 2 5 "FUNCTION"
-F N "sqrt" 5 960 ""
-V L "x" 5 960 "float" `854 
-F G "sqrt" 5 961 "float(float x)" `853 
-V L "y" 5 962 "float" `855 
-V L "res" 5 962 "float" `856 
-V L "p" 5 967 "*int8" `857 
-D G "PI_DIV_BY_TWO_INV" 5 1156 "0.63661977236758134"
-D G "PI_DIV_BY_TWO" 5 1160 "1.5707963267948966"
-D G "TWOBYPI" 5 1164 "0.6366197723675813"
-C L "cos" 5 2 3 "FUNCTION"
-F N "cos" 5 1172 ""
-V L "x" 5 1172 "float" `859 
-F G "cos" 5 1173 "float(float x)" `858 
-V L "y" 5 1174 "float" `860 
-V L "t" 5 1174 "float" `861 
-V L "t2" 5 1174 "float" `862 
-V L "quad" 5 1175 "int8" `863 
-V L "i" 5 1175 "int8" `864 
-V L "frac" 5 1176 "float" `865 
-V L "p" 5 1177 "float[5]" `866  "by the series definition for cosine"
-C L "cos" 5 2 1 "FUNCTION"
-C L "cos" 5 2 2 "FUNCTION"
-C L "cos" 5 2 1 "FUNCTION"
-C L "cos" 5 2 1 "FUNCTION"
-C L "cos" 5 2 1 "FUNCTION"
-C L "cos" 5 2 1 "FUNCTION"
-C L "cos" 5 2 1 "FUNCTION"
-C L "cos" 5 2 1 "FUNCTION"
-C L "sin" 5 2 5 "FUNCTION"
-F N "sin" 5 1311 ""
-V L "x" 5 1311 "float" `868 
-F G "sin" 5 1312 "float(float x)" `867 
-C L "tan" 5 2 5 "FUNCTION"
-F N "tan" 5 1337 ""
-V L "x" 5 1337 "float" `870 
-F G "tan" 5 1338 "float(float x)" `869 
-V L "c" 5 1339 "float" `871 
-V L "s" 5 1339 "float" `872 
-V G "pas" 5 1377 "[3]" `874 
-V G "qas" 5 1378 "[3]" `877 
-F N "ASIN_COS" 5 1380 ""
-V L "x" 5 1380 "float" `880 
-V L "n" 5 1380 "int8" `881 
-F G "ASIN_COS" 5 1381 "float(float x,int8 n)" `879 
-V L "y" 5 1382 "float" `882 
-V L "res" 5 1382 "float" `883 
-V L "r" 5 1382 "float" `884 
-V L "y2" 5 1382 "float" `885 
-V L "s" 5 1383 "int1" `886 
-C L "ASIN_COS" 5 2 1 "FUNCTION"
-C L "ASIN_COS" 5 2 1 "FUNCTION"
-C L "asin" 5 2 5 "FUNCTION"
-F N "asin" 5 1538 ""
-V L "x" 5 1538 "float" `888 
-F G "asin" 5 1539 "float(float x)" `887 
-V L "r" 5 1540 "float" `889 
-C L "acos" 5 2 5 "FUNCTION"
-F N "acos" 5 1572 ""
-V L "x" 5 1572 "float" `891 
-F G "acos" 5 1573 "float(float x)" `890 
-V L "r" 5 1574 "float" `892 
-V G "pat" 5 1600 "[4]" `894 
-V G "qat" 5 1601 "[4]" `897 
-C L "atan" 5 2 3 "FUNCTION"
-F N "atan" 5 1609 ""
-V L "x" 5 1609 "float" `900 
-F G "atan" 5 1610 "float(float x)" `899 
-V L "y" 5 1611 "float" `901 
-V L "res" 5 1611 "float" `902 
-V L "r" 5 1611 "float" `903 
-V L "s" 5 1612 "int1" `904 
-V L "flag" 5 1612 "int1" `905 
-C L "atan" 5 2 1 "FUNCTION"
-C L "atan2" 5 2 7 "FUNCTION"
-F N "atan2" 5 1752 ""
-V L "y" 5 1752 "float" `907 
-V L "x" 5 1752 "float" `908 
-F G "atan2" 5 1753 "float(float y,float x)" `906 
-V L "z" 5 1754 "float" `909 
-V L "sign" 5 1755 "int1" `910 
-V L "quad" 5 1756 "int8" `911 
-C L "atan2" 5 2 1 "FUNCTION"
-C L "atan2" 5 2 1 "FUNCTION"
-C L "cosh" 5 2 7 "FUNCTION"
-F N "cosh" 5 1974 ""
-V L "x" 5 1974 "float" `914 
-F G "cosh" 5 1975 "float(float x)" `913 
-C L "sinh" 5 2 6 "FUNCTION"
-F N "sinh" 5 2001 ""
-V L "x" 5 2001 "float" `916 
-F G "sinh" 5 2002 "float(float x)" `915 
-C L "tanh" 5 2 6 "FUNCTION"
-F N "tanh" 5 2031 ""
-V L "x" 5 2031 "float" `918 
-F G "tanh" 5 2032 "float(float x)" `917 
-D G "LOG2" 5 2061 ".30102999566398119521"
-D G "LOG2_INV" 5 2062 "3.32192809488736234787"
-F N "frexp" 5 2063 ""
-V L "x" 5 2063 "float" `920 
-V L "exp" 5 2063 "*sint8" `921 
-F G "frexp" 5 2064 "float(float x,*sint8 exp)" `919 
-V L "res" 5 2065 "float" `922 
-V L "sign" 5 2066 "int1" `923 
-C L "ldexp" 5 2 6 "FUNCTION"
-F N "ldexp" 5 2208 ""
-V L "value" 5 2208 "float" `925 
-V L "exp" 5 2208 "sint8" `926 
-F G "ldexp" 5 2209 "float(float value,sint8 exp)" `924 
-D G "soft_i2c_sda" 4 13 "pin_c4"
-D G "soft_i2c_scl" 4 14 "pin_c3"
-D G "BT0" 4 15 "PIN_b4"
-D G "BT1" 4 16 "PIN_b5"
-D G "BT2" 4 17 "PIN_b6"
-D G "BT3" 4 18 "PIN_b7"
-D G "ON" 4 19 "BT0"
-D G "UP" 4 20 "BT0"
-D G "ON1" 4 21 "BT0"
-D G "OFF" 4 22 "BT1"
-D G "DW" 4 23 "BT1"
-D G "OFF1" 4 24 "BT1"
-D G "INV" 4 25 "BT2"
-D G "ON2" 4 26 "BT2"
-D G "CLR" 4 27 "BT2"
-D G "MOD" 4 28 "BT3"
-D G "STOP" 4 29 "BT3"
-D G "OFF2" 4 30 "BT3"
-E G "OK" 4 34 "0" `928 
-E G "ERR" 4 35 "1" `929 
-T G "result" 4 35 "" `930 
-V G "MA7DOAN" 4 36 "[16]" `932 
-V G "LED_7DQ" 4 38 "int8[8]" `934 
-F N "xuat_32led_don_4byte" 4 39 ""
-V L "b3" 4 39 "int8" `936 
-V L "b2" 4 39 "int8" `937 
-V L "b1" 4 39 "int8" `938 
-V L "b0" 4 39 "int8" `939 
-f G "xuat_32led_don_4byte" 4 39 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `935 
-F N "xuat_32led_don_2word" 4 40 ""
-V L "w1" 4 40 "int16" `941 
-V L "w0" 4 40 "int16" `942 
-f G "xuat_32led_don_2word" 4 40 "void(int16 w1,int16 w0)" `940 
-F N "xuat_32led_don_1dw" 4 41 ""
-V L "dwl" 4 41 "int32" `944 
-f G "xuat_32led_don_1dw" 4 41 "void(int32 dwl)" `943 
-F N "inputcd" 4 42 ""
-V L "pin" 4 42 "int16" `946 
-f G "inputcd" 4 42 "int8(int16 pin)" `945 
-F N "xuat_4led_7doan_4so" 4 43 ""
-V L "b3" 4 43 "int8" `948 
-V L "b2" 4 43 "int8" `949 
-V L "b1" 4 43 "int8" `950 
-V L "b0" 4 43 "int8" `951 
-f G "xuat_4led_7doan_4so" 4 43 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `947 
-F N "xuat_4led_7doan_giaima_xoa_so0" 4 44 ""
-V L "tam" 4 44 "int16" `953 
-f G "xuat_4led_7doan_giaima_xoa_so0" 4 44 "void(int16 tam)" `952 
-F N "xuat_8led_7doan_2byte" 4 45 ""
-V L "data" 4 45 "int8" `955 
-V L "maquet" 4 45 "int8" `956 
-f G "xuat_8led_7doan_2byte" 4 45 "void(int8 data,int8 maquet)" `954 
-F N "hien_thi_8led_7doan_quet_all" 4 46 ""
-f G "hien_thi_8led_7doan_quet_all" 4 46 "void()" `957 
-F N "set_up_port_ic_chot" 4 47 ""
-f G "set_up_port_ic_chot" 4 47 "void()" `958 
-F N "buzzer_on" 3 4 ""
-F G "buzzer_on" 3 5 "void()" `959 
-F N "buzzer_off" 3 8 ""
-F G "buzzer_off" 3 9 "void()" `960 
-F N "xuat_32led_don_4byte" 3 12 ""
-V L "b3" 3 12 "int8" `936 
-V L "b2" 3 12 "int8" `937 
-V L "b1" 3 12 "int8" `938 
-V L "b0" 3 12 "int8" `965 
-F G "xuat_32led_don_4byte" 3 13 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `935 
-F N "xuat_32led_don_2word" 3 18 ""
-V L "w1" 3 18 "int16" `941 
-V L "w0" 3 18 "int16" `963 
-F G "xuat_32led_don_2word" 3 19 "void(int16 w1,int16 w0)" `940 
-F N "xuat_32led_don_1dw" 3 24 ""
-V L "dwl" 3 24 "int32" `962 
-F G "xuat_32led_don_1dw" 3 25 "void(int32 dwl)" `943 
-F N "inputcd" 3 31 ""
-V L "pin" 3 31 "int16" `962 
-F G "inputcd" 3 32 "int8(int16 pin)" `945 
-V L "n" 3 33 "int8" `961 
-V L "oldpin" 3 34 "int16" `962 
-V L "tt" 3 35 "int1" `963 
-V L "dem" 3 36 "int1" `964 
-F N "xuat_4led_7doan_4so" 3 63 ""
-V L "b3" 3 63 "int8" `948 
-V L "b2" 3 63 "int8" `949 
-V L "b1" 3 63 "int8" `950 
-V L "b0" 3 63 "int8" `976 
-F G "xuat_4led_7doan_4so" 3 64 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `947 
-F N "xuat_4led_7doan_giaima_xoa_so0" 3 70 ""
-V L "tam" 3 70 "int16" `973 
-F G "xuat_4led_7doan_giaima_xoa_so0" 3 71 "void(int16 tam)" `952 
-V L "ht" 3 72 "int8[4]" `972 
-V L "i" 3 72 "int8" `973 
-F N "hien_thi_8led_7doan_quet_all" 3 82 ""
-F G "hien_thi_8led_7doan_quet_all" 3 83 "void()" `957 
-V L "n" 3 84 "int8" `977 
-F N "triac_2_on" 3 95 ""
-F G "triac_2_on" 3 96 "void()" `978 
-F N "triac_2_off" 3 99 ""
-F G "triac_2_off" 3 100 "void()" `979 
-F N "set_up_port_ic_chot" 3 103 ""
-F G "set_up_port_ic_chot" 3 104 "void()" `958 
-C L "set_up_port_ic_chot" 3 112 1 "FUNCTION"
-C L "set_up_port_ic_chot" 3 112 1 "FUNCTION"
-C L "soft_i2c_clk" 3 112 1 "FUNCTION"
-F N "soft_i2c_clk" 3 124 ""
-F G "soft_i2c_clk" 3 125 "void()" `980 
-F N "soft_i2c_start" 3 130 ""
-F G "soft_i2c_start" 3 131 "void()" `981 
-F N "soft_i2c_stop" 3 139 ""
-F G "soft_i2c_stop" 3 140 "void()" `982 
-F N "soft_i2c_write" 3 146 ""
-V L "b" 3 146 "int8" `984 
-F G "soft_i2c_write" 3 147 "void(int8 b)" `983 
-V L "m" 3 148 "int8" `985 
-F N "soft_i2c_read" 3 157 ""
-V L "ack" 3 157 "int8" `987 
-F G "soft_i2c_read" 3 158 "int8(int8 ack)" `986 
-V L "n" 3 159 "int8" `988 
-V L "nhan" 3 159 "int8" `989 
-V G "y" 6 1 "int32" `990 
-V G "yp_chay" 6 1 "int32" `991 
-V G "yt_chay" 6 1 "int32" `992 
-V G "y_codinh" 6 1 "int32" `993 
-V G "zt" 6 2 "int16" `994 
-V G "zt_chay_t" 6 2 "int16" `995 
-V G "zt_chay_p" 6 2 "int16" `996 
-V G "zt_codinh" 6 2 "int16" `997 
-V G "zp" 6 3 "int16" `998 
-V G "zp_chay_t" 6 3 "int16" `999 
-V G "zp_chay_p" 6 3 "int16" `1000 
-V G "zp_codinh" 6 3 "int16" `1001 
-V G "tgdlay" 6 5 "int16" `1002 
-V G "dem_led" 6 6 "int8" `1003 
-V G "i32" 6 7 "sint8" `1004 
-V G "j32" 6 7 "sint8" `1005 
-V G "ttct_td" 6 7 "sint8" `1006 
-V G "i16" 6 7 "sint8" `1007 
-V G "j16" 6 7 "sint8" `1008 
-V G "za" 6 9 "int32" `1009 
-V G "ya" 6 9 "int32" `1010 
-V G "xa" 6 9 "int32" `1011 
-V G "zb" 6 9 "int32" `1012 
-V G "yb" 6 9 "int32" `1013 
-V G "xb" 6 9 "int32" `1014 
-V G "ia" 6 10 "sint8" `1015 
-V G "ja" 6 10 "sint8" `1016 
-F N "reset_toan_bo_bien" 6 11 ""
-F G "reset_toan_bo_bien" 6 12 "void()" `1017 
-C L "reset_toan_bo_bien" 6 13 1 "FUNCTION"
-F N "tang_dem_led_delay_1" 6 25 ""
-V L "dl" 6 25 "int8" `1019 
-F G "tang_dem_led_delay_1" 6 26 "void(int8 dl)" `1018 
-V L "i" 6 27 "int8" `1020 
-F N "tang_dem_led_delay_0" 6 33 ""
-V L "dl" 6 33 "int8" `1022 
-F G "tang_dem_led_delay_0" 6 34 "void(int8 dl)" `1021 
-F N "delay_chon" 6 39 ""
-V L "dl" 6 39 "int8" `1024 
-V L "chondelay" 6 39 "int8" `1025 
-F G "delay_chon" 6 40 "void(int8 dl,int8 chondelay)" `1023 
-C L "diem_sang_dich_trai_mat_dan_32led" 6 13 3 "FUNCTION"
-F N "diem_sang_dich_trai_mat_dan_32led" 6 47 ""
-V L "dl" 6 47 "int8" `1027 
-V L "chondelay" 6 47 "int8" `1028 
-F G "diem_sang_dich_trai_mat_dan_32led" 6 48 "void(int8 dl,int8 chondelay)" `1026 
-C L "diem_sang_dich_phai_mat_dan_32led" 6 13 3 "FUNCTION"
-F N "diem_sang_dich_phai_mat_dan_32led" 6 73 ""
-V L "dl" 6 73 "int8" `1030 
-V L "chondelay" 6 73 "int8" `1031 
-F G "diem_sang_dich_phai_mat_dan_32led" 6 74 "void(int8 dl,int8 chondelay)" `1029 
-C L "dao_dl_32bit_va_xuat" 6 13 3 "FUNCTION"
-F N "dao_dl_32bit_va_xuat" 6 99 ""
-F G "dao_dl_32bit_va_xuat" 6 100 "void()" `1032 
-F N "sang_tat_32led" 6 104 ""
-V L "dl" 6 104 "int8" `1034 
-V L "chondelay" 6 104 "int8" `1035 
-F G "sang_tat_32led" 6 105 "void(int8 dl,int8 chondelay)" `1033 
-C L "sang_tat_dan_ngoai_vao_32led" 6 13 3 "FUNCTION"
-F N "sang_tat_dan_ngoai_vao_32led" 6 120 ""
-V L "dl" 6 120 "int8" `1037 
-V L "chondelay" 6 120 "int8" `1038 
-F G "sang_tat_dan_ngoai_vao_32led" 6 121 "void(int8 dl,int8 chondelay)" `1036 
-C L "sang_tat_dan_trong_ra_32led" 6 13 3 "FUNCTION"
-F N "sang_tat_dan_trong_ra_32led" 6 142 ""
-V L "dl" 6 142 "int8" `1040 
-V L "chondelay" 6 142 "int8" `1041 
-F G "sang_tat_dan_trong_ra_32led" 6 143 "void(int8 dl,int8 chondelay)" `1039 
-C L "sang_tat_dan_phai_sang_trai_2x16led" 6 13 3 "FUNCTION"
-F N "sang_tat_dan_phai_sang_trai_2x16led" 6 164 ""
-V L "dl" 6 164 "int8" `1043 
-V L "chondelay" 6 164 "int8" `1044 
-F G "sang_tat_dan_phai_sang_trai_2x16led" 6 165 "void(int8 dl,int8 chondelay)" `1042 
-C L "sang_tat_dan_trai_sang_phai_2x16led" 6 13 3 "FUNCTION"
-F N "sang_tat_dan_trai_sang_phai_2x16led" 6 184 ""
-V L "dl" 6 184 "int8" `1046 
-V L "chondelay" 6 184 "int8" `1047 
-F G "sang_tat_dan_trai_sang_phai_2x16led" 6 185 "void(int8 dl,int8 chondelay)" `1045 
-C L "sang_tat_dan_pst_32led" 6 13 3 "FUNCTION"
-F N "sang_tat_dan_pst_32led" 6 204 ""
-V L "dl" 6 204 "int8" `1049 
-V L "chondelay" 6 204 "int8" `1050 
-F G "sang_tat_dan_pst_32led" 6 205 "void(int8 dl,int8 chondelay)" `1048 
-C L "sang_tat_dan_tsp_32led" 6 13 3 "FUNCTION"
-F N "sang_tat_dan_tsp_32led" 6 224 ""
-V L "dl" 6 224 "int8" `1052 
-V L "chondelay" 6 224 "int8" `1053 
-F G "sang_tat_dan_tsp_32led" 6 225 "void(int8 dl,int8 chondelay)" `1051 
-C L "diem_sang_di_chuyen_pst_32led" 6 13 3 "FUNCTION"
-F N "diem_sang_di_chuyen_pst_32led" 6 245 ""
-V L "dl" 6 245 "int8" `1055 
-V L "chondelay" 6 245 "int8" `1056 
-F G "diem_sang_di_chuyen_pst_32led" 6 246 "void(int8 dl,int8 chondelay)" `1054 
-C L "diem_sang_di_chuyen_tsp_32led" 6 13 3 "FUNCTION"
-F N "diem_sang_di_chuyen_tsp_32led" 6 266 ""
-V L "dl" 6 266 "int8" `1058 
-V L "chondelay" 6 266 "int8" `1059 
-F G "diem_sang_di_chuyen_tsp_32led" 6 267 "void(int8 dl,int8 chondelay)" `1057 
-C L "sang_don_pst_32led" 6 13 3 "FUNCTION"
-F N "sang_don_pst_32led" 6 287 ""
-V L "dl" 6 287 "int8" `1061 
-V L "chondelay" 6 287 "int8" `1062 
-F G "sang_don_pst_32led" 6 288 "void(int8 dl,int8 chondelay)" `1060 
-C L "sang_don_tsp_32led" 6 13 3 "FUNCTION"
-F N "sang_don_tsp_32led" 6 312 ""
-V L "dl" 6 312 "int8" `1064 
-V L "chondelay" 6 312 "int8" `1065 
-F G "sang_don_tsp_32led" 6 313 "void(int8 dl,int8 chondelay)" `1063 
-C L "sang_don_tnt_32led" 6 13 3 "FUNCTION"
-F N "sang_don_tnt_32led" 6 338 ""
-V L "dl" 6 338 "int8" `1067 
-V L "chondelay" 6 338 "int8" `1068 
-F G "sang_don_tnt_32led" 6 339 "void(int8 dl,int8 chondelay)" `1066 
-C L "sang_don_ttr_32led" 6 13 3 "FUNCTION"
-F N "sang_don_ttr_32led" 6 368 ""
-V L "dl" 6 368 "int8" `1070 
-V L "chondelay" 6 368 "int8" `1071 
-F G "sang_don_ttr_32led" 6 369 "void(int8 dl,int8 chondelay)" `1069 
-V G "tt" 0 6 "int1" `1074  "bien trang thai"
-F N "U_inputcd" 0 8 ""
-V L "chan" 0 8 "int16" `1076  "ham chong doi"
-F G "U_inputcd" 0 9 "int8(int16 chan)" `1075 
-V G "n" 0 23 "sint8" `1077 
-V G "i" 0 24 "int16" `1078 
-F N "sangdan" 0 26 ""
-F G "sangdan" 0 27 "void()" `1079 
-C L "sangdan" 0 31 1 "FUNCTION"
-F N "sangdich" 0 44 ""
-F G "sangdich" 0 45 "void()" `1080 
-F N "MAIN" 0 59 ""
-F G "MAIN" 0 60 "void()" `1081 
+D G "_STDINT" 3 19 ""
+C L "jump_to_isr" 3 2 1 "FUNCTION"
+T G "int8_t" 3 23 "sint8" `781 
+T G "uint8_t" 3 24 "int8" `782 
+T G "int16_t" 3 25 "sint16" `783 
+T G "uint16_t" 3 26 "int16" `784 
+T G "int32_t" 3 27 "sint32" `785 
+T G "uint32_t" 3 28 "int32" `786 
+D G "INT8_MAX" 3 37 " (127)"
+D G "INT8_MIN" 3 38 " (-128)"
+D G "UINT8_MAX" 3 39 " (255)"
+D G "INT16_MAX" 3 41 " (32767)"
+D G "INT16_MIN" 3 42 " (-32768)"
+D G "UINT16_MAX" 3 43 " (65535)"
+D G "INT32_MAX" 3 45 " (2147483647)"
+D G "INT32_MIN" 3 46 " (-2147483648)"
+D G "UINT32_MAX" 3 47 " (4294967295)"
+C L "jump_to_isr" 3 2 1 "FUNCTION"
+T G "int_least8_t" 3 61 "sint8" `787 
+T G "uint_least8_t" 3 62 "int8" `788 
+T G "int_least16_t" 3 63 "sint16" `789 
+T G "uint_least16_t" 3 64 "int16" `790 
+T G "int_least32_t" 3 65 "sint32" `791 
+T G "uint_least32_t" 3 66 "int32" `792 
+D G "INT_LEAST8_MAX" 3 75 " (127)"
+D G "INT_LEAST8_MIN" 3 76 " (-128)"
+D G "UINT_LEAST8_MAX" 3 77 " (255)"
+D G "INT_LEAST16_MAX" 3 79 " (32767)"
+D G "INT_LEAST16_MIN" 3 80 " (-32768)"
+D G "UINT_LEAST16_MAX" 3 81 " (65535)"
+D G "INT_LEAST32_MAX" 3 83 " (2147483647)"
+D G "INT_LEAST32_MIN" 3 84 " (-2147483648)"
+D G "UINT_LEAST32_MAX" 3 85 " (4294967295)"
+C L "jump_to_isr" 3 2 1 "FUNCTION"
+T G "int_fast8_t" 3 112 "sint8" `793 
+T G "uint_fast8_t" 3 113 "int8" `794 
+D G "INT_FAST8_MAX" 3 114 " (127)"
+D G "INT_FAST8_MIN" 3 115 " (-128)"
+D G "UINT_FAST8_MAX" 3 116 " (255)"
+T G "int_fast16_t" 3 117 "sint16" `795 
+T G "uint_fast16_t" 3 118 "int16" `796 
+T G "int_fast32_t" 3 121 "sint32" `797 
+T G "uint_fast32_t" 3 122 "int32" `798 
+D G "INT_FAST16_MAX" 3 124 " (32767)"
+D G "INT_FAST16_MIN" 3 125 " (-32768)"
+D G "UINT_FAST16_MAX" 3 126 " (65535)"
+D G "INT_FAST32_MAX" 3 128 " (2147483647)"
+D G "INT_FAST32_MIN" 3 129 " (-2147483648)"
+D G "UINT_FAST32_MAX" 3 130 " (4294967295)"
+C L "jump_to_isr" 3 2 1 "FUNCTION"
+T G "uintptr_t" 3 148 "int16" `799 
+T G "intptr_t" 3 149 "sint16" `800 
+D G "INT8_C" 3 152 "(val) ((int8_t)val)"
+D G "UINT8_C" 3 153 "(val) ((uint8_t)val)"
+D G "INT16_C" 3 154 "(val) ((int16_t)val)"
+D G "UINT16_C" 3 155 "(val) ((uint16_t)val)"
+D G "INT32_C" 3 156 "(val) ((int32_t)val)"
+D G "UINT32_C" 3 157 "(val) ((uint32_t)val)"
+C L "jump_to_isr" 3 2 3 "FUNCTION"
+T G "intmax_t" 3 181 "sint32" `801 
+T G "uintmax_t" 3 182 "int32" `802 
+D G "INTMAXN_MAX" 3 184 " (2147483647)"
+D G "INTMAXN_MIN" 3 185 " (-2147483648)"
+D G "UINTMAXN_MAX" 3 186 " (4294967295)"
+D G "INTMAX_C" 3 188 "(value) ((signed int32)val)"
+D G "UINTMAX_C" 3 189 "(value) ((unsigned int32)val)"
+D G "__TV_PICKIT2_SHIFT_1_C__" 4 2 ""
+D G "__TV_PICKIT2_SHIFT_1_H__" 5 2 ""
+C L "jump_to_isr" 5 4 5 "FUNCTION"
+D G "MATH_H" 6 30 ""
+D G "PI" 6 35 "3.1415926535897932"
+D G "SQRT2" 6 38 "1.4142135623730950"
+C L "jump_to_isr" 6 2 3 "FUNCTION"
+F N "CEIL_FLOOR" 6 45 ""
+V L "x" 6 45 "float" `808 
+V L "n" 6 45 "int8" `809 
+F G "CEIL_FLOOR" 6 46 "float(float x,int8 n)" `807 
+V L "y" 6 47 "float" `810 
+V L "res" 6 47 "float" `811 
+V L "l" 6 48 "int16" `812 
+V L "s" 6 49 "int1" `813 
+C L "floor" 6 2 5 "FUNCTION"
+F N "floor" 6 207 ""
+V L "x" 6 207 "float" `828 
+F G "floor" 6 208 "float(float x)" `827 
+C L "ceil" 6 2 5 "FUNCTION"
+F N "ceil" 6 233 ""
+V L "x" 6 233 "float" `830 
+F G "ceil" 6 234 "float(float x)" `829 
+D G "fabs" 6 259 "abs"
+C L "fmod" 6 2 6 "FUNCTION"
+F N "fmod" 6 271 ""
+V L "x" 6 271 "float" `832 
+V L "y" 6 271 "float" `833 
+F G "fmod" 6 272 "float(float x,float y)" `831 
+V L "i" 6 273 "float" `834 
+D G "LN2" 6 334 "0.6931471805599453"
+D G "LN2_INV" 6 335 "1.4426950408889634073"
+V G "pe" 6 337 "[6]" `839 
+F N "exp" 6 341 ""
+V L "x" 6 341 "float" `842 
+F G "exp" 6 342 "float(float x)" `841 
+V L "y" 6 343 "float" `843 
+V L "res" 6 343 "float" `844 
+V L "r" 6 343 "float" `845 
+V L "n" 6 347 "sint8" `846 
+V L "s" 6 348 "int1" `847 
+C L "exp" 6 2 1 "FUNCTION"
+V G "pl" 6 525 "[4]" `851 
+V G "ql" 6 526 "[4]" `854 
+C L "log" 6 2 3 "FUNCTION"
+F N "log" 6 534 ""
+V L "x" 6 534 "float" `857 
+F G "log" 6 535 "float(float x)" `856 
+V L "y" 6 536 "float" `858 
+V L "res" 6 536 "float" `859 
+V L "r" 6 536 "float" `860 
+V L "y2" 6 536 "float" `861 
+V L "n" 6 540 "sint8" `862 
+C L "log" 6 2 1 "FUNCTION"
+D G "LN10" 6 758 "2.3025850929940456"
+D G "LN10_INV" 6 759 "0.4342944819032518276"
+C L "log10" 6 2 3 "FUNCTION"
+F N "log10" 6 767 ""
+V L "x" 6 767 "float" `864 
+F G "log10" 6 768 "float(float x)" `863 
+V L "r" 6 769 "float" `865 
+C L "modf" 6 2 8 "FUNCTION"
+F N "modf" 6 808 ""
+V L "value" 6 808 "float" `867 
+V L "iptr" 6 808 "*float" `868 
+F G "modf" 6 809 "float(float value,*float iptr)" `866 
+C L "pwr" 6 2 6 "FUNCTION"
+F N "pwr" 6 836 ""
+V L "x" 6 836 "float" `870 
+V L "y" 6 836 "float" `871 
+F G "pwr" 6 837 "float(float x,float y)" `869 
+C L "pow" 6 2 7 "FUNCTION"
+F N "pow" 6 899 ""
+V L "x" 6 899 "float" `873 
+V L "y" 6 899 "float" `874 
+F G "pow" 6 900 "float(float x,float y)" `872 
+C L "sqrt" 6 2 5 "FUNCTION"
+F N "sqrt" 6 960 ""
+V L "x" 6 960 "float" `876 
+F G "sqrt" 6 961 "float(float x)" `875 
+V L "y" 6 962 "float" `877 
+V L "res" 6 962 "float" `878 
+V L "p" 6 967 "*int8" `879 
+D G "PI_DIV_BY_TWO_INV" 6 1156 "0.63661977236758134"
+D G "PI_DIV_BY_TWO" 6 1160 "1.5707963267948966"
+D G "TWOBYPI" 6 1164 "0.6366197723675813"
+C L "cos" 6 2 3 "FUNCTION"
+F N "cos" 6 1172 ""
+V L "x" 6 1172 "float" `881 
+F G "cos" 6 1173 "float(float x)" `880 
+V L "y" 6 1174 "float" `882 
+V L "t" 6 1174 "float" `883 
+V L "t2" 6 1174 "float" `884 
+V L "quad" 6 1175 "int8" `885 
+V L "i" 6 1175 "int8" `886 
+V L "frac" 6 1176 "float" `887 
+V L "p" 6 1177 "float[5]" `888  "by the series definition for cosine"
+C L "cos" 6 2 1 "FUNCTION"
+C L "cos" 6 2 2 "FUNCTION"
+C L "cos" 6 2 1 "FUNCTION"
+C L "cos" 6 2 1 "FUNCTION"
+C L "cos" 6 2 1 "FUNCTION"
+C L "cos" 6 2 1 "FUNCTION"
+C L "cos" 6 2 1 "FUNCTION"
+C L "cos" 6 2 1 "FUNCTION"
+C L "sin" 6 2 5 "FUNCTION"
+F N "sin" 6 1311 ""
+V L "x" 6 1311 "float" `890 
+F G "sin" 6 1312 "float(float x)" `889 
+C L "tan" 6 2 5 "FUNCTION"
+F N "tan" 6 1337 ""
+V L "x" 6 1337 "float" `892 
+F G "tan" 6 1338 "float(float x)" `891 
+V L "c" 6 1339 "float" `893 
+V L "s" 6 1339 "float" `894 
+V G "pas" 6 1377 "[3]" `896 
+V G "qas" 6 1378 "[3]" `899 
+F N "ASIN_COS" 6 1380 ""
+V L "x" 6 1380 "float" `902 
+V L "n" 6 1380 "int8" `903 
+F G "ASIN_COS" 6 1381 "float(float x,int8 n)" `901 
+V L "y" 6 1382 "float" `904 
+V L "res" 6 1382 "float" `905 
+V L "r" 6 1382 "float" `906 
+V L "y2" 6 1382 "float" `907 
+V L "s" 6 1383 "int1" `908 
+C L "ASIN_COS" 6 2 1 "FUNCTION"
+C L "ASIN_COS" 6 2 1 "FUNCTION"
+C L "asin" 6 2 5 "FUNCTION"
+F N "asin" 6 1538 ""
+V L "x" 6 1538 "float" `910 
+F G "asin" 6 1539 "float(float x)" `909 
+V L "r" 6 1540 "float" `911 
+C L "acos" 6 2 5 "FUNCTION"
+F N "acos" 6 1572 ""
+V L "x" 6 1572 "float" `913 
+F G "acos" 6 1573 "float(float x)" `912 
+V L "r" 6 1574 "float" `914 
+V G "pat" 6 1600 "[4]" `916 
+V G "qat" 6 1601 "[4]" `919 
+C L "atan" 6 2 3 "FUNCTION"
+F N "atan" 6 1609 ""
+V L "x" 6 1609 "float" `922 
+F G "atan" 6 1610 "float(float x)" `921 
+V L "y" 6 1611 "float" `923 
+V L "res" 6 1611 "float" `924 
+V L "r" 6 1611 "float" `925 
+V L "s" 6 1612 "int1" `926 
+V L "flag" 6 1612 "int1" `927 
+C L "atan" 6 2 1 "FUNCTION"
+C L "atan2" 6 2 7 "FUNCTION"
+F N "atan2" 6 1752 ""
+V L "y" 6 1752 "float" `929 
+V L "x" 6 1752 "float" `930 
+F G "atan2" 6 1753 "float(float y,float x)" `928 
+V L "z" 6 1754 "float" `931 
+V L "sign" 6 1755 "int1" `932 
+V L "quad" 6 1756 "int8" `933 
+C L "atan2" 6 2 1 "FUNCTION"
+C L "atan2" 6 2 1 "FUNCTION"
+C L "cosh" 6 2 7 "FUNCTION"
+F N "cosh" 6 1974 ""
+V L "x" 6 1974 "float" `936 
+F G "cosh" 6 1975 "float(float x)" `935 
+C L "sinh" 6 2 6 "FUNCTION"
+F N "sinh" 6 2001 ""
+V L "x" 6 2001 "float" `938 
+F G "sinh" 6 2002 "float(float x)" `937 
+C L "tanh" 6 2 6 "FUNCTION"
+F N "tanh" 6 2031 ""
+V L "x" 6 2031 "float" `940 
+F G "tanh" 6 2032 "float(float x)" `939 
+D G "LOG2" 6 2061 ".30102999566398119521"
+D G "LOG2_INV" 6 2062 "3.32192809488736234787"
+F N "frexp" 6 2063 ""
+V L "x" 6 2063 "float" `942 
+V L "exp" 6 2063 "*sint8" `943 
+F G "frexp" 6 2064 "float(float x,*sint8 exp)" `941 
+V L "res" 6 2065 "float" `944 
+V L "sign" 6 2066 "int1" `945 
+C L "ldexp" 6 2 6 "FUNCTION"
+F N "ldexp" 6 2208 ""
+V L "value" 6 2208 "float" `947 
+V L "exp" 6 2208 "sint8" `948 
+F G "ldexp" 6 2209 "float(float value,sint8 exp)" `946 
+D G "soft_i2c_sda" 5 13 "pin_c4"
+D G "soft_i2c_scl" 5 14 "pin_c3"
+D G "BT0" 5 15 "PIN_b4"
+D G "BT1" 5 16 "PIN_b5"
+D G "BT2" 5 17 "PIN_b6"
+D G "BT3" 5 18 "PIN_b7"
+D G "ON" 5 19 "BT0"
+D G "UP" 5 20 "BT0"
+D G "ON1" 5 21 "BT0"
+D G "OFF" 5 22 "BT1"
+D G "DW" 5 23 "BT1"
+D G "OFF1" 5 24 "BT1"
+D G "INV" 5 25 "BT2"
+D G "ON2" 5 26 "BT2"
+D G "CLR" 5 27 "BT2"
+D G "MOD" 5 28 "BT3"
+D G "STOP" 5 29 "BT3"
+D G "OFF2" 5 30 "BT3"
+E G "OK" 5 34 "0" `950 
+E G "ERR" 5 35 "1" `951 
+T G "result" 5 35 "" `952 
+V G "MA7DOAN" 5 36 "[16]" `954 
+V G "LED_7DQ" 5 38 "int8[8]" `956 
+F N "xuat_32led_don_4byte" 5 39 ""
+V L "b3" 5 39 "int8" `958 
+V L "b2" 5 39 "int8" `959 
+V L "b1" 5 39 "int8" `960 
+V L "b0" 5 39 "int8" `961 
+f G "xuat_32led_don_4byte" 5 39 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `957 
+F N "xuat_32led_don_2word" 5 40 ""
+V L "w1" 5 40 "int16" `963 
+V L "w0" 5 40 "int16" `964 
+f G "xuat_32led_don_2word" 5 40 "void(int16 w1,int16 w0)" `962 
+F N "xuat_32led_don_1dw" 5 41 ""
+V L "dwl" 5 41 "int32" `966 
+f G "xuat_32led_don_1dw" 5 41 "void(int32 dwl)" `965 
+F N "inputcd" 5 42 ""
+V L "pin" 5 42 "int16" `968 
+f G "inputcd" 5 42 "int8(int16 pin)" `967 
+F N "xuat_4led_7doan_4so" 5 43 ""
+V L "b3" 5 43 "int8" `970 
+V L "b2" 5 43 "int8" `971 
+V L "b1" 5 43 "int8" `972 
+V L "b0" 5 43 "int8" `973 
+f G "xuat_4led_7doan_4so" 5 43 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `969 
+F N "xuat_4led_7doan_giaima_xoa_so0" 5 44 ""
+V L "tam" 5 44 "int16" `975 
+f G "xuat_4led_7doan_giaima_xoa_so0" 5 44 "void(int16 tam)" `974 
+F N "xuat_8led_7doan_2byte" 5 45 ""
+V L "data" 5 45 "int8" `977 
+V L "maquet" 5 45 "int8" `978 
+f G "xuat_8led_7doan_2byte" 5 45 "void(int8 data,int8 maquet)" `976 
+F N "hien_thi_8led_7doan_quet_all" 5 46 ""
+f G "hien_thi_8led_7doan_quet_all" 5 46 "void()" `979 
+F N "set_up_port_ic_chot" 5 47 ""
+f G "set_up_port_ic_chot" 5 47 "void()" `980 
+F N "buzzer_on" 4 4 ""
+F G "buzzer_on" 4 5 "void()" `981 
+F N "buzzer_off" 4 8 ""
+F G "buzzer_off" 4 9 "void()" `982 
+F N "xuat_32led_don_4byte" 4 12 ""
+V L "b3" 4 12 "int8" `958 
+V L "b2" 4 12 "int8" `959 
+V L "b1" 4 12 "int8" `960 
+V L "b0" 4 12 "int8" `987 
+F G "xuat_32led_don_4byte" 4 13 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `957 
+F N "xuat_32led_don_2word" 4 18 ""
+V L "w1" 4 18 "int16" `963 
+V L "w0" 4 18 "int16" `985 
+F G "xuat_32led_don_2word" 4 19 "void(int16 w1,int16 w0)" `962 
+F N "xuat_32led_don_1dw" 4 24 ""
+V L "dwl" 4 24 "int32" `984 
+F G "xuat_32led_don_1dw" 4 25 "void(int32 dwl)" `965 
+F N "inputcd" 4 31 ""
+V L "pin" 4 31 "int16" `984 
+F G "inputcd" 4 32 "int8(int16 pin)" `967 
+V L "n" 4 33 "int8" `983 
+V L "oldpin" 4 34 "int16" `984 
+V L "tt" 4 35 "int1" `985 
+V L "dem" 4 36 "int1" `986 
+F N "xuat_4led_7doan_4so" 4 63 ""
+V L "b3" 4 63 "int8" `970 
+V L "b2" 4 63 "int8" `971 
+V L "b1" 4 63 "int8" `972 
+V L "b0" 4 63 "int8" `998 
+F G "xuat_4led_7doan_4so" 4 64 "void(int8 b3,int8 b2,int8 b1,int8 b0)" `969 
+F N "xuat_4led_7doan_giaima_xoa_so0" 4 70 ""
+V L "tam" 4 70 "int16" `995 
+F G "xuat_4led_7doan_giaima_xoa_so0" 4 71 "void(int16 tam)" `974 
+V L "ht" 4 72 "int8[4]" `994 
+V L "i" 4 72 "int8" `995 
+F N "hien_thi_8led_7doan_quet_all" 4 82 ""
+F G "hien_thi_8led_7doan_quet_all" 4 83 "void()" `979 
+V L "n" 4 84 "int8" `999 
+F N "triac_2_on" 4 95 ""
+F G "triac_2_on" 4 96 "void()" `1000 
+F N "triac_2_off" 4 99 ""
+F G "triac_2_off" 4 100 "void()" `1001 
+F N "set_up_port_ic_chot" 4 103 ""
+F G "set_up_port_ic_chot" 4 104 "void()" `980 
+C L "set_up_port_ic_chot" 4 112 1 "FUNCTION"
+C L "set_up_port_ic_chot" 4 112 1 "FUNCTION"
+C L "soft_i2c_clk" 4 112 1 "FUNCTION"
+F N "soft_i2c_clk" 4 124 ""
+F G "soft_i2c_clk" 4 125 "void()" `1002 
+F N "soft_i2c_start" 4 130 ""
+F G "soft_i2c_start" 4 131 "void()" `1003 
+F N "soft_i2c_stop" 4 139 ""
+F G "soft_i2c_stop" 4 140 "void()" `1004 
+F N "soft_i2c_write" 4 146 ""
+V L "b" 4 146 "int8" `1006 
+F G "soft_i2c_write" 4 147 "void(int8 b)" `1005 
+V L "m" 4 148 "int8" `1007 
+F N "soft_i2c_read" 4 157 ""
+V L "ack" 4 157 "int8" `1009 
+F G "soft_i2c_read" 4 158 "int8(int8 ack)" `1008 
+V L "n" 4 159 "int8" `1010 
+V L "nhan" 4 159 "int8" `1011 
+V G "y" 7 1 "int32" `1012 
+V G "yp_chay" 7 1 "int32" `1013 
+V G "yt_chay" 7 1 "int32" `1014 
+V G "y_codinh" 7 1 "int32" `1015 
+V G "zt" 7 2 "int16" `1016 
+V G "zt_chay_t" 7 2 "int16" `1017 
+V G "zt_chay_p" 7 2 "int16" `1018 
+V G "zt_codinh" 7 2 "int16" `1019 
+V G "zp" 7 3 "int16" `1020 
+V G "zp_chay_t" 7 3 "int16" `1021 
+V G "zp_chay_p" 7 3 "int16" `1022 
+V G "zp_codinh" 7 3 "int16" `1023 
+V G "tgdlay" 7 5 "int16" `1024 
+V G "dem_led" 7 6 "int8" `1025 
+V G "i32" 7 7 "sint8" `1026 
+V G "j32" 7 7 "sint8" `1027 
+V G "ttct_td" 7 7 "sint8" `1028 
+V G "i16" 7 7 "sint8" `1029 
+V G "j16" 7 7 "sint8" `1030 
+V G "za" 7 9 "int32" `1031 
+V G "ya" 7 9 "int32" `1032 
+V G "xa" 7 9 "int32" `1033 
+V G "zb" 7 9 "int32" `1034 
+V G "yb" 7 9 "int32" `1035 
+V G "xb" 7 9 "int32" `1036 
+V G "ia" 7 10 "sint8" `1037 
+V G "ja" 7 10 "sint8" `1038 
+F N "reset_toan_bo_bien" 7 11 ""
+F G "reset_toan_bo_bien" 7 12 "void()" `1039 
+C L "reset_toan_bo_bien" 7 13 1 "FUNCTION"
+F N "tang_dem_led_delay_1" 7 25 ""
+V L "dl" 7 25 "int8" `1041 
+F G "tang_dem_led_delay_1" 7 26 "void(int8 dl)" `1040 
+V L "i" 7 27 "int8" `1042 
+F N "tang_dem_led_delay_0" 7 33 ""
+V L "dl" 7 33 "int8" `1044 
+F G "tang_dem_led_delay_0" 7 34 "void(int8 dl)" `1043 
+F N "delay_chon" 7 39 ""
+V L "dl" 7 39 "int8" `1046 
+V L "chondelay" 7 39 "int8" `1047 
+F G "delay_chon" 7 40 "void(int8 dl,int8 chondelay)" `1045 
+C L "diem_sang_dich_trai_mat_dan_32led" 7 13 3 "FUNCTION"
+F N "diem_sang_dich_trai_mat_dan_32led" 7 47 ""
+V L "dl" 7 47 "int8" `1049 
+V L "chondelay" 7 47 "int8" `1050 
+F G "diem_sang_dich_trai_mat_dan_32led" 7 48 "void(int8 dl,int8 chondelay)" `1048 
+C L "diem_sang_dich_phai_mat_dan_32led" 7 13 3 "FUNCTION"
+F N "diem_sang_dich_phai_mat_dan_32led" 7 73 ""
+V L "dl" 7 73 "int8" `1052 
+V L "chondelay" 7 73 "int8" `1053 
+F G "diem_sang_dich_phai_mat_dan_32led" 7 74 "void(int8 dl,int8 chondelay)" `1051 
+C L "dao_dl_32bit_va_xuat" 7 13 3 "FUNCTION"
+F N "dao_dl_32bit_va_xuat" 7 99 ""
+F G "dao_dl_32bit_va_xuat" 7 100 "void()" `1054 
+F N "sang_tat_32led" 7 104 ""
+V L "dl" 7 104 "int8" `1056 
+V L "chondelay" 7 104 "int8" `1057 
+F G "sang_tat_32led" 7 105 "void(int8 dl,int8 chondelay)" `1055 
+C L "sang_tat_dan_ngoai_vao_32led" 7 13 3 "FUNCTION"
+F N "sang_tat_dan_ngoai_vao_32led" 7 120 ""
+V L "dl" 7 120 "int8" `1059 
+V L "chondelay" 7 120 "int8" `1060 
+F G "sang_tat_dan_ngoai_vao_32led" 7 121 "void(int8 dl,int8 chondelay)" `1058 
+C L "sang_tat_dan_trong_ra_32led" 7 13 3 "FUNCTION"
+F N "sang_tat_dan_trong_ra_32led" 7 142 ""
+V L "dl" 7 142 "int8" `1062 
+V L "chondelay" 7 142 "int8" `1063 
+F G "sang_tat_dan_trong_ra_32led" 7 143 "void(int8 dl,int8 chondelay)" `1061 
+C L "sang_tat_dan_phai_sang_trai_2x16led" 7 13 3 "FUNCTION"
+F N "sang_tat_dan_phai_sang_trai_2x16led" 7 164 ""
+V L "dl" 7 164 "int8" `1065 
+V L "chondelay" 7 164 "int8" `1066 
+F G "sang_tat_dan_phai_sang_trai_2x16led" 7 165 "void(int8 dl,int8 chondelay)" `1064 
+C L "sang_tat_dan_trai_sang_phai_2x16led" 7 13 3 "FUNCTION"
+F N "sang_tat_dan_trai_sang_phai_2x16led" 7 184 ""
+V L "dl" 7 184 "int8" `1068 
+V L "chondelay" 7 184 "int8" `1069 
+F G "sang_tat_dan_trai_sang_phai_2x16led" 7 185 "void(int8 dl,int8 chondelay)" `1067 
+C L "sang_tat_dan_pst_32led" 7 13 3 "FUNCTION"
+F N "sang_tat_dan_pst_32led" 7 204 ""
+V L "dl" 7 204 "int8" `1071 
+V L "chondelay" 7 204 "int8" `1072 
+F G "sang_tat_dan_pst_32led" 7 205 "void(int8 dl,int8 chondelay)" `1070 
+C L "sang_tat_dan_tsp_32led" 7 13 3 "FUNCTION"
+F N "sang_tat_dan_tsp_32led" 7 224 ""
+V L "dl" 7 224 "int8" `1074 
+V L "chondelay" 7 224 "int8" `1075 
+F G "sang_tat_dan_tsp_32led" 7 225 "void(int8 dl,int8 chondelay)" `1073 
+C L "diem_sang_di_chuyen_pst_32led" 7 13 3 "FUNCTION"
+F N "diem_sang_di_chuyen_pst_32led" 7 245 ""
+V L "dl" 7 245 "int8" `1077 
+V L "chondelay" 7 245 "int8" `1078 
+F G "diem_sang_di_chuyen_pst_32led" 7 246 "void(int8 dl,int8 chondelay)" `1076 
+C L "diem_sang_di_chuyen_tsp_32led" 7 13 3 "FUNCTION"
+F N "diem_sang_di_chuyen_tsp_32led" 7 266 ""
+V L "dl" 7 266 "int8" `1080 
+V L "chondelay" 7 266 "int8" `1081 
+F G "diem_sang_di_chuyen_tsp_32led" 7 267 "void(int8 dl,int8 chondelay)" `1079 
+C L "sang_don_pst_32led" 7 13 3 "FUNCTION"
+F N "sang_don_pst_32led" 7 287 ""
+V L "dl" 7 287 "int8" `1083 
+V L "chondelay" 7 287 "int8" `1084 
+F G "sang_don_pst_32led" 7 288 "void(int8 dl,int8 chondelay)" `1082 
+C L "sang_don_tsp_32led" 7 13 3 "FUNCTION"
+F N "sang_don_tsp_32led" 7 312 ""
+V L "dl" 7 312 "int8" `1086 
+V L "chondelay" 7 312 "int8" `1087 
+F G "sang_don_tsp_32led" 7 313 "void(int8 dl,int8 chondelay)" `1085 
+C L "sang_don_tnt_32led" 7 13 3 "FUNCTION"
+F N "sang_don_tnt_32led" 7 338 ""
+V L "dl" 7 338 "int8" `1089 
+V L "chondelay" 7 338 "int8" `1090 
+F G "sang_don_tnt_32led" 7 339 "void(int8 dl,int8 chondelay)" `1088 
+C L "sang_don_ttr_32led" 7 13 3 "FUNCTION"
+F N "sang_don_ttr_32led" 7 368 ""
+V L "dl" 7 368 "int8" `1092 
+V L "chondelay" 7 368 "int8" `1093 
+F G "sang_don_ttr_32led" 7 369 "void(int8 dl,int8 chondelay)" `1091 
+V G "systemTick" 0 7 "uintmax_t" `1096 
+V G "trangThaiLed" 0 8 "int8" `1097  "bien trang thai"
+V G "testTrangThai" 0 9 "int1" `1098 
+V G "bienDem" 0 10 "int8" `1099 
+V G "hangDonVi" 0 11 "int8" `1100 
+V G "hangChuc" 0 12 "int8" `1101 
+F N "ngatTimer1" 0 17 ""
+F G "ngatTimer1" 0 18 "void()" `1102 
+F N "hardwareInit" 0 25 ""
+F G "hardwareInit" 0 26 "void()" `1103 
+F N "MAIN" 0 38 ""
+F G "MAIN" 0 39 "void()" `1104 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1

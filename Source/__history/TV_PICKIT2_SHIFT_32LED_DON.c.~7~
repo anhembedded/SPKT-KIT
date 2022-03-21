@@ -364,7 +364,7 @@ void sang_don_tnt_32led(unsigned int8 dl,chondelay)
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //32 led: sang don  tu ngoai vao
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx OK
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 void sang_don_ttr_32led(unsigned int8 dl,chondelay)
 {       
    if(i16>0)

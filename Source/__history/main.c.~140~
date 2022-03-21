@@ -63,7 +63,7 @@ void main()
             trangThaiLed = 0;
          }
       }
-      xuat_4led_7doan_4so(MA7DOAN[hangChuc],MA7DOAN[hangDonVi] , 0b0111111, MA7DOAN[trangThaiLed]);
+      xuat_4led_7doan_4so(MA7DOAN[hangChuc],MA7DOAN[hangDonVi] , 0b0011111, MA7DOAN[trangThaiLed]);
       
        
     if(trangThaiLed == 0)

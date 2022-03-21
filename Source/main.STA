@@ -1,56 +1,81 @@
 
-ROM used:   634/131072 (0%)
-            634/131072 (0%) including unused fragments
+ROM used:   2996/131072 (2%)
+            2996/131072 (2%) including unused fragments
 
-            0.2 Average locations per line
-            1.0 Average locations per statement
+            0.7 Average locations per line
+            4.4 Average locations per statement
 
-RAM used:   84/3936 (2%) at main() level
-            104/3936 (3%) worst case
+RAM used:   115/3936 (3%) at main() level
+            132/3936 (3%) worst case
 
-Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack used: 1 worst case (0 in main + 1 for interrupts)
 Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   74    33   5  main.c
-   13     0   0  main.h
-  952     0   0  C:\Program Files (x86)\PICC\Devices\18F6722.h
+  117    57   8  main.c
+   14     0   0  main.h
+  952     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18F6722.h
+  195     0   0  ..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
   175   114  17  TV_PICKIT2_SHIFT_1.c
    50     0   0  TV_PICKIT2_SHIFT_1.h
- 2228   258  40  C:\Program Files (x86)\PICC\Drivers\math.h
-  394   248  38  TV_PICKIT2_SHIFT_32LED_DON.c
+ 2228   258  38  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  394   248  37  TV_PICKIT2_SHIFT_32LED_DON.c
 ----- -----
- 3886   653 Total
+ 4125   677 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
-0     40   3    1   1121 10.1  @delay_ms1
-0      8   1    0     17  0.8  buzzer_off
-0     88   7    9    154  1.8  xuat_32led_don_1dw
-0     66   5    4    167  2.1  xuat_4led_7doan_4so
-0    102   8    2    287  4.2  hien_thi_8led_7doan_quet_all
-0      8   1    0     17  0.8  triac_2_off
-0     60   5    0    310  1.9  set_up_port_ic_chot
-0    258  20    0    195  3.1  MAIN
- Inline         0    213  5.4  @cinit1
+0     38   1    1             @delay_ms1
+0     36   1    0             @const954
+0      8   0    0     17  0.8  buzzer_off
+0     62   1    7    160  2.4  xuat_32led_don_2word
+0     86   1    9    154  1.8  xuat_32led_don_1dw
+0    208   3    5    804  6.2  inputcd
+0     62   1    6             @WRITEBITA
+0     50   1    5             @READBITA
+0     50   1    4    167  2.1  xuat_4led_7doan_4so
+0    100   2    2    287  4.2  hien_thi_8led_7doan_quet_all
+0      8   0    0     17  0.8  triac_2_off
+0     60   1    0    310  1.9  set_up_port_ic_chot
+0    158   3    0    603  2.9  reset_toan_bo_bien
+0     20   0    2    117  3.5  tang_dem_led_delay_1
+0     16   0    1     68  2.4  tang_dem_led_delay_0
+0     20   0    2     82  3.1  delay_chon
+0    100   2    4    341  4.7  sang_tat_dan_phai_sang_trai_2x16led
+0    106   2    4    341  4.7  sang_tat_dan_trai_sang_phai_2x16led
+0    130   2    7    315  4.6  sang_tat_dan_pst_32led
+0    120   2    7    315  4.6  sang_tat_dan_tsp_32led
+0    106   2    3    328  4.7  diem_sang_di_chuyen_pst_32led
+0    106   2    3    328  4.7  diem_sang_di_chuyen_tsp_32led
+0    132   2    3    381  6.6  sang_don_pst_32led
+0    132   2    3    381  6.6  sang_don_tsp_32led
+0    136   2    2    533  7.2  sang_don_tnt_32led
+0    136   2    2    535  7.0  sang_don_ttr_32led
+0     32   1    0     38  1.7  ngatTimer1
+0     36   1    0    145  2.6  hardwareInit
+0    516   9    3   1435  6.8  MAIN
+0     40   1    3    569  6.2  @DIV88
+ Inline         0             @cinit1
 
 Program metrics:
-    Functions               9
-    Statements              653
-    Comments                478
-    Volume (V)              3706
-    Difficulty (D)          31.5
-    Effort to implement (E) 116726
-    Time to implement (T)   1 hours, 48 minutes
-    Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   11
-    Maintainability (MI)    22
+    Functions               26
+    Statements              677
+    Comments                498
+    Volume (V)              15696
+    Difficulty (D)          105.9
+    Effort to implement (E) 1662183
+    Time to implement (T)   25 hours, 39 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   53
+    Maintainability (MI)    108
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-0FFFE   630  64902  
+00004-00006     0  4  
+00008-000BC   182  0  
+000BE-0FFFE  2810  62536  
 10000-1FFFE     0  65536  
 
 

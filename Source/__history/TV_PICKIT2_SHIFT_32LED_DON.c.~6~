@@ -262,7 +262,7 @@ void diem_sang_di_chuyen_pst_32led(unsigned int8 dl,chondelay)
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //32 led: diem sang di chueyn tu trai sang phai
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx OK
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 void diem_sang_di_chuyen_tsp_32led(unsigned int8 dl,chondelay)
 {        
    if (dem_led==0)
@@ -283,7 +283,7 @@ void diem_sang_di_chuyen_tsp_32led(unsigned int8 dl,chondelay)
 } 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //32 led: sang don  phai sang trai
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 void sang_don_pst_32led(unsigned int8 dl,chondelay)
 {       
    if(i32>0)
@@ -364,7 +364,7 @@ void sang_don_tnt_32led(unsigned int8 dl,chondelay)
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //32 led: sang don  tu ngoai vao
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx OK
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 void sang_don_ttr_32led(unsigned int8 dl,chondelay)
 {       
    if(i16>0)
