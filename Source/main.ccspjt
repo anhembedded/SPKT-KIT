@@ -33,6 +33,7 @@ D1_L9=[84298]Started Editing.
 D1_L10=[85337]Stopped Editing.
 D1_L11=[85966]Project Closed.
 D2=21-03-2022
+<<<<<<< Updated upstream
 D2_L=14
 D2_L1=[31215]Project Opened.
 D2_L2=[31580]Started Editing.
@@ -50,13 +51,22 @@ D2_L13=[39171]Stopped Editing.
 D2_E=78
 D2_D=0
 D2_L14=[39171]Project Closed.
+=======
+D2_L=2
+D2_L1=[60614]Project Opened.
+D2_L2=[60783]Project Closed.
+>>>>>>> Stashed changes
 
 [fileformats]
 forcecoff=0
 
 [Opened Files]
 1=main.c
+<<<<<<< Updated upstream
 t1=56
+=======
+t1=1
+>>>>>>> Stashed changes
 Count=6
 2=TV_PICKIT2_SHIFT_1.c
 t2=1
