@@ -1,0 +1,26 @@
+[PROJECT]
+Target=2_Dong_bai_310_32led_tong_hop.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_310_32led_tong_hop.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_310_32led_tong_hop.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_310_32led_tong_hop.c
+[Opened Files]
+1=2_Dong_bai_310_32led_tong_hop.c
+2=
+3=2_Dong_bai_305_16led_trai_std_tsp.c
+4=2_Dong_bai_306_32led_std_tnv.c
+5=2_Dong_bai_303_choptat_32led.c
+6=2_Dong_bai_307_32led_std_ttr.c
+7=2_Dong_bai_308_32led_std_pst.c
+8=2_Dong_bai_309_32led_std_tsp.c
+9=
+[Units]
+Count=1
+1=2_Dong_bai_310_32led_tong_hop (main)

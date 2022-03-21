@@ -1,0 +1,14 @@
+void main()
+{
+   set_up_port();
+   lcd_setup();
+   lcd_goto_xy(0,0);
+   lcd_data("  NGUYEN THANH DAT  ");
+   lcd_goto_xy(1,0);
+   lcd_data("  MSSV: 18542107    ");
+   while(true)
+   {
+      delay_ms(1000);
+      lcd_command(lcd_shift_left);
+   }
+ }

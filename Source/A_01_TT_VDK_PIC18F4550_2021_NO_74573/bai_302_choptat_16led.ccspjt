@@ -1,0 +1,16 @@
+[PROJECT]
+Target=bai_302_choptat_16led.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=bai_302_choptat_16led.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[bai_302_choptat_16led.c]
+Type=4
+[mru-list]
+1=bai_302_choptat_16led.c
+[Units]
+Count=1
+1=bai_302_choptat_16led (main)

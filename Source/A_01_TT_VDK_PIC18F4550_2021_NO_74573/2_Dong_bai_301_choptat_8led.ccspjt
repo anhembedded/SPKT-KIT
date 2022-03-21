@@ -1,0 +1,55 @@
+[PROJECT]
+Target=2_Dong_bai_301_choptat_8led.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_301_choptat_8led.c
+[2_Dong_bai_301_choptat_8led.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_301_choptat_8led.c
+[Opened Files]
+1=..\..\..\D503\D503\Mo phong\bai301.c
+2=
+3=
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[Units]
+Count=1
+1=2_Dong_bai_301_choptat_8led (main)
+
+[ProjectLog]
+Days=2
+D1=14-03-2022
+D1_L=2
+D1_L1=[54661]Project Opened.
+D1_L2=[54689]Project Closed.
+D2=16-03-2022
+D2_L=22
+D2_L1=[70454]Project Opened.
+D2_L2=[70544]Started Editing.
+D2_L3=[70844]Stopped Editing.
+D2_L4=[71052]Started Editing.
+D2_L5=[71220]Stopped Editing.
+TotalEdit=10
+TotalDebug=0
+D2_E=10
+D2_D=0
+D2_L6=[71220]Project Closed.
+D2_L7=[71231]Project Opened.
+D2_L8=[71239]Project Closed.
+D2_L9=[71247]Project Opened.
+D2_L10=[71296]Started Editing.
+D2_L11=[71338]Stopped Editing.
+D2_L12=[71338]Project Closed.
+D2_L13=[71374]Project Opened.
+D2_L14=[71443]Started Editing.
+D2_L15=[71753]Stopped Editing.
+D2_L16=[71753]Project Closed.
+D2_L17=[71791]Project Opened.
+D2_L18=[71984]Project Closed.
+D2_L19=[71998]Project Opened.
+D2_L20=[72112]Project Closed.
+D2_L21=[72121]Project Opened.
+D2_L22=[72127]Project Closed.

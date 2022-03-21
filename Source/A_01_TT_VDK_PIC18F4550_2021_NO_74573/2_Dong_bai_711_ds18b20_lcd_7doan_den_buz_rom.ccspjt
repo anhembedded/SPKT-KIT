@@ -1,0 +1,16 @@
+[PROJECT]
+Target=2_Dong_bai_711_ds18b20_lcd_7doan_den_buz_rom.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_711_ds18b20_lcd_7doan_den_buz_rom.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+[Units]
+Count=1
+1=2_Dong_bai_711_ds18b20_lcd_7doan_den_buz_rom (main)

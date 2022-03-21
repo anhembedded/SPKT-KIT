@@ -1,0 +1,10 @@
+D G "__PCH__" 0 3 ""5.011""
+D G "__DEVICE__" 0 3 ""
+D G "__DATE__" 0 3 ""28-Nov-21""
+D G "__TIME__" 0 3 ""11:06:25""
+V G "gio" 0 1 "sint8" `34 
+V G "phut" 0 1 "sint8" `35 
+V G "giay" 0 1 "sint8" `36 
+V G "bdn" 0 1 "sint8" `37 
+V G "gt_mod" 0 1 "sint8" `38 
+V G "tg_chinh" 0 1 "sint8" `39 

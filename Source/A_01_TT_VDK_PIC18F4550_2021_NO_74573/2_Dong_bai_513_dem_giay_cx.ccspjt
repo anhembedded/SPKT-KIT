@@ -1,0 +1,19 @@
+[PROJECT]
+Target=2_Dong_bai_513_dem_giay_cx.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_513_dem_giay_cx.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_513_dem_giay_cx.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_513_dem_giay_cx.c
+[Opened Files]
+1=2_Dong_bai_513_dem_giay_cx.c
+2=
+[Units]
+Count=1
+1=2_Dong_bai_513_dem_giay_cx (main)

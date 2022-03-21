@@ -1,0 +1,149 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 rbdc
+004.0   step_motor_enable
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006     dl_btn
+007-00A dl_4l7d
+00B-012 dl_8l7dq
+013-01B time_w
+01C-024 time_r
+025-028 g_lcd
+029     lcd_ctrl
+029.0   lcd_e
+029.1   lcd_rw
+029.2   lcd_rs
+029.3   lcd_p
+02A-02B so_ng
+02C-02D so_tp
+02E.0   ttqn
+02E.1   buz_ena
+02F-042 hang0
+043-056 hang1
+057-06A hang2
+06B-07C hang3
+07D     i
+07E-07F xuat_1word.w
+07E     @delay_ms1.P1
+07E-081 atan2.y
+07E     lcd_goto_xy.x
+07E     MAIN.@SCRATCH1
+07F     lcd_goto_xy.y
+07F     lcd_data.db
+080     xuat_1word.b1
+080     lcd_goto_xy.@SCRATCH1
+081     xuat_1word.b0
+081     lcd_command.db
+082     lcd_xuat.db
+082-085 atan2.x
+083     xuat_lcd.lcd_ctr
+084     xuat_lcd.lcd_dta
+085     xuat_1byte.x
+085.7   xuat_1byte.msb
+086-089 atan2.z
+086     xuat_1byte.sb
+08A.0   atan2.sign
+08B     atan2.quad
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  lcd_vitri.call
+000014  lcd_vitri.data
+000018  @const1088.call
+00001A  @const1099.call
+000024  @const1101.call
+00003A  @const1146.call
+000046  xuat_1byte
+00006C  xuat_1word
+000082  xoa_tat_6module
+0000CE  set_up_port
+000108  xuat_glcd_lcd
+00012C  xuat_lcd
+00013C  lcd_xuat
+000162  lcd_command
+00016C  @delay_ms1
+000194  lcd_setup
+0001DC  lcd_goto_xy
+0001F6  lcd_data
+000200  MAIN
+000200  @cinit1
+000218  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_bai_601_lcd_hienthi_4hang.c                      [28-Nov-21 14:38  CRC=D7976846]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+
+Source signature=30232A97
+
+Units:
+    2_Dong_bai_601_lcd_hienthi_4hang (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_bai_601_lcd_hienthi_4hang.xsym
+    Errors:      2_Dong_bai_601_lcd_hienthi_4hang.err
+    Ext Symbols: 2_Dong_bai_601_lcd_hienthi_4hang.esym
+    INHX32:      2_Dong_bai_601_lcd_hienthi_4hang.hex
+    Symbols:     2_Dong_bai_601_lcd_hienthi_4hang.sym
+    List:        2_Dong_bai_601_lcd_hienthi_4hang.lst
+    Debug/COFF:  2_Dong_bai_601_lcd_hienthi_4hang.cof
+    Project:     2_Dong_bai_601_lcd_hienthi_4hang.ccspjt
+    Call Tree:   2_Dong_bai_601_lcd_hienthi_4hang.tre
+    Statistics:  2_Dong_bai_601_lcd_hienthi_4hang.STA

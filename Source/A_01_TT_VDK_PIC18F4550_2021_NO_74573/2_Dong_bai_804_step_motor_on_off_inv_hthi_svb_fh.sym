@@ -1,0 +1,186 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006     dl_btn
+007-00A dl_4l7d
+00B-012 dl_8l7dq
+013-01B time_w
+01C-024 time_r
+025-028 g_lcd
+029.0   lcd_e
+029     lcd_ctrl
+029.1   lcd_rw
+029.2   lcd_rs
+029.3   lcd_p
+02A-02B so_ng
+02C-02D so_tp
+02E.0   ttqn
+02E.1   buz_ena
+02E.2   stepmotor_tn
+02E.3   stepmotor_onoff
+02E.4   stepmotor_fh
+02F-036 stepmotor_fs
+037-046 stepmotor_hs
+047     stepmotor_i
+048     stepmotor_delay
+049     y
+04A-04B sb
+04C-04D sv
+04E-04F phim_bt3_c2.dl
+04E-04F xuat_1word.w
+04E-04F buzzer_on_off.dl
+04E-051 atan2.y
+04E-04F phim_bt2_c2.dl
+04E-04F md4l7d_giaima_4so_vitri_vn.x
+04E     step_motor_on_off_inv.@SCRATCH1
+04E     hienthi_sb_sv_17d.@SCRATCH1
+04F     xuat_32led_don_4byte.bld3
+04F     hienthi_sb_sv_17d.@SCRATCH2
+050     xuat_1word.b1
+050     xuat_32led_don_4byte.bld2
+050     md4l7d_giaima_4so_vitri_vn.y
+050     xuat_buzzer_relay.rbdc1
+050     phim_bt2_c2.@SCRATCH1
+050     phim_bt3_c2.@SCRATCH1
+050     buzzer_on_off.@SCRATCH1
+050     hienthi_sb_sv_17d.@SCRATCH3
+051     @delay_ms1.P1
+051     @delay_us1.P2
+051     xuat_32led_don_4byte.bld1
+051     xuat_1word.b0
+051     xuat_buzzer_relay.rbdc2
+051     md4l7d_giaima_4so_vitri_vn.xvn
+052-055 atan2.x
+052     xuat_32led_don_4byte.bld0
+052     md4l7d_giaima_4so_vitri_vn.@SCRATCH1
+053     xuat_1byte.x
+053.7   xuat_1byte.msb
+053     md4l7d_giaima_4so_vitri_vn.@SCRATCH2
+054     xuat_1byte.sb
+054     md4l7d_giaima_4so_vitri_vn.@SCRATCH3
+055     md4l7d_giaima_4so_vitri_vn.@SCRATCH4
+056-057 @DIV1616.P1
+056-059 atan2.z
+056     md4l7d_giaima_4so_vitri_vn.@SCRATCH5
+058-059 @DIV1616.P1
+05A.0   atan2.sign
+05A     @DIV1616.@SCRATCH1
+05B     atan2.quad
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  @const1088.call
+000026  @const1099.call
+000030  @const1101.call
+000046  @const1146.call
+000052  xuat_1byte
+000078  xuat_1word
+00008E  xoa_tat_6module
+0000DA  set_up_port
+000114  @DIV1616
+000156  md4l7d_giaima_4so_vitri_vn
+00030E  xuat_4led_7doan_4so
+000332  hienthi_sb_sv_17d
+000374  xuat_32led_don_4byte
+000396  @delay_us1
+0003B0  phim_bt2_c2
+0003EA  xuat_buzzer_relay
+000408  @delay_ms1
+00042E  buzzer_on_off
+000452  step_motor_on_off_inv
+0004BA  phim_bt3_c2
+0004F4  step_motor_quay_thuan_fs
+000522  step_motor_quay_nghich_fs
+000550  step_motor_run_tn_fs
+00055E  step_motor_quay_thuan_hs
+00058C  step_motor_quay_nghich_hs
+0005BA  step_motor_run_tn_hs
+0005C8  step_motor_run_fs_hs
+0005D6  @cinit1
+0005D6  MAIN
+0005F8  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.c      [03-Dec-21 21:01  CRC=A70BFCA6]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+    tv_08_step_motor.c                                      [22-Nov-21 16:44  CRC=F99683B1]
+    2_Dong_bai_801_step_motor_on_off_inv_tv.c               [03-Dec-21 20:10  CRC=43E846E8]
+
+Source signature=F286DE59
+
+Units:
+    2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.xsym
+    Errors:      2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.err
+    Ext Symbols: 2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.esym
+    INHX32:      2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.hex
+    Symbols:     2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.sym
+    List:        2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.lst
+    Debug/COFF:  2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.cof
+    Project:     2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.ccspjt
+    Call Tree:   2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.tre
+    Statistics:  2_Dong_bai_804_step_motor_on_off_inv_hthi_svb_fh.STA

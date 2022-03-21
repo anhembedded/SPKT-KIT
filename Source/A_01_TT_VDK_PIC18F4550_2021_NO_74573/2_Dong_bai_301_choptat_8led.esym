@@ -1,0 +1,12 @@
+D G "__PCH__" 3 23 ""5.025""
+D G "__DEVICE__" 3 23 ""
+D G "__DATE__" 3 23 ""16-Mar-22""
+D G "__TIME__" 3 23 ""19:57:04"" "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+D G "co_nhan" 3 4 "1"
+D G "khong_nhan" 3 5 "0"
+D G "c_ktnp" 3 6 "1" "co kiem tra nha phim"
+D G "" 3 7 "0" "khong kiem tra nha phim"
+V G "dl_btn" 3 14 "int8" `34 
+D G "phim_on_c1" 3 19 "phim_bt0_c1"
+D G "phim_run_c1" 3 20 "phim_bt0_c1"
+D G "phim_up_c1" 3 21 "phim_bt0_c1"

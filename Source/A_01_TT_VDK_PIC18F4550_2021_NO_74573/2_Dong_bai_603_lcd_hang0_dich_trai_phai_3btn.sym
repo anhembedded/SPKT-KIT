@@ -1,0 +1,215 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016.0   step_motor_enable
+016-017 rbdc
+016.1   step_motor_in1
+016.2   step_motor_in2
+016.3   step_motor_in3
+016.4   step_motor_in4
+016.5   dc_enable
+016.6   pwrkey
+017.0   buzzer
+017.1   triac_1
+017.2   triac_2
+017.3   relay_1
+017.4   relay_2
+018     dl_btn
+019-01C dl_4l7d
+01D-024 dl_8l7dq
+025-02D time_w
+02E-036 time_r
+037-03A g_lcd
+03B     lcd_ctrl
+03B.0   lcd_e
+03B.1   lcd_rw
+03B.2   lcd_rs
+03B.3   lcd_p
+03C-03D so_ng
+03E-03F so_tp
+040.0   ttqn
+040.1   buz_ena
+041     i
+042     tt
+043     tam
+044-05C hang0
+05D-073 hang1
+074-089 hang2
+08A-09F hang3
+0A0     bdn
+0A1-0A4 xuat_32led_don_1dw.dwld
+0A1     @delay_ms1.P1
+0A1-0A2 phim_bt1_c2.dl
+0A1-0A4 atan2.y
+0A1-0A2 phim_bt0_c2.dl
+0A1-0A2 phim_bt2_c2.dl
+0A1-0A2 xuat_1word.w
+0A1     lcd_puts.x
+0A1     hang0_dich_trai.@SCRATCH1
+0A1     hang0_dich_phai.@SCRATCH1
+0A2     lcd_puts.y
+0A2     hang0_dich_trai.@SCRATCH2
+0A2     hang0_dich_phai.@SCRATCH2
+0A3-0A4 lcd_puts.str
+0A3     xuat_1word.b1
+0A3     phim_bt0_c2.@SCRATCH1
+0A3     phim_bt1_c2.@SCRATCH1
+0A3     phim_bt2_c2.@SCRATCH1
+0A3     hang0_dich_trai.@SCRATCH3
+0A3     hang0_dich_phai.@SCRATCH3
+0A4     @delay_us1.P1
+0A4     xuat_1word.b0
+0A5-0A8 atan2.x
+0A5     lcd_goto_xy.x
+0A5-0A6 xuat_32led_don_1dw.wd1
+0A5     lcd_puts.@SCRATCH1
+0A6     lcd_data.db
+0A6     lcd_goto_xy.y
+0A7-0A8 xuat_32led_don_1dw.wd0
+0A7     lcd_goto_xy.@SCRATCH1
+0A8     lcd_command.db
+0A9-0AA xuat_32led_don_2word.wld1
+0A9-0AC atan2.z
+0A9     lcd_xuat.db
+0A9     xuat_32led_don_1dw.@SCRATCH1
+0AA     xuat_lcd.lcd_ctr
+0AB     xuat_lcd.lcd_dta
+0AB-0AC xuat_32led_don_2word.wld0
+0AD.0   atan2.sign
+0AD     xuat_32led_don_2word.b3
+0AE     atan2.quad
+0AE     xuat_32led_don_2word.b2
+0AF     xuat_32led_don_2word.b1
+0B0     xuat_32led_don_2word.b0
+0B1     xuat_32led_don_4byte.bld3
+0B2     xuat_32led_don_4byte.bld2
+0B3     xuat_32led_don_4byte.bld1
+0B4     xuat_32led_don_4byte.bld0
+0B5     xuat_1byte.x
+0B5.7   xuat_1byte.msb
+0B6     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  lcd_vitri.call
+0000B0  lcd_vitri.data
+0000B4  @const1088.call
+0000B6  @const1099.call
+0000C0  @const1101.call
+0000D6  @const1146.call
+0000E2  timer3_ct_con_ngat
+0000F2  xuat_1byte
+000118  xuat_1word
+00012E  xoa_tat_6module
+00017A  set_up_port
+0001B4  xuat_glcd_lcd
+0001D8  xuat_lcd
+0001E8  lcd_xuat
+00020E  lcd_command
+000218  @delay_ms1
+00023E  lcd_setup
+000286  lcd_goto_xy
+0002A0  lcd_data
+0002AC  lcd_puts
+000336  @delay_us1
+000350  phim_bt0_c2
+00038A  xuat_32led_don_4byte
+0003AE  xuat_32led_don_2word
+0003D4  xuat_32led_don_1dw
+0003F8  phim_dich_trai
+000416  phim_bt2_c2
+000450  phim_dich_phai
+00046E  phim_bt1_c2
+0004A8  phim_ngung
+0004C4  hang0_dich_trai
+000514  hang0_dich_phai
+000564  kiem_tra_dich_h0
+000590  MAIN
+000590  @cinit1
+0005AA  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.c          [28-Nov-21 14:50  CRC=B42502B6]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+
+Source signature=0CB0C507
+
+Units:
+    2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.xsym
+    Errors:      2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.err
+    Ext Symbols: 2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.esym
+    INHX32:      2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.hex
+    Symbols:     2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.sym
+    List:        2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.lst
+    Debug/COFF:  2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.cof
+    Project:     2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.ccspjt
+    Call Tree:   2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.tre
+    Statistics:  2_Dong_bai_603_lcd_hang0_dich_trai_phai_3btn.STA

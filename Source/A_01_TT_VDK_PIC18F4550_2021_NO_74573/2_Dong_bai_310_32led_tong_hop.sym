@@ -1,0 +1,198 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006     dl_btn
+007-00A dl_4l7d
+00B-012 dl_8l7dq
+013-01B time_w
+01C-024 time_r
+025-028 g_lcd
+029     lcd_ctrl
+029.0   lcd_e
+029.1   lcd_rw
+029.2   lcd_rs
+029.3   lcd_p
+02A-02B so_ng
+02C-02D so_tp
+02E.0   ttqn
+02E.1   buz_ena
+02F-030 xuat_1word.w
+02F     h310_32led_std_tsp_nlan.n
+02F-032 atan2.y
+02F     h310_32led_std_tnv_nlan.n
+02F     h310_32led_chop_tat_nlan.n
+02F     h310_32led_std_pst_nlan.n
+02F     h310_32led_std_ttr_nlan.n
+030-031 h310_32led_std_ttr_nlan.dl
+030-031 h310_32led_std_tnv_nlan.dl
+030-031 h310_32led_std_pst_nlan.dl
+030-031 h310_32led_std_tsp_nlan.dl
+030-031 h310_32led_chop_tat_nlan.dl
+031     xuat_1word.b1
+032     h310_32led_chop_tat_nlan.j
+032     h310_32led_std_tsp_nlan.j
+032     h310_32led_std_tnv_nlan.j
+032     xuat_1word.b0
+032     h310_32led_std_ttr_nlan.j
+032     h310_32led_std_pst_nlan.j
+033-036 atan2.x
+033-034 b307_32led_std_ttr.dl
+033-034 b309_32led_std_tsp.dl
+033-034 b308_32led_std_pst.dl
+033-034 b303_32led_chop_tat.dl
+033-034 b306_32led_std_tnv.dl
+035     b309_32led_std_tsp.i
+035     b306_32led_std_tnv.i
+035     b308_32led_std_pst.i
+035     b307_32led_std_ttr.i
+035     b303_32led_chop_tat.@SCRATCH1
+036-039 b308_32led_std_pst.x
+036-037 b307_32led_std_ttr.LT
+036-037 b306_32led_std_tnv.LT
+036-039 b309_32led_std_tsp.x
+037-03A atan2.z
+038-039 b306_32led_std_tnv.LP
+038-039 b307_32led_std_ttr.LP
+03A-03D xuat_32led_don_1dw.dwld
+03A     b306_32led_std_tnv.@SCRATCH1
+03A     b307_32led_std_ttr.@SCRATCH1
+03A     b308_32led_std_pst.@SCRATCH1
+03A     b309_32led_std_tsp.@SCRATCH1
+03B     @delay_ms1.P1
+03B.0   atan2.sign
+03B     b306_32led_std_tnv.@SCRATCH2
+03B     b307_32led_std_ttr.@SCRATCH2
+03B     b308_32led_std_pst.@SCRATCH2
+03B     b309_32led_std_tsp.@SCRATCH2
+03C     atan2.quad
+03C     b308_32led_std_pst.@SCRATCH3
+03C     b309_32led_std_tsp.@SCRATCH3
+03D     b308_32led_std_pst.@SCRATCH4
+03D     b309_32led_std_tsp.@SCRATCH4
+03E-03F xuat_32led_don_1dw.wd1
+03E     b308_32led_std_pst.@SCRATCH5
+03E     b309_32led_std_tsp.@SCRATCH5
+040-041 xuat_32led_don_1dw.wd0
+042-043 xuat_32led_don_2word.wld1
+042     xuat_32led_don_1dw.@SCRATCH1
+044-045 xuat_32led_don_2word.wld0
+046     xuat_32led_don_2word.b3
+047     xuat_32led_don_2word.b2
+048     xuat_32led_don_2word.b1
+049     xuat_32led_don_2word.b0
+04A     xuat_32led_don_4byte.bld3
+04B     xuat_32led_don_4byte.bld2
+04C     xuat_32led_don_4byte.bld1
+04D     xuat_32led_don_4byte.bld0
+04E     xuat_1byte.x
+04E.7   xuat_1byte.msb
+04F     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const1088.call
+000006  @const1099.call
+000010  @const1101.call
+000026  @const1146.call
+000032  xuat_1byte
+000058  xuat_1word
+00006E  xoa_tat_6module
+0000BA  set_up_port
+0000F4  xuat_32led_don_4byte
+000116  @delay_ms1
+00013C  b303_32led_chop_tat
+00019C  h310_32led_chop_tat_nlan
+0001B4  xuat_32led_don_2word
+0001D8  xuat_32led_don_1dw
+0001FC  b308_32led_std_pst
+0002A8  h310_32led_std_pst_nlan
+0002C2  b309_32led_std_tsp
+000364  h310_32led_std_tsp_nlan
+00037E  b306_32led_std_tnv
+000428  h310_32led_std_tnv_nlan
+000442  b307_32led_std_ttr
+0004EC  h310_32led_std_ttr_nlan
+000506  MAIN
+000506  @cinit1
+00051E  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_bai_310_32led_tong_hop.c                         [27-Nov-21 18:12  CRC=F6E4ACC1]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+
+Source signature=4F706F12
+
+Units:
+    2_Dong_bai_310_32led_tong_hop (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_bai_310_32led_tong_hop.xsym
+    Errors:      2_Dong_bai_310_32led_tong_hop.err
+    Ext Symbols: 2_Dong_bai_310_32led_tong_hop.esym
+    INHX32:      2_Dong_bai_310_32led_tong_hop.hex
+    Symbols:     2_Dong_bai_310_32led_tong_hop.sym
+    List:        2_Dong_bai_310_32led_tong_hop.lst
+    Debug/COFF:  2_Dong_bai_310_32led_tong_hop.cof
+    Project:     2_Dong_bai_310_32led_tong_hop.ccspjt
+    Call Tree:   2_Dong_bai_310_32led_tong_hop.tre
+    Statistics:  2_Dong_bai_310_32led_tong_hop.STA

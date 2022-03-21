@@ -1,0 +1,27 @@
+ÀÄ2_Dong_bai_407_cai_gh_0_99_2bt_up
+   ÀÄMAIN  0/134  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/76  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄhienthi_4led7doan  0/50  Ram=1
+      ³  ÃÄ@const652  0/32  Ram=0
+      ³  ÃÄ@const652  0/32  Ram=0
+      ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÀÄb407_upc_upd_g_han  0/30  Ram=1
+         ÃÄphim_bt0_c2  0/58  Ram=3
+         ³  ÀÄ@delay_us1  0/28  Ram=1
+         ÀÄhienthi_4led7doan  0/50  Ram=1
+            ÀÄ*

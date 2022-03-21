@@ -1,0 +1,36 @@
+#include <tv_kit_vdk_pic_all.c>
+#include <2_Dong_bai_411_dem_xung_t0_tv.c>
+void main()
+{
+   set_up_port();
+   setup_timer_0(t0_ext_l_to_h|t0_div_1);
+   set_timer0(0); t0_tam = 1; g_han = 50;
+   while(true)
+   {
+      b411_dem_xung_ngoai_t0;
+   }
+}
+
+unsigned int8  t0, t0_tam, g_han;
+
+void b411_hienthi_4led7doan()
+{    
+   md4l7d_giaima_2so_vitri_vn(t0,3,cx_vn);
+   md4l7d_giaima_2so_vitri_vn(g_han,3,cx_vn);
+   xuat_4led_7doan_4so();
+}  
+void b411_dem_xung_ngoai_t0()
+{  
+   t0 = get_timer0();
+   if(t0_tam!=t0)
+   {
+      t0_tam = t0;
+      b411_hienthi_4led7doan();
+      if (t0>=g_han)
+      {
+         set_timer0(0);
+         buzzer_on_off(300);
+      }
+   }
+} 
+

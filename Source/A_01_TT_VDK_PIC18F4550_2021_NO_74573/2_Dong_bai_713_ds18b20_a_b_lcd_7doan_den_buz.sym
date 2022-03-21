@@ -1,0 +1,275 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006     dl_btn
+007-00A dl_4l7d
+00B-012 dl_8l7dq
+013-01B time_w
+01C-024 time_r
+025-028 g_lcd
+029     lcd_ctrl
+029.0   lcd_e
+029.1   lcd_rw
+029.2   lcd_rs
+029.3   lcd_p
+02A-02B so_ng
+02C-02D so_tp
+02E.0   ttqn
+02E.1   buz_ena
+02F     ds18a_ng
+030     ds18a_ngt
+031-032 ds18a_w
+033-034 ds18a_tp
+035-036 ds18a_tpt
+037     ds18b_ng
+038     ds18b_ngt
+039-03A ds18b_w
+03B-03C ds18b_tp
+03D-03E ds18b_tpt
+03F-046 ds_a
+047-04E ds_b
+04F     i
+050     md4l7d_giaima_2so_vitri_vn.x
+050     ds18b20_read_temp_mr.tt
+050     lcd_khoi_tao_cgram_so_to.i
+050-053 atan2.y
+050-051 lcd_gm_ht_2so_to_xvn.so
+050-051 @MUL1616.P1
+050     so_sanh_1nd_dk_buzzer.nd1
+050-051 xuat_1word.w
+050     @PSTRINGC_965.@SCRATCH1
+050     ds18b20_a_ht_lcd.@SCRATCH1
+050     ds18b20_b_ht_lcd.@SCRATCH1
+050     MAIN.@SCRATCH1
+051     xuat_buzzer_relay.rbdc1
+051     md4l7d_giaima_2so_vitri_vn.y
+051     @delay_ms1.P1
+051     ds18b20_read_temp_mr.bl
+051     lcd_khoi_tao_cgram_so_to.@SCRATCH1
+051     @PSTRINGC_965.@SCRATCH2
+051     so_sanh_1nd_dk_buzzer.@SCRATCH1
+051     ds18b20_a_ht_lcd.@SCRATCH2
+051     ds18b20_b_ht_lcd.@SCRATCH2
+052     lcd_gm_ht_2so_to_xvn.x
+052     md4l7d_giaima_2so_vitri_vn.xvn
+052     ds18b20_read_temp_mr.bh
+052     xuat_1word.b1
+052-053 lcd_gm_ht_3so_nho_xvn.so
+052-053 @MUL1616.P1
+052     xuat_buzzer_relay.rbdc2
+053     lcd_gm_ht_2so_to_xvn.y
+053     xuat_1word.b0
+053-054 ds18b20_read_temp_mr.w
+053     md4l7d_giaima_2so_vitri_vn.@SCRATCH1
+054-057 atan2.x
+054     lcd_gm_ht_2so_to_xvn.xvn
+054     lcd_gm_ht_3so_nho_xvn.x
+054     md4l7d_giaima_2so_vitri_vn.@SCRATCH2
+054     @MUL1616.@SCRATCH1
+055     touch_read_byte.i
+055.0   touch_present.present
+055     lcd_gm_ht_2so_to_xvn.ch
+055     lcd_gm_ht_3so_nho_xvn.y
+055     md4l7d_giaima_2so_vitri_vn.@SCRATCH3
+055     ds18b20_read_temp_mr.@SCRATCH1
+056     @DIV88.P1
+056     touch_write_byte.data
+056     touch_read_byte.data
+056     lcd_gm_ht_2so_to_xvn.dv
+056     lcd_gm_ht_3so_nho_xvn.xvn
+056     touch_present.@SCRATCH1
+057     @DIV88.P1
+057     lcd_xoa_so_to.x
+057     touch_write_byte.i
+057     lcd_gm_ht_3so_nho_xvn.tr
+057     @delay_us1.P1
+057.0   touch_read_bit.data
+057     lcd_gm_ht_2so_to_xvn.@SCRATCH1
+058     lcd_gm_ht_3so_nho_xvn.ch
+058     lcd_xoa_so_to.y
+058     lcd_hien_thi_so_to.so
+058-05B atan2.z
+058     @DIV88.@SCRATCH1
+058     lcd_gm_ht_2so_to_xvn.@SCRATCH2
+058     touch_write_byte.@SCRATCH1
+059     touch_write_bit.data
+059     lcd_xoa_so_to.i
+059     lcd_gm_ht_3so_nho_xvn.dv
+059     lcd_hien_thi_so_to.x
+05A     lcd_hien_thi_so_to.y
+05A     lcd_xoa_so_to.@SCRATCH1
+05A     lcd_gm_ht_3so_nho_xvn.@SCRATCH1
+05B     lcd_hien_thi_so_to.i
+05B     lcd_gm_ht_3so_nho_xvn.@SCRATCH2
+05C-05D @DIV1616.P1
+05C     @MUL88.P2
+05C.0   atan2.sign
+05C     lcd_hien_thi_so_to.@SCRATCH1
+05C     lcd_gm_ht_3so_nho_xvn.@SCRATCH3
+05D     @MUL88.P1
+05D     lcd_data.db
+05D     lcd_goto_xy.x
+05D     atan2.quad
+05D     lcd_hien_thi_so_to.@SCRATCH2
+05D     lcd_gm_ht_3so_nho_xvn.@SCRATCH4
+05E-05F @DIV1616.P1
+05E     lcd_goto_xy.y
+05F     lcd_goto_xy.@SCRATCH1
+060     lcd_command.db
+060     @DIV1616.@SCRATCH1
+061     lcd_xuat.db
+062     xuat_lcd.lcd_ctr
+063     xuat_lcd.lcd_dta
+064     xuat_1byte.x
+064.7   xuat_1byte.msb
+065     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  lcd_vitri.call
+000034  lcd_vitri.data
+000038  lcd_so_to.call
+000048  lcd_so_to.data
+000084  lcd_ma_8doan.call
+000094  lcd_ma_8doan.data
+0000D4  @const1088.call
+0000D6  @const1099.call
+0000E0  @const1101.call
+0000F6  @const1146.call
+000102  @const1193.call
+000104  @const1205.call
+000106  @const1221.call
+000110  @const1222.call
+00011A  xuat_1byte
+000140  xuat_1word
+000156  xoa_tat_6module
+0001A2  set_up_port
+0001DC  xuat_glcd_lcd
+000200  xuat_lcd
+000210  lcd_xuat
+000236  lcd_command
+000240  @delay_ms1
+000266  lcd_setup
+0002AE  lcd_data
+0002B8  lcd_khoi_tao_cgram_so_to
+0002E4  lcd_goto_xy
+0002FE  @PSTRINGC_965
+00031E  @delay_us1
+000338  touch_present
+000386  touch_write_bit
+0003F6  touch_write_byte
+000424  ds18b20_khoi_tao
+000452  touch_read_bit
+00048E  touch_read_byte
+0004B0  ds18b20_read_temp_mr
+00053E  @DIV1616
+000580  @MUL88
+0005CC  lcd_hien_thi_so_to
+000628  lcd_xoa_so_to
+00065C  lcd_gm_ht_2so_to_xvn
+0006DA  @MUL1616
+0006F8  lcd_gm_ht_3so_nho_xvn
+0007A0  ds18b20_a_ht_lcd
+000822  @DIV88
+00084A  md4l7d_giaima_2so_vitri_vn
+0008DC  xuat_4led_7doan_4so
+0008FE  ds18b20_a_ht_7doan
+000910  ds18b20_no_ds18b
+000922  ds18b20_a_doc_nhiet_do1
+000960  ds18b20_b_ht_lcd
+0009E4  ds18b20_b_ht_7doan
+0009F6  ds18b20_b_doc_nhiet_do1
+000A36  xuat_buzzer_relay
+000A58  buzzer_on
+000A60  triac_2_off
+000A68  buzzer_off
+000A6E  triac_2_on
+000A76  so_sanh_1nd_dk_buzzer
+000AAA  MAIN
+000AAA  @cinit1
+000AD0  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.c          [03-Dec-21 19:43  CRC=F20A021B]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+    2_Dong_bai_711_ds18a_tv.c                               [02-Dec-21 20:29  CRC=90702571]
+    2_Dong_bai_712_ds18b_tv.c                               [03-Dec-21 19:40  CRC=632D2BBB]
+
+Source signature=12E84F34
+
+Units:
+    2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.xsym
+    Errors:      2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.err
+    Ext Symbols: 2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.esym
+    INHX32:      2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.hex
+    Symbols:     2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.sym
+    List:        2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.lst
+    Debug/COFF:  2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.cof
+    Project:     2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.ccspjt
+    Call Tree:   2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.tre
+    Statistics:  2_Dong_bai_713_ds18b20_a_b_lcd_7doan_den_buz.STA

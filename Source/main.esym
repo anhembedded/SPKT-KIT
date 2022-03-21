@@ -1,9 +1,9 @@
-D G "__PCH__" 0 118 ""5.101""
-D G "__DEVICE__" 0 118 "6722"
-D G "__DATE__" 0 118 ""21-Mar-22""
-D G "__TIME__" 0 118 ""10:52:34""
-D G "_UNICODE" 0 118 ""?""
-D G "__EVAL" 0 118 ""?"" "Standard Header file for the PIC18F6722 device ////////////////"
+D G "__PCH__" 0 461 ""5.101""
+D G "__DEVICE__" 0 461 "6722"
+D G "__DATE__" 0 461 ""21-Mar-22""
+D G "__TIME__" 0 461 ""21:27:29""
+D G "_UNICODE" 0 461 ""?""
+D G "__EVAL" 0 461 ""?"" "Standard Header file for the PIC18F6722 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 F N "set_tris_a" 2 43 ""
 V L "value" 2 43 "int8" `55 
@@ -1916,17 +1916,59 @@ V L "dl" 7 368 "int8" `1092
 V L "chondelay" 7 368 "int8" `1093 
 F G "sang_don_ttr_32led" 7 369 "void(int8 dl,int8 chondelay)" `1091 
 V G "systemTick" 0 7 "uintmax_t" `1096 
-V G "trangThaiLed" 0 8 "int8" `1097  "bien trang thai"
-V G "testTrangThai" 0 9 "int1" `1098 
-V G "bienDem" 0 10 "int8" `1099 
-V G "hangDonVi" 0 11 "int8" `1100 
-V G "hangChuc" 0 12 "int8" `1101 
-F N "ngatTimer1" 0 17 ""
-F G "ngatTimer1" 0 18 "void()" `1102 
-F N "hardwareInit" 0 25 ""
-F G "hardwareInit" 0 26 "void()" `1103 
-F N "MAIN" 0 38 ""
-F G "MAIN" 0 39 "void()" `1104 
+V G "trangThaiLed" 0 8 "sint8" `1097 
+V G "ledRun" 0 9 "int1" `1098 
+V G "trangThaiDem" 0 10 "int1" `1099 
+V G "bienDem" 0 11 "int8" `1100 
+V G "hangDonVi" 0 12 "int8" `1101 
+V G "hangChuc" 0 13 "int8" `1102 
+F N "hardwareInit" 0 16 ""
+F G "hardwareInit" 0 17 "void()" `1103 
+F N "b301_8led_chop_tat" 0 23 ""
+V L "dl" 0 23 "int32" `1105 
+F G "b301_8led_chop_tat" 0 24 "void(int32 dl)" `1104 
+F N "b302_16led_chop_tat" 0 70 ""
+V L "dl" 0 70 "int32" `1110 
+F G "b302_16led_chop_tat" 0 71 "void(int32 dl)" `1109 
+F N "b303_32led_chop_tat" 0 120 ""
+V L "dl" 0 120 "int32" `1112 
+F G "b303_32led_chop_tat" 0 121 "void(int32 dl)" `1111 
+F N "b304_16led_phai_std_pst" 0 169 ""
+V L "dl" 0 169 "int32" `1114 
+F G "b304_16led_phai_std_pst" 0 170 "void(int32 dl)" `1113 
+V L "i" 0 171 "int8" `1115 
+V L "LP" 0 171 "int32" `1116 
+F N "b305_16led_trai_std_tsp" 0 228 ""
+V L "dl" 0 228 "int32" `1118 
+F G "b305_16led_trai_std_tsp" 0 229 "void(int32 dl)" `1117 
+V L "i" 0 230 "int8" `1119 
+V L "LT" 0 230 "int32" `1120 
+F N "b306_32led_std_tnv" 0 286 ""
+V L "dl" 0 286 "int32" `1122 
+F G "b306_32led_std_tnv" 0 287 "void(int32 dl)" `1121 
+V L "i" 0 288 "int8" `1123 
+V L "LT" 0 288 "int32" `1124 
+V L "LP" 0 288 "int32" `1125 
+F N "b307_32led_std_ttr" 0 347 ""
+V L "dl" 0 347 "int32" `1127 
+F G "b307_32led_std_ttr" 0 348 "void(int32 dl)" `1126 
+V L "i" 0 349 "int8" `1128 
+V L "LT" 0 349 "int32" `1129 
+V L "LP" 0 349 "int32" `1130 
+F N "b308_32led_std_pst" 0 392 ""
+V L "dl" 0 392 "int32" `1132 
+F G "b308_32led_std_pst" 0 393 "void(int32 dl)" `1131 
+V L "i" 0 394 "int8" `1133 
+V L "x" 0 394 "int32" `1134 
+F N "b309_32led_std_tsp" 0 438 ""
+V L "dl" 0 438 "int32" `1136 
+F G "b309_32led_std_tsp" 0 439 "void(int32 dl)" `1135 
+V L "i" 0 440 "int8" `1137 
+V L "x" 0 440 "int32" `1138 
+F N "led" 0 498 ""
+F G "led" 0 499 "void()" `1139 
+F N "MAIN" 0 615 ""
+F G "MAIN" 0 616 "void()" `1140 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1

@@ -1,0 +1,116 @@
+
+ROM used:   4074/32768 (12%)
+            4074/32768 (12%) including unused fragments
+
+            0.7 Average locations per line
+            3.7 Average locations per statement
+
+RAM used:   62/2048 (3%) at main() level
+            88/2048 (4%) worst case
+
+Stack used: 9 worst case (9 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   31    19   2  2_Dong_bai_703_lcd_7doan_lm35a_b_den_buz_bt3.c
+   21     0   0  tv_kit_vdk_pic_all.c
+  215    46   4  tv_00_define_18f4550.c
+  821     0   0  ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h
+  204    88   8  tv_01_4_nutnhan.c
+   98    63   6  tv_02_matran_phim4x4_138.c
+ 2229   257  23  ..\..\..\..\..\Program Files\PICC\Drivers\math.h
+   38    15   1  tv_03_32led_don.c
+  100    47   4  tv_04_4led_7doan.c
+  111    48   4  tv_05_8led_7doan_quet.c
+  132    45   4  tv_05_i2c_ds13_pcf.c
+   41    12   1  tv_06_lcd_glcd.c
+  409   198  18  tv_06_lcd.c
+   64    35   3  tv_dht11.c
+  130    37   3  tv_08_relay_triac_buzzer_dc.c
+  350    24   2  tv_07_adc_cb.c
+   98    39   4  tv_07_ds18b20.c
+  230    54   5  ..\..\..\..\..\Program Files\PICC\Drivers\touch.c
+   49    27   2  tv_07_i2c_at24cxx.c
+   48    20   2  tv_09_matran_led_mbi.c
+   28    16   1  2_Dong_bai_701_lm35a_tv.c
+   28    16   1  2_Dong_bai_702_lm35b_tv.c
+----- -----
+ 5475  1106 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0    1             @delay_ms1
+0     32   0    0             @const652
+0     38   0    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     76   1    0   344  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     56   1    4             @SFTOI
+0     54   1    2             @ITOF
+0    244   3   11             @MULFF
+0    618   8   16             @ADDFF
+0    346   4   14             @DIVFF
+0     42   1    0   152  1.8  xuat_4led_7doan_4so
+0    146   2    6   305  5.1  md4l7d_giaima_2so_vitri_vn
+0     40   0    3             @DIV88
+0     66   1    5             @DIV1616
+0     36   0    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   0    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     20   0    0             @const974
+0     26   0    3   145  3.9  lcd_goto_xy
+0     76   1    0             @const980
+0     80   1    0             @const984
+0     44   1    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0    100   1    6   280  5.8  lcd_hien_thi_so_to
+0     76   1    2             @MUL88
+0     58   1    4   241  5.3  lcd_xoa_so_to
+0    128   2    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0     80   1    4   197  2.8  lcd_hien_thi_2so_tp_nho
+0      2   0    0             @const1088
+0     32   0    2             @PSTRINGC_965
+0     10   0    0             @const1099
+0     22   0    0             @const1101
+0     34   0    2   158  2.7  xuat_buzzer_relay
+0      8   0    0    29  1.2  buzzer_on
+0      6   0    0    30  1.0  buzzer_off
+0      8   0    0    29  1.2  triac_2_on
+0      8   0    0    32  0.8  triac_2_off
+0    198   2    6   271  5.3  h701_adc_read
+0    218   3    4   130  2.7  float_to_ng_2so_tp
+0     52   1    2   339  4.4  so_sanh_1nd_dk_buzzer
+0     12   0    0             @const1146
+0    112   1    5   162  2.6  h701_adc_lm35a_doc_xuly
+0     70   1    5   242  3.7  h701_adc_lm35a_ht_lcd
+0     22   0    2    96  2.1  h701_adc_lm35a_ht_7doan
+0    116   1    5   162  2.6  h702_adc_lm35b_doc_xuly
+0     70   1    5   242  3.7  h702_adc_lm35b_ht_lcd
+0     22   0    2    96  2.1  h702_adc_lm35b_ht_7doan
+0    290   4    2   538  3.7  MAIN
+0      6   0    0             @const1219
+0      6   0    0             @const1220
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               33
+    Statements              1106
+    Comments                1223
+    Volume (V)              12228
+    Difficulty (D)          95.8
+    Effort to implement (E) 1171118
+    Time to implement (T)   18 hours, 4 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   23
+    Maintainability (MI)    83
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  4070  28694  
+
+
+

@@ -1,88 +1,43 @@
 [PROJECT]
 Target=main.hex
 Processor_Text=PIC18F6722
-CCSVerions=5.101
-Compiler=PCH
 CCSVersion=5.101
+Compiler=PCH
 [Target Data]
 FileList=main.c
-[Directories]
-Include=
-[E:\Project\SPKT-KIT\Source\main]
+[main.c]
 Type=4
 [mru-list]
 1=main.c
 
-[ProjectLog]
-Days=2
-D1=20-03-2022
-D1_L=11
-D1_L1=[76537]Project Closed.
-D1_L2=[76537]Project Opened.
-D1_L3=[76543]Started Editing.
-D1_L4=[77880]Stopped Editing.
-TotalEdit=146
-TotalDebug=0
-D1_E=68
-D1_D=0
-D1_L5=[80417]Project Closed.
-D1_L6=[80708]Project Opened.
-D1_L7=[81714]Started Editing.
-D1_L8=[84254]Stopped Editing.
-D1_L9=[84298]Started Editing.
-D1_L10=[85337]Stopped Editing.
-D1_L11=[85966]Project Closed.
-D2=21-03-2022
-<<<<<<< Updated upstream
-D2_L=14
-D2_L1=[31215]Project Opened.
-D2_L2=[31580]Started Editing.
-D2_L3=[32373]Stopped Editing.
-D2_L4=[33021]Started Editing.
-D2_L5=[33385]Stopped Editing.
-D2_L6=[33769]Started Editing.
-D2_L7=[34791]Stopped Editing.
-D2_L8=[34939]Started Editing.
-D2_L9=[35681]Stopped Editing.
-D2_L10=[35878]Started Editing.
-D2_L11=[37599]Stopped Editing.
-D2_L12=[37636]Started Editing.
-D2_L13=[39171]Stopped Editing.
-D2_E=78
-D2_D=0
-D2_L14=[39171]Project Closed.
-=======
-D2_L=2
-D2_L1=[60614]Project Opened.
-D2_L2=[60783]Project Closed.
->>>>>>> Stashed changes
-
-[fileformats]
-forcecoff=0
+[defines]
+buildcount=113
 
 [Opened Files]
 1=main.c
-<<<<<<< Updated upstream
-t1=56
-=======
-t1=1
->>>>>>> Stashed changes
-Count=6
+t1=472
 2=TV_PICKIT2_SHIFT_1.c
-t2=1
+t2=63
 3=TV_PICKIT2_SHIFT_1.h
-t3=15
-4=..\..\..\Program Files (x86)\PICC\Devices\18f6722.h
-t4=270
+t3=1
+4=C:\Program Files (x86)\PICC\Devices\18f6722.h
+t4=199
 5=main.h
 t5=1
 6=TV_PICKIT2_SHIFT_32LED_DON.c
-t6=359
-[main.c]
-Type=4
-
-[defines]
-buildcount=89
+t6=73
+Count=6
 [Units]
 Count=1
 1=main (main)
+
+[ProjectLog]
+Days=1
+D1=21-03-2022
+D1_L=2
+D1_L1=[77542]Stopped Editing.
+TotalEdit=36
+TotalDebug=0
+D1_E=36
+D1_D=0
+D1_L2=[77599]Project Closed.

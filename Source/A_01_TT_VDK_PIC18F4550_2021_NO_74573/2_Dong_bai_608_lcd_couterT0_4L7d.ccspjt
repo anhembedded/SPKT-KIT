@@ -1,0 +1,22 @@
+[PROJECT]
+Target=2_Dong_bai_608_lcd_couterT0_4L7d.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_608_lcd_couterT0_4L7d.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_608_lcd_couterT0_4L7d.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_608_lcd_couterT0_4L7d.c
+[Opened Files]
+1=2_Dong_bai_608_lcd_couterT0_4L7d.c
+2=..\..\1_Dat_bai_608__lcd_4led_dem_sp_t0.c
+3=2_Dong_bai_607_lcd_mtp4x4_buzzer_on_off.c
+4=2_Dong_bai_601_lcd_hienthi_4hang.c
+5=
+[Units]
+Count=1
+1=2_Dong_bai_608_lcd_couterT0_4L7d (main)

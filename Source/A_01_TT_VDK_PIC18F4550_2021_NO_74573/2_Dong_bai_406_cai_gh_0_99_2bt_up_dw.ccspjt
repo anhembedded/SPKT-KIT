@@ -1,0 +1,16 @@
+[PROJECT]
+Target=2_Dong_bai_406_cai_gh_0_99_2bt_up_dw.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_406_cai_gh_0_99_2bt_up_dw.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_406_cai_gh_0_99_2bt_up_dw.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_406_cai_gh_0_99_2bt_up_dw.c
+[Units]
+Count=1
+1=2_Dong_bai_406_cai_gh_0_99_2bt_up_dw (main)

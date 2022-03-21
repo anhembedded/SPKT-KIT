@@ -1,0 +1,195 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 rbdc
+004.0   step_motor_enable
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006     dl_btn
+007-00A dl_4l7d
+00B-012 dl_8l7dq
+013-01B time_w
+01C-024 time_r
+025-028 g_lcd
+029     lcd_ctrl
+029.0   lcd_e
+029.1   lcd_rw
+029.2   lcd_rs
+029.3   lcd_p
+02A-02B so_ng
+02C-02D so_tp
+02E.0   ttqn
+02E.1   buz_ena
+02E.2   tt_cai
+02F     mp
+030     i
+031-032 donvi
+033-034 chuc
+035-036 tram
+037-038 g_han
+039-03C atan2.y
+039-03A xuat_1word.w
+039-03C xuat_32led_don_1dw.dwld
+039-03A md8l7d_gma_3so_vitri_vn.x
+039     key_4x4_dw_c2.dl
+039     hien_thi_8led_7doan_quet.ttl
+039     tinh_giai_ma_g_han.@SCRATCH1
+039     quet_mtp_nhap_g_han.@SCRATCH1
+03A     key_4x4_dw_c2.mp
+03A     hien_thi_8led_7doan_quet.@SCRATCH1
+03A     tinh_giai_ma_g_han.@SCRATCH2
+03B     key_nhan.maphim
+03B     @delay_ms1.P1
+03B-03C @MULS1616.P2
+03B     xuat_8led_7doan_quet.ttq
+03B     md8l7d_gma_3so_vitri_vn.y
+03B     xuat_1word.b1
+03C     md8l7d_gma_3so_vitri_vn.xvn
+03C     xuat_1word.b0
+03C     xuat_8led_7doan_quet.mht
+03C     key_nhan.hang
+03D-040 atan2.x
+03D-03E @MULS1616.P1
+03D     key_nhan.cot
+03D-03E xuat_32led_don_1dw.wd1
+03D     xuat_8led_7doan_quet.@SCRATCH1
+03D     md8l7d_gma_3so_vitri_vn.@SCRATCH1
+03E     key_nhan.@SCRATCH1
+03E     md8l7d_gma_3so_vitri_vn.@SCRATCH2
+03F-040 xuat_32led_don_1dw.wd0
+03F     md8l7d_gma_3so_vitri_vn.@SCRATCH3
+03F     @MULS1616.@SCRATCH1
+040     md8l7d_gma_3so_vitri_vn.@SCRATCH4
+040     @MULS1616.@SCRATCH2
+041-044 atan2.z
+041-042 xuat_32led_don_2word.wld1
+041-042 @DIV1616.P1
+041     xuat_32led_don_1dw.@SCRATCH1
+041     md8l7d_gma_3so_vitri_vn.@SCRATCH5
+043-044 @DIV1616.P1
+043-044 xuat_32led_don_2word.wld0
+045.0   atan2.sign
+045     xuat_32led_don_2word.b3
+045     @DIV1616.@SCRATCH1
+046     xuat_32led_don_2word.b2
+046     atan2.quad
+047     xuat_32led_don_2word.b1
+048     xuat_32led_don_2word.b0
+049     xuat_32led_don_4byte.bld3
+04A     xuat_32led_don_4byte.bld2
+04B     xuat_32led_don_4byte.bld1
+04C     xuat_32led_don_4byte.bld0
+04D     xuat_1byte.x
+04D.7   xuat_1byte.msb
+04E     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  maquet.call
+000034  maquet.data
+000038  ma_quet.call
+000048  ma_quet.data
+000052  @const1088.call
+000054  @const1099.call
+00005E  @const1101.call
+000074  @const1146.call
+000080  xuat_1byte
+0000A6  xuat_1word
+0000BC  xoa_tat_6module
+000108  set_up_port
+000142  @MULS1616
+000192  @DIV1616
+0001D4  md8l7d_gma_3so_vitri_vn
+00030E  tinh_giai_ma_g_han
+00035C  xuat_8led_7doan_quet
+00038E  @delay_ms1
+0003B4  tat_8led_7doan_quet
+0003C0  hien_thi_8led_7doan_quet
+0003F6  key_nhan
+000468  key_4x4_dw_c2
+00049C  xuat_32led_don_4byte
+0004C0  xuat_32led_don_2word
+0004E6  xuat_32led_don_1dw
+00050A  quet_mtp_nhap_g_han
+000576  MAIN
+000576  @cinit1
+000590  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_bai_508_mtp4x4_cai_gh_3so.c                      [27-Nov-21 20:24  CRC=7B3C7A56]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+
+Source signature=D3C83CA7
+
+Units:
+    2_Dong_bai_508_mtp4x4_cai_gh_3so (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_bai_508_mtp4x4_cai_gh_3so.xsym
+    Errors:      2_Dong_bai_508_mtp4x4_cai_gh_3so.err
+    Ext Symbols: 2_Dong_bai_508_mtp4x4_cai_gh_3so.esym
+    INHX32:      2_Dong_bai_508_mtp4x4_cai_gh_3so.hex
+    Symbols:     2_Dong_bai_508_mtp4x4_cai_gh_3so.sym
+    List:        2_Dong_bai_508_mtp4x4_cai_gh_3so.lst
+    Debug/COFF:  2_Dong_bai_508_mtp4x4_cai_gh_3so.cof
+    Project:     2_Dong_bai_508_mtp4x4_cai_gh_3so.ccspjt
+    Call Tree:   2_Dong_bai_508_mtp4x4_cai_gh_3so.tre
+    Statistics:  2_Dong_bai_508_mtp4x4_cai_gh_3so.STA

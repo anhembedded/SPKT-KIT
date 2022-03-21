@@ -1,5 +1,5 @@
-Compiling C:\Project\SPKT-KIT\Source\main on 21-Mar-22 at 10:52
->>> Warning 202 "C:\Project\SPKT-KIT\Source\main.c" Line 9(6,19): Variable never used:   testTrangThai
-      Memory usage:   ROM=2%      RAM=3% - 3%
+Compiling E:\Project\SPKT-KIT\Source\main on 21-Mar-22 at 21:27
+>>> Warning 202 "E:\Project\SPKT-KIT\Source\main.c" Line 7(11,21): Variable never used:   systemTick
+      Memory usage:   ROM=5%      RAM=2% - 3%
       0 Errors,  1 Warnings.
 Build Successful.

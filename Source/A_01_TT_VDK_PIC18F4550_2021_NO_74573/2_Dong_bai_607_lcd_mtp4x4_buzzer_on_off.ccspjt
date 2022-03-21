@@ -1,0 +1,20 @@
+[PROJECT]
+Target=2_Dong_bai_607_lcd_mtp4x4_buzzer_on_off.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_607_lcd_mtp4x4_buzzer_on_off.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_607_lcd_mtp4x4_buzzer_on_off.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_607_lcd_mtp4x4_buzzer_on_off.c
+[Opened Files]
+1=2_Dong_bai_607_lcd_mtp4x4_buzzer_on_off.c
+2=..\..\1_Dat_bai_607__lcd_mtp4x4_buzzer_on_off.c
+3=
+[Units]
+Count=1
+1=2_Dong_bai_607_lcd_mtp4x4_buzzer_on_off (main)

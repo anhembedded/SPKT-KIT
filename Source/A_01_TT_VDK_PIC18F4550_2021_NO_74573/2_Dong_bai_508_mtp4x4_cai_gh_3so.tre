@@ -1,0 +1,53 @@
+ÀÄ2_Dong_bai_508_mtp4x4_cai_gh_3so
+   ÀÄMAIN  0/156  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/76  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄtinh_giai_ma_g_han  0/78  Ram=2
+      ³  ÃÄ@MULS1616  0/80  Ram=6
+      ³  ÃÄ@MULS1616  0/80  Ram=6
+      ³  ÀÄmd8l7d_gma_3so_vitri_vn  0/314  Ram=9
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@const652  0/32  Ram=0
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@const652  0/32  Ram=0
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÀÄ@const652  0/32  Ram=0
+      ÃÄhien_thi_8led_7doan_quet  0/54  Ram=2
+      ³  ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³  ³  ÃÄ@const895  0/26  Ram=0
+      ³  ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄtat_8led_7doan_quet  0/12  Ram=0
+      ³     ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³        ÀÄ*
+      ÀÄquet_mtp_nhap_g_han  0/108  Ram=1
+         ÃÄkey_4x4_dw_c2  0/52  Ram=2
+         ³  ÃÄkey_nhan  0/114  Ram=4
+         ³  ³  ÀÄ@const692  0/20  Ram=0
+         ³  ÀÄ@delay_ms1  0/38  Ram=1
+         ÃÄtinh_giai_ma_g_han  0/78  Ram=2
+         ³  ÀÄ*
+         ÃÄtinh_giai_ma_g_han  0/78  Ram=2
+         ³  ÀÄ*
+         ÃÄxuat_32led_don_1dw  0/36  Ram=9
+         ³  ÀÄxuat_32led_don_2word  0/38  Ram=8
+         ³     ÀÄxuat_32led_don_4byte  0/36  Ram=4
+         ³        ÃÄxuat_1byte  0/38  Ram=2
+         ³        ÃÄxuat_1byte  0/38  Ram=2
+         ³        ÃÄxuat_1byte  0/38  Ram=2
+         ³        ÀÄxuat_1byte  0/38  Ram=2
+         ÀÄxuat_32led_don_1dw  0/36  Ram=9
+            ÀÄ*

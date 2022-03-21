@@ -1,0 +1,4 @@
+>>> Warning 201 "2_Dong_bai_609_lcd_4led_dem_sp_t0_ud.c" Line 46(1,1): Assignment inside relational expression
+      Memory usage:   ROM=5%      RAM=2% - 3%
+      0 Errors,  1 Warnings.
+Build Successful.

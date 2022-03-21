@@ -1,0 +1,21 @@
+[PROJECT]
+Target=2_Dong_bai_611_led_traitim.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_611_led_traitim.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_611_led_traitim.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_611_led_traitim.c
+[Opened Files]
+1=2_Dong_bai_614_lcd_dem_sp_soto.c
+2=2_Dong_bai_611_led_traitim.c
+3=2_Dong_bai_612_lcd_so_to_0.c
+4=
+[Units]
+Count=1
+1=2_Dong_bai_611_led_traitim (main)

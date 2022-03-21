@@ -1,0 +1,18 @@
+#include <tv_kit_vdk_pic_all.c>
+
+void main()
+{
+   set_up_port();
+   lcd_setup();
+   
+   lcd_goto_xy(0,0);
+   lcd_data("LE DINH DONG   "); 
+   lcd_goto_xy(1,9);
+   lcd_data("09   "); 
+   lcd_khoi_tao_cgram_so_to();
+   
+   lcd_hien_thi_so_to(0,2,6);
+   lcd_hien_thi_so_to(9,2,9);
+   while(true);
+}
+
