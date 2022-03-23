@@ -14,7 +14,7 @@ Type=4
 1=main.c
 
 [ProjectLog]
-Days=2
+Days=3
 D1=20-03-2022
 D1_L=11
 D1_L1=[76537]Project Closed.
@@ -50,13 +50,18 @@ D2_L13=[39171]Stopped Editing.
 D2_E=78
 D2_D=0
 D2_L14=[39171]Project Closed.
+D3=22-03-2022
+D3_L=3
+D3_L1=[32981]Project Opened.
+D3_L2=[32993]Started Editing.
+D3_L3=[33313]Stopped Editing.
 
 [fileformats]
 forcecoff=0
 
 [Opened Files]
 1=main.c
-t1=56
+t1=21
 Count=6
 2=TV_PICKIT2_SHIFT_1.c
 t2=1
@@ -72,7 +77,7 @@ t6=359
 Type=4
 
 [defines]
-buildcount=89
+buildcount=92
 [Units]
 Count=1
 1=main (main)

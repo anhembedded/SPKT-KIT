@@ -1,4 +1,4 @@
-Compiling C:\Project\SPKT-KIT\Source\main on 21-Mar-22 at 10:52
+Compiling C:\Project\SPKT-KIT\Source\main on 22-Mar-22 at 09:11
 >>> Warning 202 "C:\Project\SPKT-KIT\Source\main.c" Line 9(6,19): Variable never used:   testTrangThai
       Memory usage:   ROM=2%      RAM=3% - 3%
       0 Errors,  1 Warnings.
