@@ -1,0 +1,16 @@
+[PROJECT]
+Target=2_Dong_bai_508_mtp4x4_cai_gh_3so.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_508_mtp4x4_cai_gh_3so.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_508_mtp4x4_cai_gh_3so.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_508_mtp4x4_cai_gh_3so.c
+[Units]
+Count=1
+1=2_Dong_bai_508_mtp4x4_cai_gh_3so (main)

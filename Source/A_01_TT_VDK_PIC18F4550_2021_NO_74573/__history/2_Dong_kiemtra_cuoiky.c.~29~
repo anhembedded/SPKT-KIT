@@ -1,0 +1,39 @@
+#include <tv_kit_vdk_pic_all.c>
+#define solan 100
+#include <2_Dong_bai_701_lm35a_tv.c>
+
+unsigned char hang0[]={"DONG  18542109        "};
+unsigned char hang1[]={"LM35A                 "};
+signed int8 i;
+void main()
+{
+   set_up_port();
+   lcd_setup();
+   lcd_khoi_tao_cgram_so_to();
+   
+   lcd_goto_xy(0,0);
+   for (i=0;i<20;i++) lcd_data(hang0[i]);
+   lcd_goto_xy(1,0);
+   for (i=0;i<20;i++) lcd_data(hang1[i]);
+   lcd_goto_xy(1,14);
+   lcd_data("SPHAM               :");
+   
+   while(true)
+   {
+      h701_adc_lm35a_doc_xuly(solan);
+      h701_adc_lm35a_ht_lcd(2,0,2,2);
+     
+      so_sanh_1nd_dk_buzzer(lm35a_ng%256);
+      delay_ms(200);
+      if(!input(bt3)) buzzer_off();
+      
+      h701_adc_lm35a_doc_xuly(solan);
+      h701_adc_lm35a_ht_lcd(2,0,6,6);
+     
+      so_sanh_1nd_dk_buzzer(lm35a_ng%256);
+      delay_ms(200);
+      if(!input(bt3)) buzzer_off();
+   }
+}
+
+

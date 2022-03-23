@@ -1,0 +1,7 @@
+D G "__PCH__" 0 0 ""5.011""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""30-Nov-21""
+D G "__TIME__" 0 0 ""10:13:35""
+V G "lm35a_ng" 0 1 "int16" `34 
+V G "lm35a_tp" 0 1 "int16" `35 
+V G "lm35a_ngt" 0 1 "int16" `36 

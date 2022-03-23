@@ -1,0 +1,16 @@
+[PROJECT]
+Target=2_Dong_bai_815_dc_motor_pwm_ccp1_up_dw_stop.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_815_dc_motor_pwm_ccp1_up_dw_stop.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+[Units]
+Count=1
+1=2_Dong_bai_815_dc_motor_pwm_ccp1_up_dw_stop (main)

@@ -1,0 +1,4 @@
+*** Error 128 "2_Dong_bai_615_clock_ds1307_lcd_tv.c" Line 0(0,0): A #DEVICE required before this line
+--- Info 300 "2_Dong_bai_615_clock_ds1307_lcd_tv.c" Line 1(26,27): More info:   ** I/O error 131
+      1 Errors,  0 Warnings.
+Build Failed.

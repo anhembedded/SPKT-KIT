@@ -1,0 +1,22 @@
+[PROJECT]
+Target=2_Dong_kiemtra_cuoiky.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_kiemtra_cuoiky.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_kiemtra_cuoiky.c]
+Type=4
+[mru-list]
+1=2_Dong_kiemtra_cuoiky.c
+[Opened Files]
+1=2_Dong_kiemtra_cuoiky.c
+2=..\..\18_Dang_Thanh_Tung_KiemTra_CuoiKy.c
+3=
+4=
+5=
+[Units]
+Count=1
+1=2_Dong_kiemtra_cuoiky (main)

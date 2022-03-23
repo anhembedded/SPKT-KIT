@@ -1,0 +1,64 @@
+ÀÄ2_Dong_bai_414_dem_xung_t0_stop_run_32led
+   ÀÄMAIN  0/146  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/76  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄb406_up_dw_g_han  0/46  Ram=1
+      ³  ÃÄphim_bt2_c2  0/58  Ram=3
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÃÄb406_hienthi_4led7doan  0/16  Ram=0
+      ³  ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/142  Ram=6
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÃÄ@const652  0/32  Ram=0
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÀÄ@const652  0/32  Ram=0
+      ³  ³  ÀÄxuat_4led_7doan_4so  0/34  Ram=0
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄphim_bt3_c2  0/58  Ram=3
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÀÄb406_hienthi_4led7doan  0/16  Ram=0
+      ³     ÀÄ*
+      ÃÄb411_dem_xung_ngoai_t0  0/40  Ram=0
+      ³  ÃÄb411_hienthi_4led7doan  0/32  Ram=0
+      ³  ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/142  Ram=6
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/142  Ram=6
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄxuat_4led_7doan_4so  0/34  Ram=0
+      ³  ³     ÀÄ*
+      ³  ÀÄbuzzer_on_off  0/36  Ram=3
+      ³     ÃÄxuat_buzzer_relay  0/30  Ram=2
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³        ÀÄ*
+      ÃÄphim_run  0/30  Ram=0
+      ³  ÃÄphim_bt0_c2  0/58  Ram=3
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÀÄxuat_32led_don_1dw  0/36  Ram=9
+      ³     ÀÄxuat_32led_don_2word  0/38  Ram=8
+      ³        ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³           ÃÄxuat_1byte  0/38  Ram=2
+      ³           ÃÄxuat_1byte  0/38  Ram=2
+      ³           ÃÄxuat_1byte  0/38  Ram=2
+      ³           ÀÄxuat_1byte  0/38  Ram=2
+      ÀÄphim_stop  0/28  Ram=0
+         ÃÄphim_bt1_c2  0/58  Ram=3
+         ³  ÀÄ@delay_us1  0/26  Ram=1
+         ÀÄxuat_32led_don_1dw  0/36  Ram=9
+            ÀÄ*

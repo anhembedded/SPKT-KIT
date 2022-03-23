@@ -1,0 +1,16 @@
+[PROJECT]
+Target=2_Dong_bai_516_gio_phut_giay_3key.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=2_Dong_bai_516_gio_phut_giay_3key.c
+[Directories]
+Include=C:\Program Files\PICC\Devices\;C:\Program Files\PICC\Drivers\
+[2_Dong_bai_516_gio_phut_giay_3key.c]
+Type=4
+[mru-list]
+1=2_Dong_bai_516_gio_phut_giay_3key.c
+[Units]
+Count=1
+1=2_Dong_bai_516_gio_phut_giay_3key (main)

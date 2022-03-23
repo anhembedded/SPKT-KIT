@@ -1,0 +1,28 @@
+[PROJECT]
+Target=bai_301_choptat_8led.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.011
+Compiler=PCH
+[Target Data]
+FileList=bai_301_choptat_8led.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\
+[bai_301_choptat_8led.c]
+Type=4
+[mru-list]
+1=bai_301_choptat_8led.c
+[Opened Files]
+1=I:\GIAOTRINH_005_LT_VIXULY_2\A_05_SLICE_ALL_TIENG_VIET\VXL_VDK_PIC_2021\BAI_603_CHOP_TAT_8LED_2S.c
+2=I:\GIAOTRINH_005_LT_VIXULY_2\A_05_SLICE_ALL_TIENG_VIET\VXL_VDK_PIC_2021\BAI_605_CHOP_TAT_8LED_T0_2S.c
+3=I:\GIAOTRINH_005_LT_VIXULY_2\A_05_SLICE_ALL_TIENG_VIET\VXL_VDK_PIC_2021\BAI_606_CHOPTAT_8LED_WDT.c
+4=
+5=
+6=D:\a_01_tt_vdk_pic18F4550_2021_d501_to_no_74573\tv_05_8led_7doan_quet.c
+7=D:\a_01_tt_vdk_pic18F4550_2021_d501_to_no_74573\tv_06_lcd_glcd.c
+8=D:\a_01_tt_vdk_pic18F4550_2021_d501_to_no_74573\tv_08_relay_triac_buzzer_dc.c
+9=D:\a_01_tt_vdk_pic18F4550_2021_d501_to_no_74573\tv_09_matran_led_mbi.c
+10=bai_301_choptat_8led.c
+11=
+[Units]
+Count=1
+1=bai_301_choptat_8led (main)

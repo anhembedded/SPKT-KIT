@@ -1,0 +1,125 @@
+
+ROM used:   3232/32768 (10%)
+            3232/32768 (10%) including unused fragments
+
+            0.6 Average locations per line
+            2.9 Average locations per statement
+
+RAM used:   57/2048 (3%) at main() level
+            79/2048 (4%) worst case
+
+Stack used: 10 worst case (10 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   66    45   4  2_Dong_bai_712_ds18b20_lcd_7doan_den_buz_rom_3bt.c
+   21     0   0  tv_kit_vdk_pic_all.c
+  215    46   4  tv_00_define_18f4550.c
+  821     0   0  ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h
+  204    88   8  tv_01_4_nutnhan.c
+   98    63   6  tv_02_matran_phim4x4_138.c
+ 2229   257  23  ..\..\..\..\..\Program Files\PICC\Drivers\math.h
+   38    15   1  tv_03_32led_don.c
+  100    47   4  tv_04_4led_7doan.c
+  111    48   4  tv_05_8led_7doan_quet.c
+  132    45   4  tv_05_i2c_ds13_pcf.c
+   41    12   1  tv_06_lcd_glcd.c
+  409   198  18  tv_06_lcd.c
+   64    35   3  tv_dht11.c
+  130    37   3  tv_08_relay_triac_buzzer_dc.c
+  350    24   2  tv_07_adc_cb.c
+   98    39   3  tv_07_ds18b20.c
+  230    54   5  ..\..\..\..\..\Program Files\PICC\Drivers\touch.c
+   49    27   2  tv_07_i2c_at24cxx.c
+   48    20   2  tv_09_matran_led_mbi.c
+   35    19   2  2_Dong_bai_711_ds18a_tv.c
+----- -----
+ 5489  1119 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     26   0    1             @delay_us1
+0     32   0    0             @const652
+0     38   1    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     76   1    0   344  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     58   1    3   198  3.6  phim_bt0_c2
+0     60   1    3   194  3.9  phim_bt1_c2
+0     44   1    0   152  1.8  xuat_4led_7doan_4so
+0    148   2    6   305  5.1  md4l7d_giaima_2so_vitri_vn
+0     40   1    3             @DIV88
+0     66   1    5             @DIV1616
+0     36   1    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   1    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     20   0    0             @const974
+0     26   0    3   145  3.9  lcd_goto_xy
+0     76   1    0             @const980
+0     80   1    0             @const984
+0     44   1    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0     92   1    6   280  5.8  lcd_hien_thi_so_to
+0     76   1    2             @MUL88
+0     52   1    4   241  5.3  lcd_xoa_so_to
+0    170   3   12   540  5.2  lcd_gm_ht_3so_nho_xvn
+0    128   2    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0      2   0    0             @const1088
+0     32   0    2             @PSTRINGC_965
+0     10   0    0             @const1099
+0     22   0    0             @const1101
+0     34   1    2   158  2.7  xuat_buzzer_relay
+0      8   0    0    29  1.2  buzzer_on
+0      6   0    0    30  1.0  buzzer_off
+0      8   0    0    29  1.2  triac_2_on
+0      8   0    0    32  0.8  triac_2_off
+0     52   1    2   339  4.4  so_sanh_1nd_dk_buzzer
+0     60   1    1   176  2.3  touch_read_bit
+0     34   1    2   149  4.3  touch_read_byte
+0    112   2    1   450  3.3  touch_write_bit
+0     46   1    3   185  5.6  touch_write_byte
+0     78   1    2   260  3.2  touch_present
+0     18   0    0    43  1.3  ds18b20_no_ds18b
+0     12   0    0             @const1146
+0     44   1    0   158  1.3  ds18b20_khoi_tao
+0     58   1    4   260  2.9  ds18b20_read_temp
+0    182   3   15   851  8.6  ds18b20_doc_rom
+0    130   2    2   259  4.0  ds18b20_a_ht_lcd
+0      2   0    0   114  3.0  @const1193
+0     32   0    5   100  3.2  @MUL1616
+0     18   0    0    45  1.4  ds18b20_a_ht_7doan
+0     60   1    0   152  3.4  ds18b20_a_doc_nhiet_do
+0     62   1    1   114  3.0  hienthi_nd_high
+0     62   1    1   114  3.0  hienthi_nd_low
+0     32   0    0   100  3.2  chinh_nd_high
+0     32   0    0   100  3.2  chinh_nd_low
+0    296   5    0   650  3.8  MAIN
+0      8   0    0             @const1208
+0      6   0    0             @const1209
+0      6   0    0             @const1210
+0      4   0    0             @const1211
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               45
+    Statements              1119
+    Comments                1223
+    Volume (V)              18852
+    Difficulty (D)          144.0
+    Effort to implement (E) 2715300
+    Time to implement (T)   41 hours, 54 minutes
+    Est Delivered Bugs (B)  6
+    Cyclomatic Complexity   42
+    Maintainability (MI)    136
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  3228  29536  
+
+
+

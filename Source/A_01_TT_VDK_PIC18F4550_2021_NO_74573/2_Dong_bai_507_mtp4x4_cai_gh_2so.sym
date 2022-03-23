@@ -1,0 +1,189 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006     dl_btn
+007-00A dl_4l7d
+00B-012 dl_8l7dq
+013-01B time_w
+01C-024 time_r
+025-028 g_lcd
+029     lcd_ctrl
+029.0   lcd_e
+029.1   lcd_rw
+029.2   lcd_rs
+029.3   lcd_p
+02A-02B so_ng
+02C-02D so_tp
+02E.0   ttqn
+02E.1   buz_ena
+02E.2   tt_cai
+02F     mp
+030     i
+031     donvi
+032     chuc
+033     g_han
+034     @MUL88.P1
+034     md8l7d_gma_2so_vitri_vn.x
+034-037 atan2.y
+034-035 xuat_1word.w
+034     hien_thi_8led_7doan_quet.ttl
+034-037 xuat_32led_don_1dw.dwld
+034     key_4x4_dw_c2.dl
+034     tinh_giai_ma_g_han.@SCRATCH1
+034     quet_mtp_nhap_g_han.@SCRATCH1
+035     md8l7d_gma_2so_vitri_vn.y
+035     @MUL88.P1
+035     key_4x4_dw_c2.mp
+035     hien_thi_8led_7doan_quet.@SCRATCH1
+036     xuat_1word.b1
+036     @delay_ms1.P1
+036     key_nhan.maphim
+036     md8l7d_gma_2so_vitri_vn.xvn
+036     xuat_8led_7doan_quet.ttq
+037     xuat_8led_7doan_quet.mht
+037     xuat_1word.b0
+037     key_nhan.hang
+037     md8l7d_gma_2so_vitri_vn.@SCRATCH1
+038-03B atan2.x
+038     key_nhan.cot
+038-039 xuat_32led_don_1dw.wd1
+038     xuat_8led_7doan_quet.@SCRATCH1
+038     md8l7d_gma_2so_vitri_vn.@SCRATCH2
+039     key_nhan.@SCRATCH1
+039     md8l7d_gma_2so_vitri_vn.@SCRATCH3
+03A     @DIV88.P1
+03A-03B xuat_32led_don_1dw.wd0
+03B     @DIV88.P1
+03C-03F atan2.z
+03C-03D xuat_32led_don_2word.wld1
+03C     xuat_32led_don_1dw.@SCRATCH1
+03C     @DIV88.@SCRATCH1
+03E-03F xuat_32led_don_2word.wld0
+040     xuat_32led_don_2word.b3
+040.0   atan2.sign
+041     atan2.quad
+041     xuat_32led_don_2word.b2
+042     xuat_32led_don_2word.b1
+043     xuat_32led_don_2word.b0
+044     xuat_32led_don_4byte.bld3
+045     xuat_32led_don_4byte.bld2
+046     xuat_32led_don_4byte.bld1
+047     xuat_32led_don_4byte.bld0
+048     xuat_1byte.x
+048.7   xuat_1byte.msb
+049     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  maquet.call
+000034  maquet.data
+000038  ma_quet.call
+000048  ma_quet.data
+000052  @const1088.call
+000054  @const1099.call
+00005E  @const1101.call
+000074  @const1146.call
+000080  xuat_1byte
+0000A6  xuat_1word
+0000BC  xoa_tat_6module
+000108  set_up_port
+000142  @MUL88
+00018E  @DIV88
+0001B6  md8l7d_gma_2so_vitri_vn
+000246  tinh_giai_ma_g_han
+000264  xuat_8led_7doan_quet
+000296  @delay_ms1
+0002BC  tat_8led_7doan_quet
+0002C8  hien_thi_8led_7doan_quet
+0002FE  key_nhan
+000370  key_4x4_dw_c2
+0003A4  xuat_32led_don_4byte
+0003C8  xuat_32led_don_2word
+0003EE  xuat_32led_don_1dw
+000412  quet_mtp_nhap_g_han
+000464  MAIN
+000464  @cinit1
+00047E  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_bai_507_mtp4x4_cai_gh_2so.c                      [27-Nov-21 20:16  CRC=0336138D]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+
+Source signature=5BC1D5DE
+
+Units:
+    2_Dong_bai_507_mtp4x4_cai_gh_2so (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_bai_507_mtp4x4_cai_gh_2so.xsym
+    Errors:      2_Dong_bai_507_mtp4x4_cai_gh_2so.err
+    Ext Symbols: 2_Dong_bai_507_mtp4x4_cai_gh_2so.esym
+    INHX32:      2_Dong_bai_507_mtp4x4_cai_gh_2so.hex
+    Symbols:     2_Dong_bai_507_mtp4x4_cai_gh_2so.sym
+    List:        2_Dong_bai_507_mtp4x4_cai_gh_2so.lst
+    Debug/COFF:  2_Dong_bai_507_mtp4x4_cai_gh_2so.cof
+    Project:     2_Dong_bai_507_mtp4x4_cai_gh_2so.ccspjt
+    Call Tree:   2_Dong_bai_507_mtp4x4_cai_gh_2so.tre
+    Statistics:  2_Dong_bai_507_mtp4x4_cai_gh_2so.STA

@@ -1,0 +1,302 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017.0   step_motor_enable
+017-018 rbdc
+017.1   step_motor_in1
+017.2   step_motor_in2
+017.3   step_motor_in3
+017.4   step_motor_in4
+017.5   dc_enable
+017.6   pwrkey
+018.0   buzzer
+018.1   triac_1
+018.2   triac_2
+018.3   relay_1
+018.4   relay_2
+019     dl_btn
+01A-01D dl_4l7d
+01E-025 dl_8l7dq
+026-02E time_w
+02F-037 time_r
+038-03B g_lcd
+03C     lcd_ctrl
+03C.0   lcd_e
+03C.1   lcd_rw
+03C.2   lcd_rs
+03C.3   lcd_p
+03D-03E so_ng
+03F-040 so_tp
+041.0   ttqn
+041.1   buz_ena
+042-043 lm35a_ng
+044-045 lm35a_tp
+046-047 lm35a_ngt
+048     t0
+049     t0_tam
+04A     g_han
+04B     giay
+04C     bdn
+04D-063 hang0
+064-07A hang1
+07B     i
+07C     h701_adc_lm35a_doc_xuly.s1
+07C     lcd_khoi_tao_cgram_so_to.i
+07C     h701_adc_lm35a_ht_lcd.x
+07C     @delay_ms1.P1
+07C     @DIV88.P2
+07C-07F atan2.y
+07C     @DIVS88.P1
+07C-07F xuat_32led_don_1dw.dwld
+07C-07D xuat_1word.w
+07C-07D phim_bt0_c2.dl
+07C-07D phim_bt1_c2.dl
+07C     @PSTRINGC_965.@SCRATCH1
+07C     lcd_hienthi_soto_giay.@SCRATCH1
+07C     lcd_hienthi_soto_t0.@SCRATCH1
+07C     MAIN.@SCRATCH1
+07D     @DIV88.P1
+07D     h701_adc_lm35a_ht_lcd.y
+07D-080 h701_adc_lm35a_doc_xuly.lm35a
+07D     @DIVS88.P1
+07D     lcd_khoi_tao_cgram_so_to.@SCRATCH1
+07D     @PSTRINGC_965.@SCRATCH2
+07E     xuat_1word.b1
+07E     h701_adc_lm35a_ht_lcd.ht_lcd
+07E     phim_bt0_c2.@SCRATCH1
+07E     phim_bt1_c2.@SCRATCH1
+07E     @DIV88.@SCRATCH1
+07E     @DIVS88.@SCRATCH1
+07F     h701_adc_lm35a_ht_lcd.ht_tp
+07F     @delay_us1.P1
+07F     xuat_1word.b0
+07F     @DIVS88.@SCRATCH2
+080-081 lcd_gm_ht_2so_to_xvn.so
+080-083 atan2.x
+080-081 xuat_32led_don_1dw.wd1
+081     h701_adc_read.solan
+081-084 float_to_ng_2so_tp.st
+082-083 xuat_32led_don_1dw.wd0
+082     h701_adc_read.chan_i
+082     lcd_gm_ht_2so_to_xvn.x
+083-086 h701_adc_read.kq_adc
+083     lcd_gm_ht_2so_to_xvn.y
+084-085 xuat_32led_don_2word.wld1
+084-087 atan2.z
+084     lcd_gm_ht_2so_to_xvn.xvn
+084     xuat_32led_don_1dw.@SCRATCH1
+085-088 @SFTOI.P1
+085-088 @MULFF.P2
+085     lcd_gm_ht_2so_to_xvn.ch
+086     lcd_gm_ht_2so_to_xvn.dv
+086-087 xuat_32led_don_2word.wld0
+087     h701_adc_read.i
+087     lcd_xoa_so_to.x
+087     lcd_gm_ht_2so_to_xvn.@SCRATCH1
+088-08B @ADDFF.P1
+088     lcd_xoa_so_to.y
+088-08B @DIVFF.P1
+088.0   atan2.sign
+088     lcd_hien_thi_so_to.so
+088-089 @ITOF.P1
+088     xuat_32led_don_2word.b3
+088     lcd_gm_ht_2so_to_xvn.@SCRATCH2
+089     atan2.quad
+089-08A @DIV1616.P1
+089     lcd_hien_thi_so_to.x
+089     xuat_32led_don_2word.b2
+089-08C @MULFF.P1
+089     lcd_xoa_so_to.i
+08A     lcd_hien_thi_so_to.y
+08A     xuat_32led_don_2word.b1
+08A     lcd_xoa_so_to.@SCRATCH1
+08B-08C @DIV1616.P1
+08B     xuat_32led_don_2word.b0
+08B     lcd_hien_thi_so_to.i
+08C     @MUL88.P1
+08C-08F @ADDFF.P2
+08C-08F @DIVFF.P3
+08C     xuat_32led_don_4byte.bld3
+08C     lcd_hien_thi_so_to.@SCRATCH1
+08D     xuat_32led_don_4byte.bld2
+08D     lcd_goto_xy.x
+08D     lcd_data.db
+08D     @MUL88.P1
+08D     @MULFF.@SCRATCH1
+08D     @DIV1616.@SCRATCH1
+08D     lcd_hien_thi_so_to.@SCRATCH2
+08E     xuat_32led_don_4byte.bld1
+08E     lcd_goto_xy.y
+08E     @MULFF.@SCRATCH2
+08F     xuat_32led_don_4byte.bld0
+08F     @MULFF.@SCRATCH3
+08F     lcd_goto_xy.@SCRATCH1
+090     lcd_command.db
+090     @ADDFF.@SCRATCH1
+090     @DIVFF.@SCRATCH1
+091     lcd_xuat.db
+091     @ADDFF.@SCRATCH2
+091     @DIVFF.@SCRATCH2
+092     xuat_lcd.lcd_ctr
+092     @ADDFF.@SCRATCH3
+092     @DIVFF.@SCRATCH3
+093     xuat_lcd.lcd_dta
+093     @ADDFF.@SCRATCH4
+093     @DIVFF.@SCRATCH4
+094     xuat_1byte.x
+094.7   xuat_1byte.msb
+094     @ADDFF.@SCRATCH5
+094     @DIVFF.@SCRATCH5
+095     xuat_1byte.sb
+095     @ADDFF.@SCRATCH6
+095     @DIVFF.@SCRATCH6
+096     @ADDFF.@SCRATCH7
+097     @ADDFF.@SCRATCH8
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  lcd_vitri.call
+0000B0  lcd_vitri.data
+0000B4  lcd_so_to.call
+0000CE  lcd_so_to.data
+00010A  lcd_ma_8doan.call
+000124  lcd_ma_8doan.data
+000164  @const1088.call
+000166  @const1099.call
+000170  @const1101.call
+000186  @const1146.call
+000192  tang_giay
+0001A6  @const1223.call
+0001B6  @const1224.call
+0001BC  xuat_1byte
+0001E2  xuat_1word
+0001F8  xoa_tat_6module
+000244  set_up_port
+00027E  xuat_glcd_lcd
+0002A2  xuat_lcd
+0002B2  lcd_xuat
+0002D8  lcd_command
+0002E2  @delay_ms1
+00030A  lcd_setup
+000352  lcd_data
+00035C  lcd_khoi_tao_cgram_so_to
+000388  lcd_goto_xy
+0003A2  @PSTRINGC_965
+0003C2  @ITOF
+0003F8  @ADDFF
+000662  @DIVFF
+0007BC  h701_adc_read
+000884  @SFTOI
+0008BC  @MULFF
+0009B0  float_to_ng_2so_tp
+000A8C  h701_adc_lm35a_doc_xuly
+000AFC  @DIV1616
+000B3E  @MUL88
+000B8A  lcd_hien_thi_so_to
+000BEE  lcd_xoa_so_to
+000C28  lcd_gm_ht_2so_to_xvn
+000CAA  h701_adc_lm35a_ht_lcd
+000CDA  @delay_us1
+000CF4  phim_bt0_c2
+000D2E  xuat_32led_don_4byte
+000D5A  xuat_32led_don_2word
+000D80  xuat_32led_don_1dw
+000DA4  phim_run
+000DC2  phim_bt1_c2
+000DFC  phim_stop
+000E18  @DIV88
+000E40  lcd_hienthi_soto_t0
+000E7C  @DIVS88
+000EC4  lcd_hienthi_soto_giay
+000F00  MAIN
+000F00  @cinit1
+000F1E  @cinit2
+
+Project Directory:
+    C:\Users\Administrator\Desktop\TT VXL\A_01_TT_VDK_PIC18F4550_2021_NO_74573\
+
+Project Files:
+    2_Dong_kiemtra_cuoiky.c                                 [05-Dec-21 17:24  CRC=9D15561E]
+    tv_kit_vdk_pic_all.c                                    [22-Nov-21 16:44  CRC=EFB530C0]
+    tv_00_define_18f4550.c                                  [22-Nov-21 16:44  CRC=1279B209]
+    ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h     [09-Aug-13 15:40  CRC=A157EDDE]
+    tv_01_4_nutnhan.c                                       [22-Nov-21 16:44  CRC=5AC49C5A]
+    tv_02_matran_phim4x4_138.c                              [22-Nov-21 16:44  CRC=26E88B80]
+    ..\..\..\..\..\Program Files\PICC\Drivers\math.h        [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [22-Nov-21 16:44  CRC=6D451A57]
+    tv_04_4led_7doan.c                                      [22-Nov-21 16:44  CRC=BE5704C7]
+    tv_05_8led_7doan_quet.c                                 [22-Nov-21 16:44  CRC=DCDB6141]
+    tv_05_i2c_ds13_pcf.c                                    [22-Nov-21 16:44  CRC=E4C5E8AA]
+    tv_06_lcd_glcd.c                                        [22-Nov-21 16:44  CRC=31C7254B]
+    tv_06_lcd.c                                             [22-Nov-21 16:44  CRC=1F2FD742]
+    tv_dht11.c                                              [22-Nov-21 16:44  CRC=B4A79F17]
+    tv_08_relay_triac_buzzer_dc.c                           [22-Nov-21 16:44  CRC=77C3FD2C]
+    tv_07_adc_cb.c                                          [22-Nov-21 16:44  CRC=E4C51162]
+    tv_07_ds18b20.c                                         [22-Nov-21 16:44  CRC=EA8C37A0]
+    ..\..\..\..\..\Program Files\PICC\Drivers\touch.c       [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [22-Nov-21 16:44  CRC=63419B07]
+    tv_09_matran_led_mbi.c                                  [22-Nov-21 16:44  CRC=8E77F21F]
+    2_Dong_bai_701_lm35a_tv.c                               [05-Dec-21 14:43  CRC=E0593467]
+    2_Dong_bai_411_t0_tv.c                                  [25-Nov-21 18:42  CRC=1A1A5A06]
+
+Source signature=7BB70EC3
+
+Units:
+    2_Dong_kiemtra_cuoiky (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   2_Dong_kiemtra_cuoiky.xsym
+    Errors:      2_Dong_kiemtra_cuoiky.err
+    Ext Symbols: 2_Dong_kiemtra_cuoiky.esym
+    INHX32:      2_Dong_kiemtra_cuoiky.hex
+    Symbols:     2_Dong_kiemtra_cuoiky.sym
+    List:        2_Dong_kiemtra_cuoiky.lst
+    Debug/COFF:  2_Dong_kiemtra_cuoiky.cof
+    Project:     2_Dong_kiemtra_cuoiky.ccspjt
+    Call Tree:   2_Dong_kiemtra_cuoiky.tre
+    Statistics:  2_Dong_kiemtra_cuoiky.STA

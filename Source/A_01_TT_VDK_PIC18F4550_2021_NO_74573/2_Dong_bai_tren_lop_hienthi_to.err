@@ -1,0 +1,12 @@
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 19(24,25): Undefined identifier  -- lcd_hienthi_so_to
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 20(29,30): Undefined identifier  -- b411_hienthi_4led7doan
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 27(25,26): Undefined identifier  -- lcd_hienthi_so_nho
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 28(29,30): Undefined identifier  -- b411_hienthi_4led7doan
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 47(7,9): Undefined identifier   t0
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 48(10,12): Undefined identifier   t0
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 50(10,16): Undefined identifier   t0_tam
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 51(29,30): Undefined identifier  -- lcd_hienthi_soto_t0
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 52(24,25): Undefined identifier  -- lcd_hienthi_gh
+*** Error 12 "2_Dong_bai_tren_lop_hienthi_to.c" Line 53(32,33): Undefined identifier  -- b411_hienthi_4led7doan
+      10 Errors,  0 Warnings.
+Build Failed.

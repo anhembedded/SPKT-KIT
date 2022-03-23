@@ -1,0 +1,116 @@
+
+ROM used:   2476/32768 (8%)
+            2476/32768 (8%) including unused fragments
+
+            0.5 Average locations per line
+            2.2 Average locations per statement
+
+RAM used:   48/2048 (2%) at main() level
+            68/2048 (3%) worst case
+
+Stack used: 9 worst case (9 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   35    24   2  2_Dong_bai_615_clock_ds1307_lcd.c
+   21     0   0  tv_kit_vdk_pic_all.c
+  215    46   4  tv_00_define_18f4550.c
+  821     0   0  ..\..\..\..\..\Program Files\PICC\Devices\18f4550.h
+  204    88   8  tv_01_4_nutnhan.c
+   98    63   6  tv_02_matran_phim4x4_138.c
+ 2229   257  23  ..\..\..\..\..\Program Files\PICC\Drivers\math.h
+   38    15   1  tv_03_32led_don.c
+  100    47   4  tv_04_4led_7doan.c
+  111    48   4  tv_05_8led_7doan_quet.c
+  132    45   4  tv_05_i2c_ds13_pcf.c
+   41    12   1  tv_06_lcd_glcd.c
+  409   198  18  tv_06_lcd.c
+   64    35   3  tv_dht11.c
+  130    37   3  tv_08_relay_triac_buzzer_dc.c
+  350    24   2  tv_07_adc_cb.c
+   98    39   3  tv_07_ds18b20.c
+  230    54   5  ..\..\..\..\..\Program Files\PICC\Drivers\touch.c
+   49    27   2  tv_07_i2c_at24cxx.c
+   48    20   2  tv_09_matran_led_mbi.c
+   62    41   4  2_Dong_bai_615_clock_ds1307_lcd_tv.c
+----- -----
+ 5485  1120 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     72   1    3             @I2C_READ_1
+0     72   1    1             @I2C_WRITE_1
+0     38   1    1             @delay_ms1
+0     32   1    0             @const652
+0     38   1    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     76   2    0   344  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     26   1    0             @const895
+0     50   1    3   123  2.6  xuat_8led_7doan_quet
+0     12   0    0    25  1.2  tat_8led_7doan_quet
+0     54   1    2   171  4.0  hien_thi_8led_7doan_quet
+0    126   3    6   293  5.1  md8l7d_gma_so_bcd_vitri_vn
+0    148   3    3   262  4.6  ds1307_cap_nhat_time
+0    170   3    4   280  4.0  ds1307_doc_time
+0     22   0    0    89  1.5  ds1307_kiem_tra_ma
+0     36   1    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   1    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     20   0    0             @const974
+0     26   1    3   145  3.9  lcd_goto_xy
+0     76   2    0             @const980
+0     80   2    0             @const984
+0     44   1    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0     92   2    6   280  5.8  lcd_hien_thi_so_to
+0     76   2    2             @MUL88
+0     82   2    6   379  5.5  lcd_hthi_byte
+0      2   0    0             @const1088
+0     32   1    2             @PSTRINGC_965
+0     10   0    0             @const1099
+0     22   0    0             @const1101
+0     12   0    0             @const1146
+0     20   0    0    43  1.3  ds1307_hthi_text_lcd
+0     14   0    0             @const1188
+0    128   3    0   428  4.5  ds1307_hthi_thu_lcd
+0     14   0    0             @const1190
+0     14   0    0             @const1191
+0     14   0    0             @const1192
+0     14   0    0             @const1193
+0     14   0    0             @const1194
+0     14   0    0             @const1195
+0     14   0    0             @const1196
+0     64   1    0   190  2.2  ds1307_hthi_ntn_lcd
+0      2   0    0             @const1198
+0      2   0    0             @const1199
+0     42   1    1   114  3.0  ds1307_hthi_giay_lcd_soto
+0     42   1    1   114  3.0  ds1307_hthi_phut_lcd_soto
+0     40   1    1   114  3.0  ds1307_hthi_gio_lcd_soto
+0     26   1    0   183  2.6  ds1307_hthi_lcd_soto
+0     40   1    0   143  2.2  b518_giai_ma_8led_quet
+0    182   4    0   450  5.6  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               30
+    Statements              1120
+    Comments                1224
+    Volume (V)              11248
+    Difficulty (D)          89.5
+    Effort to implement (E) 1006500
+    Time to implement (T)   15 hours, 32 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   26
+    Maintainability (MI)    59
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  2472  30292  
+
+
+
